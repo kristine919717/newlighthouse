@@ -1,0 +1,155 @@
+body{
+  background-color: #000000;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.bg{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.bg img{
+  width: 110%;
+  height: auto;
+
+  animation-name: moving;
+  animation-duration: 20s;
+  transform: translate(-100px,-30px);
+
+}
+@keyframes moving{
+  from{
+    transform: translate(0,0);
+  }
+  to{
+    transform: translate(-100px,-30px);
+
+  }
+}
+@keyframes animation_fadeInBottom_1 {
+  0% {
+  opacity: 0;
+  margin-top: 40px;
+}
+
+/* 55% {
+
+  opacity: 0.6;
+  margin-top: 15px;
+
+} */
+
+100% {
+  opacity: 1;
+  /* margin-top: 10px; */
+
+}
+}
+#slider_bars{
+  position: absolute;
+  left: 45%;
+  top:80%;
+
+}
+.drag-container{
+
+}
+#slider_drag{
+
+  margin-left: -36px;
+  margin-top: -28px;
+  transform: translateX(0px);
+}
+#slider_drag circle{
+  fill: rgba(255, 255, 255, 0);
+  transition: fill 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+}
+#slider_drag:hover circle{
+    fill: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    /* stroke-dashoffset: 0;
+    stroke-dasharray: 700;
+    stroke-width: 2; */
+}
+#slider{
+  width: 218px;
+  margin-left: -60px;
+  /* margin-top: -28px; */
+
+
+  /* position: absolute;
+  left: 42%;
+  top:82%; */
+}
+.ui-slider-handle{
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 27px !important;
+  border: 1px solid white !important;
+  background: rgba(255, 255, 255, 0) !important;
+ cursor: pointer;
+ margin-top:-26px;
+ /* margin-left: -26px; */
+ transition: background 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+
+}
+
+.ui-slider-handle:hover{
+  background: rgba(255, 255, 255, 1)!important;
+
+}
+ /* .ui-button:hover, .ui-button:focus{
+
+    background: rgba(255, 255, 255, 1);
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+ } */
+.ui-slider-horizontal {
+  height: 0px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 25px;
+  border:0px solid;
+}
+.ui-widget.ui-widget-content{
+  border: none;
+}
+h1{
+  font-family: times;
+  font-size: 86px;
+  letter-spacing: 0.15rem;
+  animation-name: animation_fadeInBottom_1;
+  animation-duration: 5s;
+}
+h2{
+  font-size: 14px;
+  margin-top: 10px;
+  animation-name: animation_fadeInBottom_1;
+  animation-duration: 5s;
+  animation-delay: 1000;
+}
+h1, h2{
+  font-weight: normal;
+  color:white;
+  text-align: center;
+
+}
+.title{
+  position: absolute;
+top:45%;  /* margin: auto; */
+left: 50%;
+transform: translateX(-50%);
+}
+.tishi{
+  position: absolute;
+  top:87%;
+  width: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  color: white;
+}

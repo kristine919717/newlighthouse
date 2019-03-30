@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/data1.css">
+
+    <link rel="stylesheet" type="text/css" href="css/try2.css">
+    <link rel="stylesheet" type="text/css" href="css/mousescroll.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/try.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/data2.js"></script>
+
+    <section class="introsection" id="introsection">
+
+    <div class="intro-container">
+      <div class="subtitle">
+        facing life as a single mother
+
+      </div>
+
+    <h1 class="ml3">By the time morse appeared in Sir Walter Scott's </h1>
+    <div class="line2">
+
+
+    <span class="ml4">1821 novel, The Monastery  </span>
+    <span class="ml8">it already had a couple of</span>
+    <br>
+    </div>
+    <div class="line3">
+
+    <span class="ml6">accepted noun meanings: a fancy clasp for a cape and  </span>
+<br>
+</div>
+<div class="line4">
+
+    <span class="ml7">another word for walrus.    </span>
+    <span class="ml9">The verb morse, however,   </span>
+<br>
+</div>
+<div class="line5">
+
+    <span class="ml7">was a mystery.  </span>
+</div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="text/javascript" src="js/noframework.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/storyshowandhide.js"></script>
+
+<script type="text/javascript">
+  window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
+    <script>
+      // Wrap every letter in a span
+$('.ml3').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml5').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml6').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml7').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml8').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml4').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml9').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 500,
+    delay: function(el, i) {
+      return 50 * (i+1)
+    }
+  }).add({
+    targets: '.ml5 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 600,
+    delay: function(el, i) {
+      return 50 * (i+1)
+    }
+  });
+  anime.timeline({loop: false})
+
+    .add({
+      targets: '.ml8 .letter',
+      opacity: [0,1],
+      easing: "easeInOutQuad",
+      duration: 650,
+      delay: function(el, i) {
+        return 70 * (i+1)
+      }
+    });
+
+
+
+
+    anime.timeline({loop: false})
+      .add({
+        targets: '.ml7 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 750,
+        delay: function(el, i) {
+          return 70 * (i+1)
+        }
+      });
+
+
+  var t1 =anime({
+      targets: '.ml4 .letter',
+      opacity: [1,0],
+      easing: "easeInOutQuad",
+      duration: 650,
+      // direction: 'reverse',
+
+      delay: function(el, i) {
+        return 75 * (i+1)
+      }
+    });
+
+    t1.reverse();
+    var t3 =anime({
+        targets: '.ml9 .letter',
+        opacity: [1,0],
+        easing: "easeInOutQuad",
+        duration: 650,
+        // direction: 'reverse',
+
+        delay: function(el, i) {
+          return 65 * (i+1)
+        }
+      });
+
+      t3.reverse();
+
+    var t2 =anime({
+        targets: '.ml6 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 450,
+        delay: function(el, i) {
+          return 45 * (i+1)
+        }
+      });
+
+      // t2.reverse();
+    </script>
+    <div class="mouse_scroll">
+
+  		<div class="mouse">
+  			<div class="wheel"></div>
+  		</div>
+  		<div>
+  			<span class="m_scroll_arrows unu"></span>
+  			<span class="m_scroll_arrows doi"></span>
+  			<span class="m_scroll_arrows trei"></span>
+  		</div>
+  </div>
+</section>
+<div class="scroll" id="scroll">
+<p class="first-trigger" id="first-trigger">1</p>
+<p class="second-trigger" id="second-trigger">2</p>
+
+<p class="third-trigger" id="third-trigger">3</p>
+<p class="fourth-trigger" id="fourth-trigger">4</p>
+
+<p class="fifth-trigger" id="fifth-trigger">5</p>
+<p class="sixth-trigger" id="sixth-trigger">6</p>
+<p class="seventh-trigger" id="seventh-trigger">7</p>
+<p class="eighth-trigger" id="eighth-trigger">8</p>
+<p class="ninth-trigger" id="ninth-trigger">9</p>
+<p class="tenth-trigger" id="tenth-trigger">10</p>
+<p class="11th-trigger" id="11th-trigger">11</p>
+<p class="12th-trigger" id="12th-trigger">12</p>
+<p class="13th-trigger" id="13th-trigger">13</p>
+<p class="14th-trigger" id="14th-trigger">14</p>
+<p class="15th-trigger" id="15th-trigger">15</p>
+<p class="16th-trigger" id="16th-trigger">16</p>
+</div>
+
+
+  <section class="storysection">
+    <div class="story-cover">
+        <img class="cover-color"src="images/storycover.jpg" alt="">
+        <div class="mouse_scroll2">
+
+      		<div class="mouse">
+      			<div class="wheel"></div>
+      		</div>
+      		<div>
+      			<span class="m_scroll_arrows unu"></span>
+      			<span class="m_scroll_arrows doi"></span>
+      			<span class="m_scroll_arrows trei"></span>
+            <span class="m_scroll_text">scroll to read whole story</span>
+      		</div>
+      </div>
+        <img class="cover-bw" src="images/storycover_black.png" alt="">
+  </div>
+      <div class="text-container first">
+        In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+      </div>
+      <div class="story-2-container">
+
+      <img class="story-2" src="images/story-2.png" alt="">
+      <div class="text-container second">
+        <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">“We didn’t know much about the immigration life. If you’re alone, it can be a nightmare”
+</p>
+        In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+        <br><br><br>
+        <span style="font-family: times; font-size:14px;margin-top:30px; opacity:0.9;">"One big problem for single parents is social isolation."  --YMCA </span>
+
+      </div>
+    </div>
+    <div class="story-3-container">
+      <img class="story-3" src="images/story-3.png" alt="">
+      <img class="story-3-hover" src="images/story-3-hover.png" alt="">
+      <div class="story-3-hover-area" id="story-3-hover-area">
+      </div>
+      <div class="text-container third">
+        <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+          “The major challenges is the differences between their cultural
+          background and the community”
+        </p>
+        In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+      </div>
+      <div class="thirdtriggertextcontainer">
+      <div class="hovertext thirdtriggertext">
+        <p>How Maria support her children while studying?<br></p>
+      </div>
+      <p class="thirdclicktext">Maria:I don’t know how I do it…<br>
+  I was working three part-times while I was studying <br><br><br>
+<span style="font-family: times; font-size:14px;margin-top:30px; opacity:0.9;">"Single parents are less likely to be employed than those who are in couple.The comparable rates for their couple counterparts were 75% and 90%."  --StatCanada </span></p>
+  </div>
+    </div>
+    <div class="story-4-container">
+
+      <img class="story-4" src="images/story-4.png" alt="">
+      <img class="story-4-hover" src="images/story-4-hover.png" alt="">
+      <div class="story-4-hover-area"></div>
+      <div class="text-container fourth">
+        <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; margin-bottom:20px;">
+          “I thought I have everything in control
+          until I missed my daugther’s performance”
+        </p>
+        <p>In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+        </p>
+      </div>
+      <div class="fourthtriggertextcontainer">
+      <div class="hovertext fourthtriggertext">
+        <p>What happen to macy at school?<br></p>
+      </div>
+      <p class="fourthclicktext">Parent A: Look, macy is so brave, she performed alone<br>
+      Macy ran through the crowd, crying in tears.<br>
+      Macy: I don't want to be brave...I don't...</p>
+  </div>
+
+</div>
+
+<div class="story-5-container">
+
+  <img class="story-5" src="images/story-5.png" alt="">
+  <!-- <img class="story-4-hover" src="images/story-4-hover.png" alt=""> -->
+  <div class="story-5-hover-area"></div>
+  <div class="text-container fifth">
+    <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+      “I didn't know my mother is struggling so much”
+    </p>
+    <p>In 2011, Maria and her husband immigrated to Canada with
+    her son and daughter - Darek and Macy. Maria barely knows
+    English and counld not communicate with anyone here. She is
+    unfamiliar with the neighborhood and entirely isolated from the community.
+    </p>
+  </div>
+  <div class="hovertext fifthtriggertext">
+    Why Maria is so busy at night?  </div>
+
+    <div class="fifthclickimage1">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg class="timelinesvg" width="1153px" height="330px" viewBox="0 0 1153 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+          <title></title>
+          <desc>Created with Sketch.</desc>
+          <defs>
+              <linearGradient x1="21.2523942%" y1="41.4017399%" x2="89.0485307%" y2="56.6438262%" id="linearGradient-1">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="21.2523942%" y1="42.4429354%" x2="89.0485307%" y2="55.8393004%" id="linearGradient-2">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="21.2523942%" y1="49.8881228%" x2="89.0485307%" y2="50.0864469%" id="linearGradient-3">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="21.2523942%" y1="49.708742%" x2="89.0485307%" y2="50.2250534%" id="linearGradient-4">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="21.2523942%" y1="48.3264632%" x2="89.0485307%" y2="51.2931323%" id="linearGradient-5">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="21.2523942%" y1="49.8140515%" x2="89.0485307%" y2="50.1436814%" id="linearGradient-6">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="21.2523942%" y1="49.7878777%" x2="89.0485307%" y2="50.1639057%" id="linearGradient-7">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="24.9374153%" y1="45.8908033%" x2="82.5326814%" y2="53.7560753%" id="linearGradient-8">
+                  <stop stop-color="#E6947E" offset="0%"></stop>
+                  <stop stop-color="#FAD7BC" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="24.9374153%" y1="46.0675221%" x2="82.5326814%" y2="53.5945428%" id="linearGradient-9">
+                  <stop stop-color="#E6947E" offset="0%"></stop>
+                  <stop stop-color="#FAD7BC" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="24.9374153%" y1="48.252232%" x2="82.5326814%" y2="51.5975746%" id="linearGradient-10">
+                  <stop stop-color="#E6947E" offset="0%"></stop>
+                  <stop stop-color="#FAD7BC" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="21.2523942%" y1="10.5181933%" x2="89.0485307%" y2="80.5073654%" id="linearGradient-11">
+                  <stop stop-color="#93A5CF" offset="0%"></stop>
+                  <stop stop-color="#E4EFE9" offset="100%"></stop>
+              </linearGradient>
+              <linearGradient x1="24.9374153%" y1="7.54528908%" x2="82.5326814%" y2="88.8063904%" id="linearGradient-12">
+                  <stop stop-color="#E6947E" offset="0%"></stop>
+                  <stop stop-color="#FAD7BC" offset="100%"></stop>
+              </linearGradient>
+          </defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Peek3-Copy-3" transform="translate(-144.000000, -289.000000)">
+                  <g id="Group-2" transform="translate(143.000000, 283.000000)">
+                      <path d="M47.5,141 L47.5,291" id="Line-12" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M93.5,141 L93.5,291" id="Line-12-Copy-2" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M126.5,141 L126.072651,290.999391" id="Line-12-Copy-3" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M390.5,141.5 L390.5,291.5" id="Line-12-Copy-8" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M437.5,140.5 L437.5,290.5" id="Line-12-Copy-10" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M602.5,141 L602.5,291" id="Line-12-Copy-14" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M672.5,141 L672.5,291" id="Line-12-Copy-15" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M741.5,141 L741.5,291" id="Line-12-Copy-16" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M946.5,141 L946.5,291" id="Line-12-Copy-21" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <path d="M1138.5,140 L1138.5,290" id="Line-12-Copy-26" stroke="#FFFFFF" stroke-width="0.5" opacity="0.356468564" stroke-linecap="round" stroke-dasharray="5,5"></path>
+                      <g id="Group-Copy" opacity="0.421828497" transform="translate(14.000000, 124.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="2">
+                          <path d="M1138.75817,1.12520765 L0.620915033,1.12520765" id="Line-12-Copy"></path>
+                      </g>
+                      <g id="Group-Copy-2" opacity="0.421828497" transform="translate(14.000000, 333.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="2">
+                          <path d="M1138.75817,1.12520765 L0.620915033,1.12520765" id="Line-12-Copy"></path>
+                      </g>
+                      <path d="M31,217 L1093,217" id="Line-13-Copy" stroke="#FFFFFF" stroke-linecap="round" stroke-dasharray="5"></path>
+                      <rect class="activity1" id="getup" fill="url(#linearGradient-1)" x="17" y="209" width="30" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="30" dur="0.5s" fill="freeze" /></rect>
+
+                      <rect class="activity3" id="transit" fill="url(#linearGradient-2)" x="94" y="210" width="32" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="32" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity10" id="dishwasher" fill="url(#linearGradient-3)" x="127" y="210" width="263" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="263" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity5" id="cook" fill="url(#linearGradient-4)" x="439" y="210" width="163" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="163" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity7" id="study" fill="url(#linearGradient-5)" x="673" y="210" width="68" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="68" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity8" id="cleaner" fill="url(#linearGradient-6)" x="742" y="210" width="204" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="204" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity9" id="sleep" fill="url(#linearGradient-7)" x="947" y="210" width="191" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="191" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity2" id="breakfast" fill="url(#linearGradient-8)" x="48" y="210" width="45" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="45" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity4" id="pickup" fill="url(#linearGradient-9)" x="391" y="210" width="46" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="46" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <rect class="activity6" id="dinner" fill="url(#linearGradient-10)" x="603" y="210" width="69" height="14" rx="7">
+                        <animate attributeName="width" from="0" to="69" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
+                      <text id="job#1-:-dishwasher" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="196" y="197">job#1 : dishwasher</tspan>
+                      </text>
+                      <text id="study-/-freelance" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="684.2825" y="179">study /</tspan>
+                          <tspan x="676.411" y="197">freelance</tspan>
+                      </text>
+                      <text id="job#2:-restaurant-cl" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="760" y="197">job#2: restaurant cleaner</tspan>
+                      </text>
+                      <text id="dinner" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="616" y="197">dinner</tspan>
+                      </text>
+                      <text id="transit-copy" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="88" y="197">transit</tspan>
+                      </text>
+                      <text id="get-up" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="14.2255" y="197">get up</tspan>
+                      </text>
+                      <text id="breakfast-and-send-c" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="31.591" y="255">breakfast and</tspan>
+                          <tspan x="0.3585" y="273">send children to school</tspan>
+                      </text>
+                      <text id="pick-up-children" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="390.21" y="179">pick up </tspan>
+                          <tspan x="387.194" y="197">children</tspan>
+                      </text>
+                      <text id="sleep" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="1025" y="197">sleep</tspan>
+                      </text>
+                      <text id="cook-and-clean" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
+                          <tspan x="471" y="197">cook and clean</tspan>
+                      </text>
+                      <text id="7:00-copy-3" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="29" y="317">7:00 </tspan>
+                      </text>
+                      <text id="8:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="77" y="317">8:00 </tspan>
+                      </text>
+                      <text id="8:30" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="112" y="317">8:30</tspan>
+                      </text>
+                      <text id="14:20" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="370" y="317">14:20</tspan>
+                      </text>
+                      <text id="15:20" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="417" y="317">15:20</tspan>
+                      </text>
+                      <text id="18:30" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="585" y="317">18:30 </tspan>
+                      </text>
+                      <text id="20:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="655" y="317">20:00</tspan>
+                      </text>
+                      <text id="22:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="724" y="317">22:00</tspan>
+                      </text>
+                      <text id="2:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="933" y="317">2:00 </tspan>
+                      </text>
+                      <text id="6:30" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
+                          <tspan x="1123" y="317">6:30</tspan>
+                      </text>
+                      <path d="M71,227 L71,239" id="Line-13" stroke="#FFFFFF" stroke-linecap="square"></path>
+                      <text id="MARIA’S-TIME-IN-A-DA" font-family="Baskerville" font-size="30" font-weight="normal" letter-spacing="0.662500024" fill="#FFFFFF">
+                          <tspan x="401.044534" y="27">MARIA’S TIME IN A DA</tspan>
+                          <tspan x="733.952738" y="27" letter-spacing="0.685344875">Y</tspan>
+                      </text>
+                      <g id="Group" transform="translate(404.000000, 58.000000)">
+                          <g id="Group-7">
+                              <text id="83%-BY-HERSELF" font-family="NotoSans-Bold, Noto Sans" font-size="12.8" font-weight="bold" letter-spacing="0.103999996" fill="#FFFFFF">
+                                  <tspan x="24.8" y="15.6">83% </tspan>
+                                  <tspan x="54.72" y="15.6" font-family="NotoSans-Light, Noto Sans" font-weight="300">BY HERSELF</tspan>
+                              </text>
+                              <circle id="Oval-Copy-11" fill="url(#linearGradient-11)" cx="10.4" cy="10.4" r="10.4"></circle>
+                          </g>
+                          <g id="Group-6" transform="translate(142.000000, 0.000000)">
+                              <text id="17%-ENGAGE-WITH-CHIL" font-family="NotoSans-Bold, Noto Sans" font-size="12.8" font-weight="bold" letter-spacing="0.103999996" fill="#FFFFFF">
+                                  <tspan x="24.9" y="15.6">17% </tspan>
+                                  <tspan x="54.82" y="15.6" font-family="NotoSans-Light, Noto Sans" font-weight="300">ENGAGE WITH CHILDREN</tspan>
+                              </text>
+                              <circle id="Oval" fill="url(#linearGradient-12)" cx="10.4" cy="10.4" r="10.4"></circle>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg class="close timelineclose" width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+          <title></title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Artboard" transform="translate(-477.000000, -149.000000)" fill="#FFFFFF">
+                  <g id="Group" transform="translate(477.000000, 149.000000)">
+                      <rect id="Rectangle-2" transform="translate(16.000000, 16.500000) rotate(45.000000) translate(-16.000000, -16.500000) " x="-4" y="14" width="40" height="5"></rect>
+                      <rect id="Rectangle-2" transform="translate(16.000000, 16.500000) scale(-1, 1) rotate(45.000000) translate(-16.000000, -16.500000) " x="-4" y="14" width="40" height="5"></rect>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      <div class="activitycontent">
+      </div>
+    </div>
+
+</div>
+
+
+<div class="story-6-container">
+
+  <img class="story-6" src="images/story-6.png" alt="">
+  <img class="story-6-hover" src="images/story-6-hover.png" alt="">
+  <div class="story-6-hover-area"></div>
+  <div class="text-container sixth">
+    <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+      “I lost it when I know I could not afford to
+buy a birthday present for my boy.”
+    </p>
+    <p>
+    </p>
+  </div>
+  <div class="hovertext sixthtriggertext">
+    Why Maria could not afford a present for her son?  </div>
+
+    <div class="sixthclickimage1">
+      <div class="title-container">
+        <div class="title-show" id="thefirstshow">
+          <h1 class ="datatitleh1_1">Single-parent families VS. Couple families VS. Maria Median Income in Canada (CAD)</h1>
+        </div>
+     </div>
+      <div class="legend couple">
+        Couple Families
+      </div>
+      <div class="legend single">
+        Single Families
+      </div>
+      <div class="legend maria">
+        Maria
+      </div>
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg class="close incomeclose" width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+          <title></title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Artboard" transform="translate(-477.000000, -149.000000)" fill="#FFFFFF">
+                  <g id="Group" transform="translate(477.000000, 149.000000)">
+                      <rect id="Rectangle-2" transform="translate(16.000000, 16.500000) rotate(45.000000) translate(-16.000000, -16.500000) " x="-4" y="14" width="40" height="5"></rect>
+                      <rect id="Rectangle-2" transform="translate(16.000000, 16.500000) scale(-1, 1) rotate(45.000000) translate(-16.000000, -16.500000) " x="-4" y="14" width="40" height="5"></rect>
+                  </g>
+              </g>
+          </g>
+      </svg>
+    </div>
+
+</div>
+
+<div class="story-7-container">
+
+  <img class="story-7" src="images/story-7.png" alt="">
+  <img class="story-7-hover" src="images/story-7-hover.png" alt="">
+  <div class="story-7-hover-area"></div>
+  <div class="text-container seventh">
+    <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+      “Not only he didn’t complain
+he gave me a gift.”
+    </p>
+    <p>
+      In 2011, Maria and her husband immigrated to Canada with
+      her son and daughter - Darek and Macy. Maria barely knows
+      English and counld not communicate with anyone here. She is
+      unfamiliar with the neighborhood and entirely isolated from the community.
+    </p>
+  </div>
+  <div class="seventhtriggertextcontainer">
+
+  <div class="hovertext seventhtriggertext">
+  What is Derek and Macy thinking ?  </div>
+  <p class="seventhclicktext">Derek: I want to become a soldier and when I get to have lots of money, I will buy mama some hand gloves.<br>
+ Macy:So mama will not harm her hands when pressing on the keyboard for long hours….”
+</p>
+   </div>
+</div>
+<div class="logo">
+  lighthouse
+</div>
+<div class="donate">
+  DONATE
+</div>
+<div class="nextsectionarrow">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg width="43px" height="80px" viewBox="0 0 43 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+      <title>Group 3</title>
+      <desc>Created with Sketch.</desc>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.498721168" stroke-linecap="round" stroke-linejoin="round">
+          <g id="Cry4" transform="translate(-1373.000000, -433.000000)" stroke="#FFFFFF" stroke-width="5">
+              <g id="Group-3" transform="translate(1374.000000, 434.000000)">
+                  <path d="M0,0.24 L40.6403509,78" id="Line-10"></path>
+                  <path d="M0,78.24 L40.6403509,156" id="Line-10-Copy" transform="translate(20.500000, 117.500000) scale(1, -1) translate(-20.500000, -117.500000) "></path>
+              </g>
+          </g>
+      </g>
+  </svg>
+</div>
+<div class="nextcontent">
+See Donation Impact
+</div>
+<div class="previouscontent">
+  Home
+</div>
+<div class="previoussectionarrow">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg width="43px" height="80px" viewBox="0 0 43 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+      <title>Group 3</title>
+      <desc>Created with Sketch.</desc>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.498721168" stroke-linecap="round" stroke-linejoin="round">
+          <g id="Cry4" transform="translate(-1266.000000, -433.000000)" stroke="#FFFFFF" stroke-width="5">
+              <g id="Group-3" transform="translate(1287.500000, 512.500000) scale(-1, 1) translate(-1287.500000, -512.500000) translate(1267.000000, 434.000000)">
+                  <path d="M0,0.24 L40.6403509,78" id="Line-10"></path>
+                  <path d="M0,78.24 L40.6403509,156" id="Line-10-Copy" transform="translate(20.500000, 117.500000) scale(1, -1) translate(-20.500000, -117.500000) "></path>
+              </g>
+          </g>
+      </g>
+  </svg>
+</div>
+<div class="bottomtimeline">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1344px" height="37px" viewBox="0 0 1344 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+      <title>Group 4 Copy</title>
+      <desc>Created with Sketch.</desc>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Cry4" transform="translate(-45.000000, -872.000000)">
+              <g id="Group-4-Copy" transform="translate(44.000000, 871.000000)">
+                  <g id="Group-2">
+                      <path d="M25.1469004,29.6158798 L1308.5,29.6158798" id="Line-2" stroke="#FFFFFF" opacity="0.599888393" stroke-linecap="square" transform="translate(666.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-666.500000, -29.500000) "></path>
+                      <g id="Group" transform="translate(17.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-17.500000, -29.500000) translate(10.000000, 22.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <g id="Group-Copy-2" opacity="0.599818638" transform="translate(1114.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-1114.500000, -29.500000) translate(1107.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <g id="Group-Copy-4" opacity="0.599818638" transform="translate(919.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-919.500000, -29.500000) translate(912.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <g id="Group-Copy-3" opacity="0.599818638" transform="translate(1308.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-1308.500000, -29.500000) translate(1301.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <text id="MARIA’S-STORY" font-family="SFUIText-Bold, SF UI Text" font-size="12" font-weight="bold" letter-spacing="1.03999996" fill="#FFFFFF">
+                          <tspan x="140" y="11">MARIA’S STORY</tspan>
+                      </text>
+                      <text id="HOME" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                          <tspan x="0.852115819" y="11">HOME</tspan>
+                      </text>
+                      <text id="THE-MAP" opacity="0.599818638" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                          <tspan x="890" y="10">THE MAP</tspan>
+                      </text>
+                      <text id="DONATION-IMPACT" opacity="0.599818638" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                          <tspan x="1061" y="10">DONATION IMPACT</tspan>
+                      </text>
+                      <text id="DONATE-NOW" opacity="0.599818638" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                          <tspan x="1269" y="10">DONATE NOW</tspan>
+                      </text>
+                      <g id="Group-Copy" transform="translate(340.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-340.500000, -29.500000) translate(333.000000, 22.000000)"></g>
+                      <g id="Group-Copy-6" transform="translate(473.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-473.000000, -30.000000) translate(468.000000, 25.000000)"></g>
+                      <g id="Group-Copy-7" transform="translate(538.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-538.000000, -30.000000) translate(533.000000, 25.000000)"></g>
+                      <g id="Group-Copy-8" transform="translate(602.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-602.000000, -30.000000) translate(597.000000, 25.000000)"></g>
+                      <g id="Group-Copy-11" transform="translate(667.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-667.000000, -30.000000) translate(662.000000, 25.000000)"></g>
+                      <g id="Group-Copy-10" transform="translate(732.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-732.000000, -30.000000) translate(727.000000, 25.000000)"></g>
+                      <g id="Group-Copy-9" transform="translate(504.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-504.500000, -29.500000) translate(185.000000, 22.000000)" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="7" fill="#000000" opacity="0.600144159" cx="633.818572" cy="6.81857199" r="4.81857199"></circle>
+                          <circle id="6" fill="#000000" opacity="0.600144159" cx="544.818572" cy="6.81857199" r="4.81857199"></circle>
+                          <circle id="5" fill="#000000" opacity="0.600144159" cx="455.818572" cy="6.81857199" r="4.81857199"></circle>
+                          <circle id="4" fill="#000000" opacity="0.600144159" cx="365.818572" cy="6.81857199" r="4.81857199"></circle>
+                          <circle id="3" fill="#000000" opacity="0.600144159" cx="276.818572" cy="6.81857199" r="4.81857199"></circle>
+                          <circle id="2" fill="#000000" opacity="0.600144159" cx="187.818572" cy="6.81857199" r="4.81857199"></circle>
+                          <circle id="1" fill="#000000" opacity="0.600144159" cx="98.818572" cy="6.81857199" r="4.81857199"></circle>
+                          <circle id="start" fill="#FFFFFF" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </svg>
+</div>
+
+<div class="progressline">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg id="progressline" width="1276px" height="3px" viewBox="1100 0 1276 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+      <title>progressline</title>
+      <desc>Created with Sketch.</desc>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Cry4" transform="translate(-69.000000, -974.000000)" stroke="#FFFFFF" stroke-width="2">
+              <path d="M69,975.38412 L1344.45572,975.38412" id="progressline"></path>
+          </g>
+      </g>
+  </svg>
+</div>
+<script>
+var mouseX,mouseY,windowWidth,windowHeight;
+var  popupLeft,popupTop;
+$(document).ready(function(){
+
+$(document).mousemove(function(e){
+        mouseX = e.pageX;
+        mouseY = e.pageY;
+        //To Get the relative position
+        if( this.offsetLeft !=undefined)
+          mouseX = e.pageX - this.offsetLeft;
+        if( this.offsetTop != undefined)
+          mouseY = e.pageY; - this.offsetTop;
+
+        if(mouseX < 0)
+             mouseX =0;
+        if(mouseY < 0)
+            mouseY = 0;
+
+        windowWidth  = $(window).width()+$(window).scrollLeft();
+        windowHeight = $(window).height()+$(window).scrollTop();
+});
+for(let i=1; i<11; i++){
+$(".activity"+i).mouseenter(function(){
+  $(".activitycontent").show();
+  $( ".activitycontent").animate({
+    opacity:1,
+  },800,"linear",function(){
+  });
+  $(".activitycontent img").hide();
+
+  var popupWidth  = $('.activitycontent').outerWidth();
+ var popupHeight =  $('.activitycontent').outerHeight();
+
+ if(mouseX+popupWidth > windowWidth)
+   popupLeft = mouseX-popupWidth;
+ else
+  popupLeft = mouseX;
+
+ if(mouseY+popupHeight > windowHeight)
+   popupTop = mouseY-popupHeight;
+ else
+   popupTop = mouseY;
+
+if( popupLeft < $(window).scrollLeft()){
+popupLeft = $(window).scrollLeft();
+}
+
+if( popupTop < $(window).scrollTop()){
+popupTop = $(window).scrollTop();
+}
+
+if(popupLeft < 0 || popupLeft == undefined)
+      popupLeft = 0;
+ if(popupTop < 0 || popupTop == undefined)
+      popupTop = 0;
+
+ $('.activitycontent').offset({top:popupTop,left:popupLeft});
+ // var id_post=obj.id;
+ // console.log(idname);
+ $.ajax({
+     type: "POST",
+     url: "http://light-house.xyz/activitytext.php",
+     data: {
+         activity: i
+         // house_id: 1
+
+     },
+     success: function (output) {
+       $(".activitycontent").html(output);
+       $(".activitycontent img").show();
+             }
+     });
+});
+$(".activity"+i).mouseleave(function(){
+  // $(".activitycontent img").hide();
+  $( ".activitycontent").animate({
+    opacity:0,
+  },300,"linear",function(){
+    $(".activitycontent").hide();
+
+  });
+});
+
+}
+
+
+
+  })
+</script>
+<script type="text/javascript">
+
+
+var lastScrollPosition = $(document).scrollTop();
+var number = 0;
+var viewBox_x=1100;
+$(window).on('scroll', function(e) {
+    if($(document).scrollTop() > lastScrollPosition ){
+        number++;
+        if(number>5){
+        viewBox_x+=(-8.8);
+            document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
+      }
+      if(number==5){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+                $(".introsection").delay(200);
+              $(".introsection").animate({
+                opacity:0,
+              },1500,"linear",function(){
+                $(this).hide();
+
+              });
+                $(".mouse_scroll2").show();
+              $(".mouse_scroll2").delay(1500);
+            $(".mouse_scroll2").animate({
+              opacity:1,
+            },2500,"linear",function(){
+
+              });
+                $(".cover-color").delay(1500);
+              $(".cover-color").animate({
+                opacity:1,
+              },2500,"linear",function(){
+                // $(window).off('scroll');
+                $(document.body).css({
+                  "overflow-x":"auto",
+                  "overflow-y":"auto"
+                });
+
+
+
+              });
+      }
+        if(number ==15){
+
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+          story1scrolldown();
+        }
+        if(number ==25){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+          story2scrolldown();
+
+        }
+
+        if(number ==35){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+          story3scrolldown();
+
+        }
+
+        if(number==45){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+          story4scrolldown();
+
+        }
+        if(number==55){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+
+          story5scrolldown();
+
+        }
+        if(number==65){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+          story6scrolldown();
+
+        }
+        if(number==75){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+          story7scrolldown();
+
+        }
+        if(number ==85){
+            window.location.href = 'statusincanada.html';
+        }
+    }else if($(document).scrollTop() < lastScrollPosition ){
+      number+= (-1);
+      if(number<=5){
+        number=5;
+      }
+      if(number>=5){
+      viewBox_x+=(8.8);
+          document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
+    }
+      if(number ==15){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story1scrollup();
+      }
+      if(number ==25){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+          $(".story-2").show();
+        story2scrollup();
+      }
+      if(number ==35){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story3scrollup();
+      }
+      if(number ==45){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story4scrollup();
+      }
+      if(number ==55){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story5scrollup();
+      }
+      if(number ==65){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story6scrollup();
+      }
+      if(number ==75){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story6scrollup();
+      }
+    }
+    lastScrollPosition = $(document).scrollTop();
+
+    console.log(number);
+})
+
+
+</script>
+    <script type="text/javascript">
+
+//       var waypoint = new Waypoint({
+//       element: document.getElementById('scroll'),
+//       handler: function(direction) {
+//
+// $(document.body).css({
+//   "overflow-x":"hidden",
+//   "overflow-y":"hidden"
+// });
+//         $(".introsection").delay(200);
+//       $(".introsection").animate({
+//         opacity:0,
+//       },1500,"linear",function(){
+//         $(this).hide();
+//
+//       });
+//         $(".mouse_scroll2").show();
+//       $(".mouse_scroll2").delay(1500);
+//     $(".mouse_scroll2").animate({
+//       opacity:1,
+//     },2500,"linear",function(){
+//
+//       });
+//         $(".cover-color").delay(1500);
+//       $(".cover-color").animate({
+//         opacity:1,
+//       },2500,"linear",function(){
+//         // $(window).off('scroll');
+//         $(document.body).css({
+//           "overflow-x":"auto",
+//           "overflow-y":"auto"
+//         });
+//
+//
+//
+//       });
+//       },
+//       offset: 0
+//
+//     });
+
+//       var waypoint2 = new Waypoint({
+//       element: document.getElementById('second-trigger'),
+//       handler: function(direction) {
+//         $(document.body).css({
+//           "overflow-x":"hidden",
+//           "overflow-y":"hidden"
+//         });
+// //scroll down hide------------------
+// $(".mouse_scroll2").hide();
+//
+//         $(".cover-color").delay(500);
+//       $(".cover-color").animate({
+//         opacity:0,
+//       },2100,"linear",function(){
+//         $(this).hide();
+//
+//       });
+//       $(".story-2").animate({
+//         opacity:0,
+//       },1700,"linear",function(){
+//         $(this).hide();
+//       });
+//       $(".second").animate({
+//         opacity:0,
+//       },1700,"linear",function(){
+//         $(this).hide();
+//       });
+// //-----show-------
+//         $(".cover-bw").delay(1000);
+//       $(".cover-bw").animate({
+//         opacity:1,
+//       },3500,"linear",function(){
+//       });
+//
+//       $(".first").delay(3500);
+//     $(".first").animate({
+//       opacity:0.8,
+//       top:"46vh",
+//     },1300,"linear",function(){
+//       $(document.body).css({
+//         "overflow-x":"auto",
+//         "overflow-y":"auto"
+//       });
+//
+//     });
+//       },
+//       offset: 0
+//
+//       })
+
+
+
+//       var waypoint4 = new Waypoint({
+//       element: document.getElementById('fourth-trigger'),
+//       handler: function(direction) {
+//         $(document.body).css({
+//           "overflow-x":"hidden",
+//           "overflow-y":"hidden"
+//         });
+//         // $(".story-4-hover-area").hide();
+//
+//     // $(".second").delay(200);
+//     //----------scroll down hide---------
+//   $(".second").animate({
+//     opacity:0,
+//   },1700,"linear",function(){
+//   });
+//     // $(".story-2").delay(200);
+//   $(".story-2").animate({
+//     opacity:0,
+//   },1700,"linear",function(){
+//     $(".story-3-hover-area").show();
+//
+//     $(this).hide();
+//   });
+// //---------------scroll up hide
+//   $(".story-4").animate({
+//     opacity:0,
+//   },1700,"linear",function(){
+//     $(this).hide();
+//   });
+//   $(".fourth").animate({
+//     opacity:0,
+//   },1700,"linear",function(){
+//     $(this).hide();
+//   });
+//   $(".story-4-hover-area").animate({
+//     opacity:0,
+//   },1700,"linear",function(){
+//     $(this).hide();
+//   });
+//   $(".fourthtriggertext").animate({
+//     opacity:0,
+//   },1700,"linear",function(){
+//     $(this).hide();
+//   });
+//   $(".fourthclicktext").animate({
+//     opacity:0,
+//   },1700,"linear",function(){
+//     $(this).hide();
+//   });
+//
+// //-----------------show--------------
+// $(".story-3").show();
+// $(".third").show();
+// $(".story-3-hover-area").show();
+// $(".thirdtriggertext").show();
+// $(".story-3-hover-area").delay(1000);
+// $(".story-3-hover-area").animate({
+// opacity:1,
+// },3500,"linear",function(){
+// });
+// $(".story-3-hover").show();
+//         $(".story-3").delay(1000);
+//       $(".story-3").animate({
+//         opacity:1,
+//       },3500,"linear",function(){
+//       });
+//       $(".story-3-hoverarea").delay(1000);
+//       $(".story-3-hoverarea").animate({
+//         opacity:0.9,
+//       },3500,"linear",function(){
+//       });
+//     $(".story-3").animate({
+//       opacity:1,
+//     },3500,"linear",function(){
+//     });
+//
+//       $(".third").delay(2000);
+//     $(".third").animate({
+//       opacity:0.8,
+//       top:"36vh",
+//     },1700,"linear",function(){
+//       $(document.body).css({
+//         "overflow-x":"auto",
+//         "overflow-y":"auto"
+//       });
+//     });
+//       },
+//       offset: 0
+//
+//       })
+
+  //
+  //     var waypoint5 = new Waypoint({
+  //     element: document.getElementById('fifth-trigger'),
+  //     handler: function(direction) {
+  //       $(document.body).css({
+  //         "overflow-x":"hidden",
+  //         "overflow-y":"hidden"
+  //       });
+  //       //scrolldownhide-------------
+  //       $(".story-3-hover").animate({
+  //         opacity:0,
+  //       },1200,"linear",function(){
+  //         $(this).hide();
+  //       });
+  //   $(".story-3-hover-area").animate({
+  //   opacity:0,
+  // },1,"linear",function(){
+  //   $(this).hide();
+  //   });
+  //   $(".third").animate({
+  //   opacity:0,
+  //   },1200,"linear",function(){
+  //   $(this).hide();
+  //   });
+  //   $(".thirdclicktext").animate({
+  //   opacity:0,
+  //   },1200,"linear",function(){
+  //   $(this).hide();
+  //   });
+  //   $(".thirdtriggertext").animate({
+  //   opacity:0,
+  //   },1200,"linear",function(){
+  //   $(this).hide();
+  //   });
+  //   $(".story-3").animate({
+  //   opacity:0,
+  //   },1200,"linear",function(){
+  //   $(this).hide();
+  //   });
+  //
+  //   //scroll up hide------
+  //   $(".story-5").animate({
+  //     opacity:0,
+  //   },1700,"linear",function(){
+  //     $(this).hide();
+  //   });
+  //   $(".story-5-hover").animate({
+  //     opacity:0,
+  //   },1700,"linear",function(){
+  //     $(this).hide();
+  //   });
+  //   $(".fifth").animate({
+  //     opacity:0,
+  //   },1700,"linear",function(){
+  //     $(this).hide();
+  //   });
+  //   $(".story-5-hover-area").animate({
+  //     opacity:0,
+  //   },1700,"linear",function(){
+  //     $(this).hide();
+  //   });
+  //   $(".fifthtriggertext").animate({
+  //     opacity:0,
+  //   },1700,"linear",function(){
+  //     $(this).hide();
+  //   });
+  //
+  //   //show------------
+  //   $(".story-4").show();
+  //   $(".story-4-hover").show();
+  //   $(".story-4-hover-area").show();
+  //   $(".fourthtriggertext").show();
+  //   $(".fourth").show();
+  //   $(".story-4-hover-area").delay(1000);
+  //   $(".story-4-hover-area").animate({
+  //     opacity:1,
+  //   },3000,"linear",function(){
+  //   });
+  //           $(".story-4").delay(500);
+  //         $(".story-4").animate({
+  //           opacity:1,
+  //         },3000,"linear",function(){
+  //         });
+  //
+  //         $(".fourth").delay(1500);
+  //       $(".fourth").animate({
+  //         opacity:0.8,
+  //         top:"54vh",
+  //       },1500,"linear",function(){
+  //         $(document.body).css({
+  //           "overflow-x":"auto",
+  //           "overflow-y":"auto"
+  //         });
+  //       });
+  //         },
+  //         offset: 0
+  //
+  //         })
+
+
+
+//       var waypoint6 = new Waypoint({
+//       element: document.getElementById('sixth-trigger'),
+//       handler: function(direction) {
+//         $(document.body).css({
+//           "overflow-x":"hidden",
+//           "overflow-y":"hidden"
+//         });
+//
+//
+// //scroll down hide--------
+// $(".fourthclicktext").hide()
+// $(".fourthtriggertext").hide()
+//         $(".story-4-hover").animate({
+//           opacity:0,
+//         },1200,"linear",function(){
+//           $(this).hide();
+//         });
+//   $(".story-4-hover-area").animate({
+//     opacity:0,
+//   },1,"linear",function(){
+//     $(this).hide();
+//   });
+//
+//   $(".fourth").animate({
+//     opacity:0,
+//   },1200,"linear",function(){
+//     $(this).hide();
+//   });
+//   // $(".fourthclicktext").animate({
+//   //   opacity:0,
+//   // },1,"linear",function(){
+//   //   $(this).hide();
+//   // });
+//   // $(".fourthtriggertext").animate({
+//   //   opacity:0,
+//   // },1,"linear",function(){
+//   //   $(this).hide();
+//   // });
+// $(".story-4").animate({
+//   opacity:0,
+// },1200,"linear",function(){
+//   $(this).hide();
+// });
+// //scroll up hide------
+// $(".story-6").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// $(".sixth").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// $(".story-6-hover-area").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// $(".sixthtriggertext").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// //show-------
+// $(".story-5-hover-area").show();
+// $(".story-5").show();
+// $(".fifth").show();
+// $(".story-5-hover-area").delay(800);
+// $(".story-5-hover-area").animate({
+//   opacity:1,
+// },2000,"linear",function(){
+// });
+// $(".fifthtriggertext").show();
+//         $(".story-5").delay(1400);
+//       $(".story-5").animate({
+//         opacity:1,
+//       },2000,"linear",function(){
+//       });
+//
+//       $(".fifth").delay(1200);
+//     $(".fifth").animate({
+//       opacity:0.8,
+//       top:"42vh",
+//     },1100,"linear",function(){
+//       $(document.body).css({
+//         "overflow-x":"auto",
+//         "overflow-y":"auto"
+//       });
+//     });
+//       },
+//       offset: 0
+//
+//       })
+
+//
+//       var waypoint7 = new Waypoint({
+//       element: document.getElementById('seventh-trigger'),
+//       handler: function(direction) {
+//         $(document.body).css({
+//           "overflow-x":"hidden",
+//           "overflow-y":"hidden"
+//         });
+//
+//     //scrolldownhide-------------
+//     $(".story-5-hover").animate({
+//       opacity:0,
+//     },1200,"linear",function(){
+//       $(this).hide();
+//     });
+// $(".story-5-hover-area").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".fifth").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".fifthclicktext").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".fifthtriggertext").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".story-5").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+//
+// //scroll up hide------
+// $(".story-7").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// $(".story-7-hover").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// $(".seventh").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// $(".story-7-hover-area").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+// $(".seventhtriggertext").animate({
+//   opacity:0,
+// },1700,"linear",function(){
+//   $(this).hide();
+// });
+//
+// //show------------
+// $(".story-6").show();
+// $(".story-6-hover").show();
+// $(".story-6-hover-area").show();
+// $(".sixthtriggertext").show();
+// $(".sixth").show();
+// $(".story-6-hover-area").delay(800);
+// $(".story-6-hover-area").animate({
+//   opacity:1,
+// },3000,"linear",function(){
+// });
+//         $(".story-6").delay(800);
+//       $(".story-6").animate({
+//         opacity:1,
+//       },3000,"linear",function(){
+//       });
+//
+//       $(".sixth").delay(1500);
+//     $(".sixth").animate({
+//       opacity:0.8,
+//       top:"24vh",
+//     },1500,"linear",function(){
+//       $(document.body).css({
+//         "overflow-x":"auto",
+//         "overflow-y":"auto"
+//       });
+//     });
+//       },
+//       offset: 0
+//
+//       })
+
+//       var waypoint8 = new Waypoint({
+//       element: document.getElementById('eighth-trigger'),
+//       handler: function(direction) {
+//         $(document.body).css({
+//           "overflow-x":"hidden",
+//           "overflow-y":"hidden"
+//         });
+//
+// //scroll down hide--------------------
+// $(".story-6-hover").animate({
+//   opacity:0,
+// },1200,"linear",function(){
+//   $(this).hide();
+// });
+// $(".story-6-hover-area").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".sixth").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".sixthclicktext").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".sixthtriggertext").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+// $(".story-6").animate({
+// opacity:0,
+// },1200,"linear",function(){
+// $(this).hide();
+// });
+//
+//
+// //show------------
+// $(".story-7").show();
+// $(".story-7-hover").show();
+// $(".seventh").show();
+// $(".story-7-hover-area").show();
+// $(".seventhtriggertext").show();
+// $(".story-7-hover-area").delay(1000);
+// $(".story-7-hover-area").animate({
+//   opacity:0.9,
+// },3500,"linear",function(){
+// });
+//         $(".story-7").delay(800);
+//       $(".story-7").animate({
+//         opacity:1,
+//       },3000,"linear",function(){
+//       });
+//
+//       $(".seventh").delay(1500);
+//     $(".seventh").animate({
+//       opacity:0.8,
+//       top:"16vh",
+//     },1500,"linear",function(){
+//       $(document.body).css({
+//         "overflow-x":"auto",
+//         "overflow-y":"auto"
+//       });
+//     });
+//       },
+//       offset: 0
+//
+//       })
+
+      // var waypoint9 = new Waypoint({
+      // element: document.getElementById('ninth-trigger'),
+      // handler: function(direction) {
+      //   window.location.href = 'statusincanada.html';
+      //
+      // },
+      // offset: 0
+      //
+      // })
+    </script>
+<script type="text/javascript">
+$( ".story-3-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  $('.thirdtriggertext').show();
+
+  $('.thirdtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.thirdtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.thirdtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-3-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-3-hover-area").mouseleave(function() {
+  $( ".story-3-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+
+$( ".story-3-hover-area" ).click(function() {
+  $( ".thirdclicktext" ).show();
+$( ".thirdclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+$( ".story-4-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  $(".story-4-hover").show();
+  $(".fourthtriggertext").show();
+  $('.fourthtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.fourthtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.fourthtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-4-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-4-hover-area").mouseleave(function() {
+  $( ".story-4-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-4-hover-area" ).click(function() {
+  $( ".fourthclicktext" ).show();
+$( ".fourthclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+$( ".story-5-hover-area" ).click(function() {
+$( ".fourthclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+$( ".story-5-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  // $(".story-4-hover").show();
+
+  $(".fifthtriggertext").show();
+  $('.fifthtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.fifthtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.fifthtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-5-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-5-hover-area").mouseleave(function() {
+  $( ".story-5-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+
+$( ".story-5-hover-area" ).click(function() {
+  $( ".fifthclickimage1" ).show();
+  document.getElementById("timelinepart").beginElement();
+  $( ".fifthclickimage1" ).animate({
+    opacity:1,
+  },500,"linear",function(){
+  });
+});
+
+$( ".timelineclose" ).click(function() {
+  $( ".fifthclickimage1" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".fifthclickimage1" ).hide();
+    console.log("close");
+  });
+});
+
+$( ".story-6-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  // $(".story-4-hover").show();
+
+  $(".sixthtriggertext").show();
+  $('.sixthtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.sixthtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.sixthtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-6-hover" ).animate({
+    opacity:1,
+  },500,"linear",function(){
+  });
+});
+$( ".story-6-hover-area").mouseleave(function() {
+  $( ".story-6-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+
+
+$( ".story-6-hover-area" ).click(function() {
+  $( ".sixthclickimage1" ).show();
+  $( ".firstgraph" ).show();
+
+  $( ".sixthclickimage1" ).animate({
+    opacity:1,
+  },500,"linear",function(){
+  });
+
+  $( ".firstgraph" ).animate({
+    opacity:1,
+  },500,"linear",function(){
+  });
+});
+
+$( ".incomeclose" ).click(function() {
+  $( ".sixthclickimage1" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".sixthclickimage1" ).hide();
+    console.log("close");
+  });
+  $( ".firstgraph" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".firstgraph" ).hide();
+    console.log("close");
+  });
+});
+$( ".story-7-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  // $(".story-4-hover").show();
+
+  $(".seventhtriggertext").show();
+  $('.seventhtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.seventhtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.seventhtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-7-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-7-hover-area").mouseleave(function() {
+  $( ".story-7-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-7-hover-area" ).click(function() {
+  $( ".seventhclicktext" ).show();
+$( ".seventhclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+
+$( ".nextsectionarrow").mouseenter(function() {
+  $(".nextcontent").show();
+  $( ".nextcontent" ).animate({
+    opacity:0.8,
+  },500,"linear",function(){
+  });
+});
+$( ".nextsectionarrow").mouseleave(function() {
+  $( ".nextcontent" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $(this).hide();
+  });
+});
+$( ".previoussectionarrow").mouseenter(function() {
+  $(".previouscontent").show();
+  $( ".previouscontent" ).animate({
+    opacity:0.8,
+  },500,"linear",function(){
+  });
+});
+$( ".previoussectionarrow").mouseleave(function() {
+  $( ".previouscontent" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $(this).hide();
+  });
+});
+</script>
+  </section>
+  </body>
+</html>

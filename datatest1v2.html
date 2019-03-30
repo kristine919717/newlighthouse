@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/try.css">
+
+    <link rel="stylesheet" type="text/css" href="css/data1.css">
+
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- <script type="text/javascript" src="js/d3.min.js"></script> -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript" src="js/noframework.waypoints.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/data1.js"></script>
+
+    <div class="title-container">
+
+    <div class="title-show" id="thefirstshow">
+      <h1 class ="datatitleh1_1">The number of single parent family is increasing</h1>
+      <h2 class ="datatitleh2_1" id="second">In 2016, over 1 million children (1,114,055), or 19.2% of all children aged 0 to 14, were living in a lone‑parent family</h1>
+    </div>
+
+
+
+<div class="title first">1</div>
+<div class="title-show" data-aos="fade-up"
+ data-aos-anchor="#trigger-left" >
+<h1>Income of single-parent families is much lower than couple-parents families</h1>
+<h2 id="second">In 2016, over 1 million children (1,114,055), or 19.2% of all children aged 0 to 14, were living in a lone‑parent family</h1>
+  </div>
+<div class="title second" id="trigger-left">2</div>
+
+  </div>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 2000,
+    });
+
+//     var waypoint = new Waypoint({
+//   element: document.getElementById('trigger-left'),
+//   handler: function(direction) {
+//     $("#thefirstshow").animate({
+//       opacity:0,
+//       // top:"-=20",
+//       duration: 3000
+//
+//     })
+//   },
+//   offset: '80%'
+//
+// })
+//
+// var waypoint = new Waypoint({
+// element: document.getElementById('thefirstshow'),
+// handler: function(direction) {
+// $("#thefirstshow").animate({
+//   opacity:1,
+//
+//   duration: 3000
+//   // top:"-=10"
+// })
+// },
+// offset: 50
+//
+// })
+  </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+@keyframes animation_fadeInBottom_1 {
+  0% {
+  position: absolute;
+  top:23%;
+  opacity: 0;
+}
+
+40% {
+  position: absolute;
+  top: 15%;
+  opacity: 1;
+}
+80% {
+  position: absolute;
+  top: 15%;
+  opacity: 1;
+}
+
+100% {
+  opacity: 0;
+}
+}
+
+@keyframes animation_fadeInBottom_2 {
+  0% {
+  position: absolute;
+  top:28%;
+  opacity: 0;
+}
+
+40% {
+  position: absolute;
+  top: 23%;
+  opacity: 1;
+}
+
+80% {
+  position: absolute;
+  top: 23%;
+  opacity: 1;
+}
+
+100% {
+  opacity: 0;
+}
+}
+
+h1{
+  font-size: 72px;
+  font-family: times;
+}
+/* .title{
+  top:20%;
+} */
+.letter_ani_1{
+  position: absolute;
+left: 2.5rem;
+top: 12%;
+opacity: 0;
+animation-name: animation_fadeInBottom_1;
+animation-duration: 7s;
+
+}
+
+.letter_ani_2{
+  position: absolute;
+left: 2.5rem;
+top: 19%;
+opacity: 0;
+animation-name: animation_fadeInBottom_2;
+animation-duration: 6.5s;
+animation-delay:0.5s;
+
+}

@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/try2.css">
+    <link rel="stylesheet" type="text/css" href="css/mousescroll.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <section class="introsection" id="introsection">
+
+    <div class="intro-container">
+      <div class="subtitle">
+        facing life as a single mother
+
+      </div>
+
+    <h1 class="ml3">By the time morse appeared in Sir Walter Scott's </h1>
+    <div class="line2">
+
+
+    <span class="ml4">1821 novel, The Monastery  </span>
+    <span class="ml8">it already had a couple of</span>
+    <br>
+    </div>
+    <div class="line3">
+
+    <span class="ml6">accepted noun meanings: a fancy clasp for a cape and  </span>
+<br>
+</div>
+<div class="line4">
+
+    <span class="ml7">another word for walrus.    </span>
+    <span class="ml9">The verb morse, however,   </span>
+<br>
+</div>
+<div class="line5">
+
+    <span class="ml7">was a mystery.  </span>
+</div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="text/javascript" src="js/noframework.waypoints.min.js"></script>
+<script type="text/javascript">
+  window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
+    <script>
+      // Wrap every letter in a span
+$('.ml3').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml5').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml6').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml7').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml8').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml4').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+$('.ml9').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 500,
+    delay: function(el, i) {
+      return 50 * (i+1)
+    }
+  }).add({
+    targets: '.ml5 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 600,
+    delay: function(el, i) {
+      return 50 * (i+1)
+    }
+  });
+  anime.timeline({loop: false})
+
+    .add({
+      targets: '.ml8 .letter',
+      opacity: [0,1],
+      easing: "easeInOutQuad",
+      duration: 650,
+      delay: function(el, i) {
+        return 70 * (i+1)
+      }
+    });
+
+
+
+
+    anime.timeline({loop: false})
+      .add({
+        targets: '.ml7 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 750,
+        delay: function(el, i) {
+          return 70 * (i+1)
+        }
+      });
+
+
+  var t1 =anime({
+      targets: '.ml4 .letter',
+      opacity: [1,0],
+      easing: "easeInOutQuad",
+      duration: 650,
+      // direction: 'reverse',
+
+      delay: function(el, i) {
+        return 75 * (i+1)
+      }
+    });
+
+    t1.reverse();
+    var t3 =anime({
+        targets: '.ml9 .letter',
+        opacity: [1,0],
+        easing: "easeInOutQuad",
+        duration: 650,
+        // direction: 'reverse',
+
+        delay: function(el, i) {
+          return 65 * (i+1)
+        }
+      });
+
+      t3.reverse();
+
+    var t2 =anime({
+        targets: '.ml6 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 450,
+        delay: function(el, i) {
+          return 45 * (i+1)
+        }
+      });
+
+      // t2.reverse();
+    </script>
+    <div class="mouse_scroll">
+
+  		<div class="mouse">
+  			<div class="wheel"></div>
+  		</div>
+  		<div>
+  			<span class="m_scroll_arrows unu"></span>
+  			<span class="m_scroll_arrows doi"></span>
+  			<span class="m_scroll_arrows trei"></span>
+  		</div>
+  </div>
+</section>
+<div class="scroll" id="scroll">
+<p class="first-trigger" id="first-trigger">1</p>
+<p class="second-trigger" id="second-trigger">2</p>
+
+<p class="third-trigger" id="third-trigger">3</p>
+<p class="fourth-trigger" id="fourth-trigger">4</p>
+
+<p class="fifth-trigger" id="fifth-trigger">5</p>
+<p class="sixth-trigger" id="sixth-trigger">6</p>
+<p class="seventh-trigger" id="seventh-trigger">7</p>
+<p class="eighth-trigger" id="eighth-trigger">8</p>
+<p class="ninth-trigger" id="ninth-trigger">9</p>
+<p class="tenth-trigger" id="tenth-trigger">10</p>
+<p class="11th-trigger" id="11th-trigger">11</p>
+<p class="12th-trigger" id="12th-trigger">12</p>
+<p class="13th-trigger" id="13th-trigger">13</p>
+<p class="14th-trigger" id="14th-trigger">14</p>
+<p class="15th-trigger" id="15th-trigger">15</p>
+<p class="16th-trigger" id="16th-trigger">16</p>
+</div>
+
+
+  <section class="storysection">
+    <div class="story-cover">
+        <img class="cover-color"src="images/storycover.jpg" alt="">
+        <div class="mouse_scroll2">
+
+      		<div class="mouse">
+      			<div class="wheel"></div>
+      		</div>
+      		<div>
+      			<span class="m_scroll_arrows unu"></span>
+      			<span class="m_scroll_arrows doi"></span>
+      			<span class="m_scroll_arrows trei"></span>
+            <span class="m_scroll_text">scroll to read whole story</span>
+      		</div>
+      </div>
+        <img class="cover-bw" src="images/storycover_black.png" alt="">
+  </div>
+      <div class="text-container first">
+        In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+      </div>
+      <div class="story-2-container">
+
+      <img class="story-2" src="images/story-2.png" alt="">
+      <div class="text-container second">
+        <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">“We didn’t know much about the immigration life. If you’re alone, it can be a nightmare”
+</p>
+        In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+        <br><br><br>
+        <span style="font-family: times; font-size:14px;margin-top:30px; opacity:0.9;">"One big problem for single parents is social isolation."  --YMCA </span>
+
+      </div>
+    </div>
+    <div class="story-3-container">
+      <img class="story-3" src="images/story-3.png" alt="">
+      <img class="story-3-hover" src="images/story-3-hover.png" alt="">
+      <div class="story-3-hover-area" id="story-3-hover-area">
+      </div>
+      <div class="text-container third">
+        <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+          “The major challenges is the differences between their cultural
+          background and the community”
+        </p>
+        In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+      </div>
+      <div class="thirdtriggertextcontainer">
+      <div class="hovertext thirdtriggertext">
+        <p>How Maria support her children while studying?<br></p>
+      </div>
+      <p class="thirdclicktext">Maria:I don’t know how I do it…<br>
+  I was working three part-times while I was studying <br><br><br>
+<span style="font-family: times; font-size:14px;margin-top:30px; opacity:0.9;">"Single parents are less likely to be employed than those who are in couple.The comparable rates for their couple counterparts were 75% and 90%."  --StatCanada </span></p>
+  </div>
+    </div>
+    <div class="story-4-container">
+
+      <img class="story-4" src="images/story-4.png" alt="">
+      <img class="story-4-hover" src="images/story-4-hover.png" alt="">
+      <div class="story-4-hover-area"></div>
+      <div class="text-container fourth">
+        <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; margin-bottom:20px;">
+          “I thought I have everything in control
+          until I missed my daugther’s performance”
+        </p>
+        <p>In 2011, Maria and her husband immigrated to Canada with
+        her son and daughter - Darek and Macy. Maria barely knows
+        English and counld not communicate with anyone here. She is
+        unfamiliar with the neighborhood and entirely isolated from the community.
+        </p>
+      </div>
+      <div class="fourthtriggertextcontainer">
+      <div class="hovertext fourthtriggertext">
+        <p>What happen to macy at school?<br></p>
+      </div>
+      <p class="fourthclicktext">Parent A: Look, macy is so brave, she performed alone<br>
+      Macy ran through the crowd, crying in tears.<br>
+      Macy: I don't want to be brave...I don't...</p>
+  </div>
+
+</div>
+
+<div class="story-5-container">
+
+  <img class="story-5" src="images/story-5.png" alt="">
+  <!-- <img class="story-4-hover" src="images/story-4-hover.png" alt=""> -->
+  <div class="story-5-hover-area"></div>
+  <div class="text-container fifth">
+    <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+      “I didn't know my mother is struggling so much”
+    </p>
+    <p>In 2011, Maria and her husband immigrated to Canada with
+    her son and daughter - Darek and Macy. Maria barely knows
+    English and counld not communicate with anyone here. She is
+    unfamiliar with the neighborhood and entirely isolated from the community.
+    </p>
+  </div>
+  <div class="hovertext fifthtriggertext">
+    Why Maria is so busy at night?  </div>
+
+    <img class="fifthclickimage1"src="images/bubble1.png" alt="">
+    <img class="fifthclickimage2"src="images/bubblehover.png" alt="">
+
+</div>
+
+
+<div class="story-6-container">
+
+  <img class="story-6" src="images/story-6.png" alt="">
+  <img class="story-6-hover" src="images/story-6-hover.png" alt="">
+  <div class="story-6-hover-area"></div>
+  <div class="text-container sixth">
+    <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+      “I lost it when I know I could not afford to
+buy a birthday present for my boy.”
+    </p>
+    <p>
+    </p>
+  </div>
+  <div class="hovertext sixthtriggertext">
+    Why Maria could not afford a present for her son?  </div>
+    <img class="sixthclickimage1"src="images/incomegraph1.png" alt="">
+    <img class="sixthclickimage2"src="images/incomegraph2.png" alt="">
+    <img class="sixthclickimage3"src="images/spendingincome.png" alt="">
+
+</div>
+
+<div class="story-7-container">
+
+  <img class="story-7" src="images/story-7.png" alt="">
+  <img class="story-7-hover" src="images/story-7-hover.png" alt="">
+  <div class="story-7-hover-area"></div>
+  <div class="text-container seventh">
+    <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
+      “Not only he didn’t complain
+he gave me a gift.”
+    </p>
+    <p>
+      In 2011, Maria and her husband immigrated to Canada with
+      her son and daughter - Darek and Macy. Maria barely knows
+      English and counld not communicate with anyone here. She is
+      unfamiliar with the neighborhood and entirely isolated from the community.
+    </p>
+  </div>
+  <div class="seventhtriggertextcontainer">
+
+  <div class="hovertext seventhtriggertext">
+  What is Derek and Macy thinking ?  </div>
+  <p class="seventhclicktext">Derek: I want to become a soldier and when I get to have lots of money, I will buy mama some hand gloves.<br>
+ Macy:So mama will not harm her hands when pressing on the keyboard for long hours….”
+</p>
+   </div>
+</div>
+<div class="logo">
+  lighthouse
+</div>
+<div class="donate">
+  DONATE
+</div>
+<div class="nextsectionarrow">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg width="43px" height="80px" viewBox="0 0 43 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+      <title>Group 3</title>
+      <desc>Created with Sketch.</desc>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.498721168" stroke-linecap="round" stroke-linejoin="round">
+          <g id="Cry4" transform="translate(-1373.000000, -433.000000)" stroke="#FFFFFF" stroke-width="5">
+              <g id="Group-3" transform="translate(1374.000000, 434.000000)">
+                  <path d="M0,0.24 L40.6403509,78" id="Line-10"></path>
+                  <path d="M0,78.24 L40.6403509,156" id="Line-10-Copy" transform="translate(20.500000, 117.500000) scale(1, -1) translate(-20.500000, -117.500000) "></path>
+              </g>
+          </g>
+      </g>
+  </svg>
+</div>
+<div class="nextcontent">
+See Donation Impact
+</div>
+<div class="previouscontent">
+  Home
+</div>
+<div class="previoussectionarrow">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg width="43px" height="80px" viewBox="0 0 43 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+      <title>Group 3</title>
+      <desc>Created with Sketch.</desc>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.498721168" stroke-linecap="round" stroke-linejoin="round">
+          <g id="Cry4" transform="translate(-1266.000000, -433.000000)" stroke="#FFFFFF" stroke-width="5">
+              <g id="Group-3" transform="translate(1287.500000, 512.500000) scale(-1, 1) translate(-1287.500000, -512.500000) translate(1267.000000, 434.000000)">
+                  <path d="M0,0.24 L40.6403509,78" id="Line-10"></path>
+                  <path d="M0,78.24 L40.6403509,156" id="Line-10-Copy" transform="translate(20.500000, 117.500000) scale(1, -1) translate(-20.500000, -117.500000) "></path>
+              </g>
+          </g>
+      </g>
+  </svg>
+</div>
+<div class="bottomtimeline">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg width="1336px" height="36px" viewBox="0 0 1336 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+      <title>Group 4</title>
+      <desc>Created with Sketch.</desc>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Cry4" transform="translate(-53.000000, -948.000000)">
+              <g id="Group-4" transform="translate(54.000000, 946.000000)">
+                  <g id="Group-2" opacity="0.495907738">
+                      <path d="M15.1469004,29.6158798 L1298.5,29.6158798" id="Line-2" stroke="#FFFFFF" stroke-linecap="square" transform="translate(656.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-656.500000, -29.500000) "></path>
+                      <g id="Group" transform="translate(7.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-7.500000, -29.500000) translate(0.000000, 22.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <g id="Group-Copy-2" transform="translate(975.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-975.500000, -29.500000) translate(968.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <g id="Group-Copy-4" transform="translate(653.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-653.500000, -29.500000) translate(646.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <g id="Group-Copy-3" transform="translate(1298.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-1298.500000, -29.500000) translate(1291.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <text id="MARIA’S-STORY" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                          <tspan x="291" y="11">MARIA’S STORY</tspan>
+                      </text>
+                      <text id="THE-MAP" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                          <tspan x="630" y="10">THE MAP</tspan>
+                      </text>
+                      <text id="DONATION-IMPACT" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                          <tspan x="926" y="10">DONATION IMPACT</tspan>
+                      </text>
+                      <text id="DONATE-NOW" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                          <tspan x="1259" y="10">DONATE NOW</tspan>
+                      </text>
+                      <g id="Group-Copy" transform="translate(330.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-330.500000, -29.500000) translate(323.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                      </g>
+                      <g id="Group-Copy-5" transform="translate(376.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-376.000000, -30.000000) translate(371.000000, 25.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="4.81857199" cy="4.81857199" r="4.81857199"></circle>
+                      </g>
+                      <g id="Group-Copy-6" transform="translate(416.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-416.000000, -30.000000) translate(411.000000, 25.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="3.81857199" cy="4.81857199" r="4.81857199"></circle>
+                      </g>
+                      <g id="Group-Copy-7" transform="translate(441.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-441.000000, -30.000000) translate(436.000000, 25.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="18.818572" cy="4.81857199" r="4.81857199"></circle>
+                      </g>
+                      <g id="Group-Copy-8" transform="translate(466.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-466.000000, -30.000000) translate(461.000000, 25.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="32.818572" cy="4.81857199" r="4.81857199"></circle>
+                      </g>
+                      <g id="Group-Copy-11" transform="translate(523.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-523.000000, -30.000000) translate(518.000000, 25.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="14.818572" cy="4.81857199" r="4.81857199"></circle>
+                      </g>
+                      <g id="Group-Copy-10" transform="translate(558.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-558.000000, -30.000000) translate(553.000000, 25.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="19.818572" cy="4.81857199" r="4.81857199"></circle>
+                      </g>
+                      <g id="Group-Copy-9" transform="translate(578.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-578.000000, -30.000000) translate(573.000000, 25.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                          <circle id="Oval" cx="38.818572" cy="4.81857199" r="4.81857199"></circle>
+                      </g>
+                  </g>
+                  <g id="Group" transform="translate(7.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-7.500000, -29.500000) translate(0.000000, 22.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.5">
+                      <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                  </g>
+                  <g id="Group-Copy-12" transform="translate(330.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-330.500000, -29.500000) translate(323.000000, 22.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.5">
+                      <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                  </g>
+                  <g id="Group-Copy-12" transform="translate(375.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-375.500000, -29.500000) translate(370.000000, 24.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.5">
+                      <circle id="Oval" cx="5.30042918" cy="5.30042918" r="5.30042918"></circle>
+                  </g>
+                  <path d="M14.455716,29.3841202 L374.5,29.3841202" id="Path-4" stroke="#FFFFFF" stroke-width="2"></path>
+                  <text id="MARIA’S-STORY" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                      <tspan x="291" y="11">MARIA’S STORY</tspan>
+                  </text>
+              </g>
+          </g>
+      </g>
+  </svg>
+</div>
+
+<div class="">
+
+</div>
+<script type="text/javascript">
+
+
+var lastScrollPosition = $(document).scrollTop();
+var number = 0;
+$(window).on('scroll', function(e) {
+    if($(document).scrollTop() > lastScrollPosition ){
+        number++;
+    }else if($(document).scrollTop() < lastScrollPosition ){
+      number+= (-1);
+    }
+    lastScrollPosition = $(document).scrollTop();
+
+    console.log(number);
+})
+
+
+</script>
+    <script type="text/javascript">
+
+      var waypoint = new Waypoint({
+      element: document.getElementById('scroll'),
+      handler: function(direction) {
+
+$(document.body).css({
+  "overflow-x":"hidden",
+  "overflow-y":"hidden"
+});
+        $(".introsection").delay(200);
+      $(".introsection").animate({
+        opacity:0,
+      },1500,"linear",function(){
+        $(this).hide();
+
+      });
+        $(".mouse_scroll2").show();
+      $(".mouse_scroll2").delay(1500);
+    $(".mouse_scroll2").animate({
+      opacity:1,
+    },2500,"linear",function(){
+
+      });
+        $(".cover-color").delay(1500);
+      $(".cover-color").animate({
+        opacity:1,
+      },2500,"linear",function(){
+        // $(window).off('scroll');
+        $(document.body).css({
+          "overflow-x":"auto",
+          "overflow-y":"auto"
+        });
+
+
+
+      });
+      },
+      offset: 0
+
+    });
+
+      var waypoint2 = new Waypoint({
+      element: document.getElementById('second-trigger'),
+      handler: function(direction) {
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+//scroll down hide------------------
+$(".mouse_scroll2").hide();
+
+        $(".cover-color").delay(500);
+      $(".cover-color").animate({
+        opacity:0,
+      },2100,"linear",function(){
+        $(this).hide();
+
+      });
+      $(".story-2").animate({
+        opacity:0,
+      },1700,"linear",function(){
+        $(this).hide();
+      });
+      $(".second").animate({
+        opacity:0,
+      },1700,"linear",function(){
+        $(this).hide();
+      });
+//-----show-------
+        $(".cover-bw").delay(1000);
+      $(".cover-bw").animate({
+        opacity:1,
+      },3500,"linear",function(){
+      });
+
+      $(".first").delay(3500);
+    $(".first").animate({
+      opacity:0.8,
+      top:"46vh",
+    },1300,"linear",function(){
+      $(document.body).css({
+        "overflow-x":"auto",
+        "overflow-y":"auto"
+      });
+
+    });
+      },
+      offset: 0
+
+      })
+
+      var waypoint3 = new Waypoint({
+      element: document.getElementById('third-trigger'),
+      handler: function(direction) {
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+
+        //scroll down hide------------------------
+      $(".first").animate({
+        opacity:0,
+      },1700,"linear",function(){
+      });
+      $(".cover-bw").animate({
+        opacity:0,
+      },1300,"linear",function(){
+        $(this).hide();
+
+      });
+
+      //scroll up hide-----------------------------
+      $(".story-3").animate({
+        opacity:0,
+      },1700,"linear",function(){
+        $(this).hide();
+      });
+      $(".third").animate({
+        opacity:0,
+      },1700,"linear",function(){
+        $(this).hide();
+      });
+      $(".story-3-hover-area").animate({
+        opacity:0,
+      },1700,"linear",function(){
+        $(this).hide();
+      });
+
+//show---------------------
+
+      $(".second").delay(2200);
+      $(".second").show();
+    $(".second").animate({
+      opacity:0.8,
+      top:"36vh",
+    },1500,"linear",function(){
+    });
+    $(".story-2").show();
+    $(".story-2").delay(800);
+  $(".story-2").animate({
+    opacity:1,
+  },3300,"linear",function(){
+    $(document.body).css({
+      "overflow-x":"auto",
+      "overflow-y":"auto"
+    });
+  });
+      },
+      offset: 0
+
+      })
+
+      var waypoint4 = new Waypoint({
+      element: document.getElementById('fourth-trigger'),
+      handler: function(direction) {
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        // $(".story-4-hover-area").hide();
+
+    // $(".second").delay(200);
+    //----------scroll down hide---------
+  $(".second").animate({
+    opacity:0,
+  },1700,"linear",function(){
+  });
+    // $(".story-2").delay(200);
+  $(".story-2").animate({
+    opacity:0,
+  },1700,"linear",function(){
+    $(".story-3-hover-area").show();
+
+    $(this).hide();
+  });
+//---------------scroll up hide
+  $(".story-4").animate({
+    opacity:0,
+  },1700,"linear",function(){
+    $(this).hide();
+  });
+  $(".fourth").animate({
+    opacity:0,
+  },1700,"linear",function(){
+    $(this).hide();
+  });
+  $(".story-4-hover-area").animate({
+    opacity:0,
+  },1700,"linear",function(){
+    $(this).hide();
+  });
+  $(".fourthtriggertext").animate({
+    opacity:0,
+  },1700,"linear",function(){
+    $(this).hide();
+  });
+  $(".fourthclicktext").animate({
+    opacity:0,
+  },1700,"linear",function(){
+    $(this).hide();
+  });
+
+//-----------------show--------------
+$(".story-3").show();
+$(".third").show();
+$(".story-3-hover-area").show();
+$(".thirdtriggertext").show();
+$(".story-3-hover-area").delay(1000);
+$(".story-3-hover-area").animate({
+opacity:1,
+},3500,"linear",function(){
+});
+$(".story-3-hover").show();
+        $(".story-3").delay(1000);
+      $(".story-3").animate({
+        opacity:1,
+      },3500,"linear",function(){
+      });
+      $(".story-3-hoverarea").delay(1000);
+      $(".story-3-hoverarea").animate({
+        opacity:0.9,
+      },3500,"linear",function(){
+      });
+    $(".story-3").animate({
+      opacity:1,
+    },3500,"linear",function(){
+    });
+
+      $(".third").delay(2000);
+    $(".third").animate({
+      opacity:0.8,
+      top:"36vh",
+    },1700,"linear",function(){
+      $(document.body).css({
+        "overflow-x":"auto",
+        "overflow-y":"auto"
+      });
+    });
+      },
+      offset: 0
+
+      })
+
+
+      var waypoint5 = new Waypoint({
+      element: document.getElementById('fifth-trigger'),
+      handler: function(direction) {
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        //scrolldownhide-------------
+        $(".story-3-hover").animate({
+          opacity:0,
+        },1200,"linear",function(){
+          $(this).hide();
+        });
+    $(".story-3-hover-area").animate({
+    opacity:0,
+  },1,"linear",function(){
+    $(this).hide();
+    });
+    $(".third").animate({
+    opacity:0,
+    },1200,"linear",function(){
+    $(this).hide();
+    });
+    $(".thirdclicktext").animate({
+    opacity:0,
+    },1200,"linear",function(){
+    $(this).hide();
+    });
+    $(".thirdtriggertext").animate({
+    opacity:0,
+    },1200,"linear",function(){
+    $(this).hide();
+    });
+    $(".story-3").animate({
+    opacity:0,
+    },1200,"linear",function(){
+    $(this).hide();
+    });
+
+    //scroll up hide------
+    $(".story-5").animate({
+      opacity:0,
+    },1700,"linear",function(){
+      $(this).hide();
+    });
+    $(".story-5-hover").animate({
+      opacity:0,
+    },1700,"linear",function(){
+      $(this).hide();
+    });
+    $(".fifth").animate({
+      opacity:0,
+    },1700,"linear",function(){
+      $(this).hide();
+    });
+    $(".story-5-hover-area").animate({
+      opacity:0,
+    },1700,"linear",function(){
+      $(this).hide();
+    });
+    $(".fifthtriggertext").animate({
+      opacity:0,
+    },1700,"linear",function(){
+      $(this).hide();
+    });
+
+    //show------------
+    $(".story-4").show();
+    $(".story-4-hover").show();
+    $(".story-4-hover-area").show();
+    $(".fourthtriggertext").show();
+    $(".fourth").show();
+    $(".story-4-hover-area").delay(1000);
+    $(".story-4-hover-area").animate({
+      opacity:1,
+    },3000,"linear",function(){
+    });
+            $(".story-4").delay(500);
+          $(".story-4").animate({
+            opacity:1,
+          },3000,"linear",function(){
+          });
+
+          $(".fourth").delay(1500);
+        $(".fourth").animate({
+          opacity:0.8,
+          top:"54vh",
+        },1500,"linear",function(){
+          $(document.body).css({
+            "overflow-x":"auto",
+            "overflow-y":"auto"
+          });
+        });
+          },
+          offset: 0
+
+          })
+
+
+
+      var waypoint6 = new Waypoint({
+      element: document.getElementById('sixth-trigger'),
+      handler: function(direction) {
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+
+
+//scroll down hide--------
+$(".fourthclicktext").hide()
+$(".fourthtriggertext").hide()
+        $(".story-4-hover").animate({
+          opacity:0,
+        },1200,"linear",function(){
+          $(this).hide();
+        });
+  $(".story-4-hover-area").animate({
+    opacity:0,
+  },1,"linear",function(){
+    $(this).hide();
+  });
+
+  $(".fourth").animate({
+    opacity:0,
+  },1200,"linear",function(){
+    $(this).hide();
+  });
+  // $(".fourthclicktext").animate({
+  //   opacity:0,
+  // },1,"linear",function(){
+  //   $(this).hide();
+  // });
+  // $(".fourthtriggertext").animate({
+  //   opacity:0,
+  // },1,"linear",function(){
+  //   $(this).hide();
+  // });
+$(".story-4").animate({
+  opacity:0,
+},1200,"linear",function(){
+  $(this).hide();
+});
+//scroll up hide------
+$(".story-6").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+$(".sixth").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+$(".story-6-hover-area").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+$(".sixthtriggertext").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+//show-------
+$(".story-5-hover-area").show();
+$(".story-5").show();
+$(".fifth").show();
+$(".story-5-hover-area").delay(800);
+$(".story-5-hover-area").animate({
+  opacity:1,
+},2000,"linear",function(){
+});
+$(".fifthtriggertext").show();
+        $(".story-5").delay(1400);
+      $(".story-5").animate({
+        opacity:1,
+      },2000,"linear",function(){
+      });
+
+      $(".fifth").delay(1200);
+    $(".fifth").animate({
+      opacity:0.8,
+      top:"42vh",
+    },1100,"linear",function(){
+      $(document.body).css({
+        "overflow-x":"auto",
+        "overflow-y":"auto"
+      });
+    });
+      },
+      offset: 0
+
+      })
+
+
+      var waypoint7 = new Waypoint({
+      element: document.getElementById('seventh-trigger'),
+      handler: function(direction) {
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+
+    //scrolldownhide-------------
+    $(".story-5-hover").animate({
+      opacity:0,
+    },1200,"linear",function(){
+      $(this).hide();
+    });
+$(".story-5-hover-area").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".fifth").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".fifthclicktext").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".fifthtriggertext").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".story-5").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+
+//scroll up hide------
+$(".story-7").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+$(".story-7-hover").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+$(".seventh").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+$(".story-7-hover-area").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+$(".seventhtriggertext").animate({
+  opacity:0,
+},1700,"linear",function(){
+  $(this).hide();
+});
+
+//show------------
+$(".story-6").show();
+$(".story-6-hover").show();
+$(".story-6-hover-area").show();
+$(".sixthtriggertext").show();
+$(".sixth").show();
+$(".story-6-hover-area").delay(800);
+$(".story-6-hover-area").animate({
+  opacity:1,
+},3000,"linear",function(){
+});
+        $(".story-6").delay(800);
+      $(".story-6").animate({
+        opacity:1,
+      },3000,"linear",function(){
+      });
+
+      $(".sixth").delay(1500);
+    $(".sixth").animate({
+      opacity:0.8,
+      top:"24vh",
+    },1500,"linear",function(){
+      $(document.body).css({
+        "overflow-x":"auto",
+        "overflow-y":"auto"
+      });
+    });
+      },
+      offset: 0
+
+      })
+
+      var waypoint8 = new Waypoint({
+      element: document.getElementById('eighth-trigger'),
+      handler: function(direction) {
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+
+//scroll down hide--------------------
+$(".story-6-hover").animate({
+  opacity:0,
+},1200,"linear",function(){
+  $(this).hide();
+});
+$(".story-6-hover-area").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".sixth").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".sixthclicktext").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".sixthtriggertext").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+$(".story-6").animate({
+opacity:0,
+},1200,"linear",function(){
+$(this).hide();
+});
+
+
+//show------------
+$(".story-7").show();
+$(".story-7-hover").show();
+$(".seventh").show();
+$(".story-7-hover-area").show();
+$(".seventhtriggertext").show();
+$(".story-7-hover-area").delay(1000);
+$(".story-7-hover-area").animate({
+  opacity:0.9,
+},3500,"linear",function(){
+});
+        $(".story-7").delay(800);
+      $(".story-7").animate({
+        opacity:1,
+      },3000,"linear",function(){
+      });
+
+      $(".seventh").delay(1500);
+    $(".seventh").animate({
+      opacity:0.8,
+      top:"16vh",
+    },1500,"linear",function(){
+      $(document.body).css({
+        "overflow-x":"auto",
+        "overflow-y":"auto"
+      });
+    });
+      },
+      offset: 0
+
+      })
+
+      var waypoint9 = new Waypoint({
+      element: document.getElementById('ninth-trigger'),
+      handler: function(direction) {
+        window.location.href = 'statusincanada.html';
+
+      },
+      offset: 0
+
+      })
+    </script>
+<script type="text/javascript">
+$( ".story-3-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  $('.thirdtriggertext').show();
+
+  $('.thirdtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.thirdtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.thirdtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-3-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-3-hover-area").mouseleave(function() {
+  $( ".story-3-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+
+$( ".story-3-hover-area" ).click(function() {
+  $( ".thirdclicktext" ).show();
+$( ".thirdclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+$( ".story-4-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  $(".story-4-hover").show();
+  $(".fourthtriggertext").show();
+  $('.fourthtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.fourthtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.fourthtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-4-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-4-hover-area").mouseleave(function() {
+  $( ".story-4-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-4-hover-area" ).click(function() {
+  $( ".fourthclicktext" ).show();
+$( ".fourthclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+$( ".story-5-hover-area" ).click(function() {
+$( ".fourthclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+$( ".story-5-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  // $(".story-4-hover").show();
+
+  $(".fifthtriggertext").show();
+  $('.fifthtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.fifthtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.fifthtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-5-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-5-hover-area").mouseleave(function() {
+  $( ".story-5-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+
+$( ".story-5-hover-area" ).click(function() {
+  $( ".fifthclickimage1" ).show();
+
+});
+$( ".fifthclickimage1" ).click(function() {
+  $( ".fifthclickimage2" ).show();
+  $( ".fifthclickimage1" ).hide();
+});
+$( ".fifthclickimage2" ).click(function() {
+  $( ".fifthclickimage2" ).hide();
+});
+
+$( ".story-6-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  // $(".story-4-hover").show();
+
+  $(".sixthtriggertext").show();
+  $('.sixthtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.sixthtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.sixthtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-6-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-6-hover-area").mouseleave(function() {
+  $( ".story-6-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+
+$( ".story-6-hover-area" ).click(function() {
+  $( ".sixthclickimage1" ).show();
+
+});
+$( ".sixthclickimage1" ).click(function() {
+  $( ".sixthclickimage2" ).show();
+  $( ".sixthclickimage1" ).hide();
+});
+$( ".sixthclickimage2" ).click(function() {
+  $( ".sixthclickimage2" ).hide();
+  $( ".sixthclickimage3" ).show();
+
+});
+$( ".sixthclickimage3" ).click(function() {
+  $( ".sixthclickimage3" ).hide();
+
+});
+
+$( ".story-7-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+  // $(".story-4-hover").show();
+
+  $(".seventhtriggertext").show();
+  $('.seventhtriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.seventhtriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.seventhtriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-7-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-7-hover-area").mouseleave(function() {
+  $( ".story-7-hover" ).animate({
+    opacity:0,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-7-hover-area" ).click(function() {
+  $( ".seventhclicktext" ).show();
+$( ".seventhclicktext" ).animate({
+  opacity:1,
+
+},500,"linear",function(){
+});
+});
+
+$( ".nextsectionarrow").mouseenter(function() {
+  $(".nextcontent").show();
+  $( ".nextcontent" ).animate({
+    opacity:0.8,
+  },500,"linear",function(){
+  });
+});
+$( ".nextsectionarrow").mouseleave(function() {
+  $( ".nextcontent" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $(this).hide();
+  });
+});
+$( ".previoussectionarrow").mouseenter(function() {
+  $(".previouscontent").show();
+  $( ".previouscontent" ).animate({
+    opacity:0.8,
+  },500,"linear",function(){
+  });
+});
+$( ".previoussectionarrow").mouseleave(function() {
+  $( ".previouscontent" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $(this).hide();
+  });
+});
+</script>
+  </section>
+  </body>
+</html>

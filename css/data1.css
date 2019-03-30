@@ -1,0 +1,287 @@
+/* html,body{
+  margin:0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+} */
+@keyframes dot1 {
+  0% {
+  opacity: 0;
+}
+10%{
+  opacity: 0;
+
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes dot2 {
+  0% {
+  opacity: 0;
+}
+40%{
+  opacity: 0;
+
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes animation_title {
+  0% {
+  margin-top:1.2em;
+  opacity: 0;
+}
+
+40% {
+  margin-top: 0.4em;
+  opacity: 0.7;
+}
+80% {
+  margin-top: 0em;
+  opacity: 1;
+}
+
+100% {
+  opacity: 1;
+}
+}
+@keyframes animation_tip {
+  0% {
+  opacity: 0;
+}
+
+100% {
+  opacity: 1;
+}
+}
+#maingraph1{
+  stroke:#F4E966;
+}
+#maingraph2{
+  stroke:#5A8FDC;
+}
+#maingraph3{
+  stroke:#7AE0C3;
+}
+/* text{
+  fill:#FFFFFF;
+} */
+.legend{
+  color: white;
+  font-size: 14px;
+}
+.couple{
+  position: absolute;
+  top: 273px;
+    left: 1230px;
+    animation-name: dot1;
+    animation-duration: 6s;
+
+}
+.single{
+  position: absolute;
+  top: 461px;
+    left: 1230px;
+    animation-name: dot1;
+    animation-duration: 6s;
+
+}
+.maria{
+  position: absolute;
+  top: 533px;
+    left: 1230px;
+    animation-name: dot2;
+    animation-duration: 4s;
+    animation-duration: 7s;
+
+}
+.dot {
+    fill: #F4E966;
+    stroke: #fff;
+    stroke-width:2px;
+    animation-name: dot1;
+    animation-duration: 4s;
+    /* animation-delay: 1.5s; */
+}
+.dot2 {
+    fill: #5A8FDC;
+    stroke: #fff;
+    stroke-width:2px;
+    animation-name: dot1;
+    animation-duration: 4s;
+    /* animation-delay: 1.5s; */
+}
+.dot3 {
+    fill: #7AE0C3;
+    stroke: #fff;
+    stroke-width:2px;
+    animation-name: dot2;
+    animation-duration: 5.5s;
+    box-shadow: 0 0 10px #9ecaed;
+
+}
+/* path{
+  stroke-width:3px;
+  fill:none;
+} */
+
+#maingraph{
+stroke-linecap:round;
+}
+.datatitleh1_1{
+  /* position: absolute; */
+/* left: 2.5rem; */
+/* margin-top: 0.4em; */
+text-align: center;
+color: white;
+font-size: 22px;
+font-weight: normal;
+opacity: 1;
+}
+/* .title{
+  left: 15em;
+  top: 3em;
+  width: 70%;
+  height: 30vh;
+} */
+.d3-tip {
+ line-height: 1;
+ padding: 6px;
+ background: rgba(0, 0, 0, 0.8);
+ color: #fff;
+ border-radius: 4px;
+ font-size: 12px;
+ /* animation-name: animation_tip;
+ animation-duration: 0.5s; */
+ transition: opacity .6s ease;
+ /* top:600px; */
+border: 1px solid rgba(255,255,255,0.5);
+z-index: 1;
+}
+
+/* Creates a small triangle extender for the tooltip */
+/* .d3-tip:after {
+ box-sizing: border-box;
+ display: inline;
+ font-size: 10px;
+ width: 100%;
+ line-height: 1;
+ color: rgba(0, 0, 0, 0.8);
+ content: "\25BC";
+ position: absolute;
+ text-align: center;
+ border: 1px solid rgba(255,255,255,0.5);
+
+} */
+
+/* Style northward tooltips specifically */
+/* .d3-tip.n:after {
+ margin: -2px 0 0 0;
+ top: 100%;
+ left: 0;
+} */
+.datatitleh2_1{
+  /* position: absolute; */
+left: 2.5rem;
+opacity: 1;
+margin-top: 0.4em;
+
+animation-name: animation_data_scroll_before;
+animation-duration: 4s;
+/* animation-delay:0.5s; */
+
+}
+
+.mariatip{
+  max-width: 300px;
+  line-height: 1.4;
+  z-index: 1
+}
+.mariatip img{
+  width: 100%;
+}
+
+h1{
+  font-size: 55px;
+}
+h2{
+  font-size: 15px;
+}
+.firstgraph text{
+  fill: white;
+}
+.firstgraph path{
+  stroke-width:3px;
+  fill:none;
+}
+/* svg{
+  position: fixed;
+  top: 0%;
+} */
+/* .title-container{
+  display: flex;
+}
+.second, .thrid, .fourth{
+  margin-top: 100vh;
+
+}
+.second{
+  height: 30vh;
+  display: block;
+   clear:both;
+}
+.first, .fourth{
+  width: 50%;
+  background-color:#ece6df;
+}
+
+.title-container{
+  height: 200vh;
+  overflow: scroll;
+  z-index: 0;
+} */
+.y-axis path{
+  stroke-width:0px;
+
+
+}
+.tick line{
+stroke:rgba(255,255,255,0.2);
+}
+
+.x-axis path, .x-axis2 path{
+  stroke:rgba(0,0,0,0.5);
+  margin-left: 1em;
+}
+/* .title-container{
+  height: 200vh;
+} */
+.title{
+  width: 70%;
+height: 100vh;
+padding-top: 75px;
+display: block;
+}
+.second{
+  margin-top: 100px;
+}
+
+.title-show{
+  position: fixed;
+  left: 10em;
+  top: 8em;
+  width: 70%;
+  animation-name: animation_title;
+  animation-duration: 4s;
+}
+.firstgraph{
+  z-index: 1;
+  position: fixed;
+  top: 6em;
+  left: 0px;
+  display: none;
+}
+#secondgraph{
+display: block;}

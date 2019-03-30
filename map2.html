@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  </head>
+  <style media="screen">
+    g{
+      transform:translate(0px,500px);
+      box-shadow: 120px 80px 40px 20px #0ff;
+    }
+    path{
+      stroke:rgba(255,255,255,0.3);
+      stroke-width: 1px;
+      transition: all .4s ease;
+    }
+    svg{
+
+    }
+    path:hover{
+      stroke:white;
+      stroke-width: 3px;
+    }
+    body{
+      background-color: black;
+    }
+    .province-description{
+      color: white;
+      font-size: 30px;
+      font-family: times;
+      margin-bottom: 70px;
+      margin-top: 100px;
+
+      text-align: center;
+      /* display: none; */
+    }
+    .d3-tip {
+     line-height: 1;
+     padding: 6px;
+     background: rgba(0, 0, 0, 0.8);
+     color: #fff;
+     border-radius: 4px;
+     font-size: 12px;
+   }
+
+   /* Creates a small triangle extender for the tooltip */
+   .d3-tip:after {
+     box-sizing: border-box;
+     display: inline;
+     font-size: 10px;
+     width: 100%;
+     line-height: 1;
+     color: rgba(0, 0, 0, 0.8);
+     content: "\25BC";
+     position: absolute;
+     text-align: center;
+   }
+
+   /* Style northward tooltips specifically */
+   .d3-tip.n:after {
+     margin: -2px 0 0 0;
+     top: 100%;
+     left: 0;
+   }
+  </style>
+  <body>
+    <div id="legend">
+
+    </div>
+    <div class="province-description">
+      In British Columbia, there are 17.8% children living in single-parent family.
+    </div>
+    <!-- <div class="columns">
+      <div class="column">
+        <svg class="child_lone" width="1280" height="1500"></svg>
+      </div>
+
+    </div> -->
+<script>
+//text aimation
+
+$('.province-description').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+anime.timeline({loop: false})
+  .add({
+    targets: '.province-description .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 500,
+    delay: function(el, i) {
+      return 50 * (i+1)
+    }
+  });
+
+
+//data vis code
+var child_domain = [15, 17.5, 20, 22.5, 25];
+// var child_color = d3.scaleThreshold()
+//     .domain(child_domain)
+//     .range(d3.schemeYlGn[6]);
+var child_color = d3.scaleThreshold()
+    .domain(child_domain)
+    .range(['#E2EDE8','#CDDAE1','#C2D0DE','#B5C4DA','#A6B6D5','#899FCE']);
+    var child_color_highlight = d3.scaleThreshold()
+        .domain(child_domain)
+        .range(['#EFF8F4','#DCE7ED','#D4DCE4','#CAD5E4','#C0CCE4','#A4B6DB']);
+  var child_inlone_data = d3.map();
+  var child_lone_url="https://gist.githubusercontent.com/kristine919717/7bdadf721dfc388c18c3f419c860bcd8/raw/704674b105d09e90379acbaac66fc9ec4852c62c/percent_lonefamily.csv";
+
+  d3.queue()
+    .defer(d3.csv, child_lone_url, function(d){
+
+          child_inlone_data.set(d.Province, +d["Percent_child_in_lone"], +d["num_lonefamily"]);
+
+    })
+
+    var canvas = d3.select("body").append("svg")
+    .attr("width",1260)
+    .attr("height", 1500)
+  var group;
+  var projection = d3.geoAlbers();
+  var path = d3.geoPath().projection(projection);
+  // d3.csv(child_lone_url, function(child_data){
+  //   child_data.forEach(function(d) {
+  //     d["Percent_child_in_lone"] = +d["Percent_child_in_lone"];
+  //     d["num_lonefamily"] = +d["num_lonefamily"];
+  //
+  //
+  //     console.log(d);
+  //   });
+  // });
+  d3.json("https://gist.githubusercontent.com/kristine919717/ee0fc3a3ee5c9f346121b9918355d9fe/raw/dd616bbc0430fe3e55baa404906ddc30066b4e0b/gpr_000b11a_e%2520(1).json", function(data){
+     group = canvas.selectAll("g")
+      .data(data.features)
+      .enter()
+      .append("g")
+
+var tip = d3.tip()
+  .attr('class','d3-tip')
+  .offset([-10, 0])
+  .html(function(d){
+    return "<strong>"+d.properties.PRENAME+"</strong>"
+  });
+
+    var area = group.append("path")
+      .attr("d", path)
+      .attr("class", "area")
+      .attr("fill", function(d){
+        var value = child_inlone_data.get(d.properties.PRENAME);
+        return (value != 0 ? child_color(value) : "lightblue");
+      })
+      .on('mouseover', tip.show)
+
+      .on('click', function(d){
+        d3.select(".province-description")
+          .html("In " +d.properties.PRENAME +"  <span>, there are " +
+          child_inlone_data.get(d.properties.PRENAME) + "% of children living in single-parent families</span>"
+      )
+    })
+      .on('mouseout', tip.hide);
+$("path").click(function(){
+  $('.province-description').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+      targets: '.province-description .letter',
+      opacity: [0,1],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+})
+group.call(tip);
+    // group.append("svg:text")
+    //   .attr("x", function(d){return path.centroid(d)[0];})
+    //   .attr("y", function(d){return path.centroid(d)[1];})
+    //   .text(function(d){return d.properties.PRENAME;})
+
+// var w = 260,
+//     h = 40,
+//     key = d3.select('#legend')
+//     .append('svg')
+//     .attr('width', w)
+//     .attr('height', h),
+//     legend= key.append('defs')
+//     .append('svg: linearGradient')
+//     .attr('id', 'gradient')
+//     .attr('y1', '100%')
+//     .attr('x1','0%')
+//     .attr('y2', '100%')
+//     .attr('x2', '100%')
+// legend.append('stop')
+//   .attr('offset','0%')
+//   .attr('stop-color','#E2EDE8')
+// legend.append('stop')
+//   .attr('offset', '100%')
+//   .attr('stop-color','#97A9D0')
+// key.append('rect')
+//   .attr('width',w-10)
+//   .attr('height',h-20)
+//   .style('fill','url(#gradient)')
+//   .attr('transform', 'translate(0,0)');
+  });
+
+  // var color = d3.scale.linear()
+  // .domain([0, 5])
+  // .range(["blue", "green"]);
+  // var percent_child_in_lone = d3.scale.linear()
+  // .domain([0, 5])
+  // .range([16, 25]);
+    // .defer(d3.json, "https://gist.githubusercontent.com/kristine919717/f0c0089716745706c267a25780204112/raw/0bf1568fa11b27c9040de2ca6cf7a83a6e81d2a0/gpr_000b11a_e%2520(4).json")
+    // // callback function
+    // function ready(error, data) {
+    //
+    //     if (error) throw error;
+    //
+    //     // province topojson
+    //     var canada_province = topojson.feature(data, {
+    //         type: "GeometryCollection",
+    //         geometries: data.objects.gpr_000b11a_e.geometries
+    //     });
+    //
+    //     // projection and path
+    //     var projection = d3.geo.albers();
+    //
+    //     var geoPath = d3.geoPath()
+    //         .projection(projection);
+    //
+    //     // draw new york map and bind income data
+    //     d3.select("svg.child_lone").selectAll("path")
+    //         .data(canada_province.features)
+    //         .enter()
+    //         .append("path")
+    //         .attr("d", geoPath)
+    //         .attr("fill", "green");
+        //     .transition().duration(2000)
+        //     .delay(function(d, i) {
+        //         return i * 5;
+        //     })
+        //     .ease(d3.easeLinear)
+        //     .attr("fill", function(d) {
+        //         var value = incomeData.get(d.properties.GEOID);
+        //         return (value != 0 ? income_color(value) : "lightblue");
+        //
+        //     })
+        //     .attr("class", "counties-income");
+        //
+        // // title
+        // d3.select("svg.income").selectAll("path")
+        //     .append("title")
+        //     .text(function(d) {
+        //         return d.income = incomeData.get(d.properties.GEOID);
+        //     });
+        //
+        // // draw new york map and bind poverty data
+        // d3.select("svg.poverty").selectAll("path")
+        //     .data(new_york.features)
+        //     .enter()
+        //     .append("path")
+        //     .attr("d", geoPath)
+        //     .attr("fill", "white")
+        //     .transition().duration(2000)
+        //     .delay(function(d, i) {
+        //         return i * 5;
+        //     })
+        //     .ease(d3.easeLinear)
+        //     .attr("fill", function(d) {
+        //         var value = povertyData.get(d.properties.GEOID);
+        //         return (value != 0 ? poverty_color(value) : "lightblue");
+        //
+        //     })
+        //     .attr("class", "counties-poverty");
+        //
+        // // title
+        // d3.select("svg.poverty").selectAll("path")
+        //     .append("title")
+        //     .text(function(d) {
+        //         return d.income = incomeData.get(d.properties.GEOID);
+        //     });
+    // }
+
+
+</script>
+
+  </body>
+</html>
