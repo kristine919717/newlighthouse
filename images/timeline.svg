@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1336px" height="36px" viewBox="0 0 1336 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.495907738">
+        <g id="Cry4" transform="translate(-53.000000, -948.000000)">
+            <g id="Group-2" transform="translate(54.000000, 946.000000)">
+                <path d="M15.1469004,29.6158798 L1298.5,29.6158798" id="Line-2" stroke="#FFFFFF" stroke-linecap="square" transform="translate(656.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-656.500000, -29.500000) "></path>
+                <g id="Group" transform="translate(7.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-7.500000, -29.500000) translate(0.000000, 22.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.5">
+                    <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                </g>
+                <g id="Group-Copy-2" transform="translate(975.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-975.500000, -29.500000) translate(968.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                    <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                </g>
+                <g id="Group-Copy-4" transform="translate(653.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-653.500000, -29.500000) translate(646.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                    <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                </g>
+                <g id="Group-Copy-3" transform="translate(1298.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-1298.500000, -29.500000) translate(1291.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                    <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                </g>
+                <text id="MARIA’S-STORY" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                    <tspan x="291" y="11">MARIA’S STORY</tspan>
+                </text>
+                <text id="THE-MAP" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                    <tspan x="630" y="10">THE MAP</tspan>
+                </text>
+                <text id="DONATION-IMPACT" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                    <tspan x="926" y="10">DONATION IMPACT</tspan>
+                </text>
+                <text id="DONATE-NOW" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.866666675" fill="#FFFFFF">
+                    <tspan x="1259" y="10">DONATE NOW</tspan>
+                </text>
+                <g id="Group-Copy" transform="translate(330.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-330.500000, -29.500000) translate(323.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                    <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
