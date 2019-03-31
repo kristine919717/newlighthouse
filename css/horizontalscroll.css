@@ -34,31 +34,129 @@
   transform: rotate(90deg) translate3d(0,calc(-100vh + 60px),0);
   position:
 } */
-html{
-  scroll-behavior: smooth;
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
 
-}
 .mothersmatter{
   position: fixed;
   left: 90%;
   top: 0;
-  width: 200vw;
+  width: 4370px;
   height: 100%;
   background-color: white;
   /* transition: all .1s linear; */
-
+  display: flex;
 }
 .scroll{
   width: 10px;
   height: 10000vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  opacity:1;
+  background-color: white;
 }
+.bigtitle{
+  font-family: times;
+  font-size: 48px;
+  font-weight: normal;
+}
+
 .mothersintro{
-  padding-left: 200px;
+  padding-left: 250px;
+  padding-top: 20vh;
+  width: 800px;
+  flex:1;
+
 }
 .mothersintro img{
-  width: 400px;
+  width: 500px;
+  margin-top: 10px;
+}
+.inspire{
+  flex: 1
+}
+.inspire img{
+  width: 350px;
+
+}
+.achievement{
+  flex: 1;
+
+}
+.donatesection{
+  flex: 1;
+}
+
+.donatesection img{
+  width: 600px;
 }
 .parralax1{
   /* transition: all .1s linear; */
+}
+.italicsmall{
+  font-style: italic;
+  font-size: 12px;
+  color: #868686;
+}
+.paragraph{
+  position: absolute;
+
+    font-size: 12px;
+    letter-spacing: 0.04rem;
+    line-height: 1.9;
+}
+.firstparagraph{
+  left: 650px;
+    top: 58%;
+    width: 300px;
+}
+.secondparagraph{
+  position: absolute;
+      top: 20%;
+      left: 33%;
+      width: 320px;
+
+}
+.thirdparagraph, .fourthparagraph{
+  width: 400px;
+}
+.inspiretitle{
+  font-size: 120px;
+      z-index: 3;
+      position: absolute;
+      top: 505px;
+      left: 1300px;
+
+}
+.achivementimg2{
+  position: absolute;
+left: 50%;
+top: 10%;
+width: 300px;
+}
+.achivementimg1{
+    position: absolute;
+    top: 59%;
+    left: 61%;
+    width: 500px;
+
+}
+.achivementtitle{
+  font-size: 86px;
+position: absolute;
+top: 56%;
+left: 58%;
+}
+.thirdparagraph{
+  position: absolute;
+top: 72%;
+left: 67%;
+}
+.donatesection img{
+  position: absolute;
+    right: -300px;
+    top: 40%;
+}
+.donatetitle{
+  font-size: 120px;
+    margin-top: 10%;
 }

@@ -18,7 +18,20 @@
 
       }
     </style>
-    <form action="login.php" method="post">
+    <script type="text/javascript">
+    window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+    }
+    window.onbeforeunload = function(){
+            document.documentElement.scrollTop = 0;  //ie下
+            document.body.scrollTop = 0;  //非ie
+    }
+
+     $(window).scrollTop(0);
+
+     // $('.scroll').animate({ scrollTop: elementOffset }, 200);
+
+    </script>
 
 <div class="donationimpact">
   <img class="donationimpactbg" src="images/donationimpactbg.png" alt="">
@@ -190,18 +203,40 @@ See Donation Impact
 <div class="mothersmatter">
   <div class="mothersintro">
     <h1 class="bigtitle">Mother's Matter Centre</h1>
-    <p>Program for Parents of Preschool Youngsters (HIPPY) Canada</p>
+    <p class="italicsmall">Program for Parents of Preschool Youngsters (HIPPY) Canada</p>
     <img class="parralax1" src="images/mothersmatter/1.jpg" alt="">
+    <p class="paragraph firstparagraph">The Mothers Matter Centre (MMC)  is a not-for-profit, registered charity.  It is a virtual, national consortium of organizations dedicated to serving socially isolated and low economic status mothers and their families using our proven mother-to-mother approach.</p>
   </div>
+  <div class="inspire">
+    <img class="parralax1" src="images/mothersmatter/2.jpg" alt="">
+    <h1 class="bigtitle inspiretitle">Partners</h1>
+    <p class="paragraph secondparagraph">We work with partners across Canada who are dedicated to supporting low-income women to improve their lives. Programs include Central Vancouver Island Multicultureal society, SPEC Association for Families and Children, Immigrant Women's Association, Newcomer Family Resource Network, HIPPY for Young Mothers, NiL TU, O Child and Family Services, Houston Link to Learning, Mt. Pleasant Neighbourhood House, Burnaby Family Life, Project Literacy Kelowna, etc.
 
+</p>
+  </div>
+  <div class="achievement">
+    <img class="parralax1 achivementimg1" src="images/mothersmatter/3.jpg" alt="">
+    <img class="parralax2 achivementimg2" src="images/mothersmatter/4.jpg" alt="">
+
+    <h1 class="bigtitle achivementtitle">Achievements</h1>
+
+
+    <p class="paragraph thirdparagraph">The mothers we support come from all walks of life — refugee, newcomer, Aboriginal and other at-risk mothers are regularly involved in our programs. Since our inception, the Mothers Matter Centre has transformed over 40,000 lives. We helped more than 14,000 mothers gain new skills and abilities essential to strengthening mother-child relationships. This means their children and families were better prepared to get the most from their early school experiences.</p>
+  </div>
+  <div class="donatesection">
+    <h1 class="bigtitle donatetitle">Donate</h1>
+
+
+    <p class="paragraph fourthparagraph">help us make brighter house</p>
+    <img class="parralax1" src="images/mothersmatter/5.jpg" alt="">
+
+  </div>
 </div>
 <div class="scroll">
-
+123
 </div>
 <script type="text/javascript">
-window.onbeforeunload = function () {
-window.scrollTo(0, 0);
-}
+
 var lastScrollPosition = $(document).scrollTop();
 var container_x=0;
 var parralax1_x=0;
@@ -214,7 +249,7 @@ $(window).on('scroll', function(e) {
    $(".mothersmatter").css({"-moz-transform" : x_pos, "-webkit-transform" : x_pos});
 
    // parralax1_x--;
-   parralax1_x = parralax1_x-1;
+   parralax1_x = parralax1_x-2;
    var x1_pos="translateX(" + parralax1_x + "px)";
    $(".parralax1").css({"-moz-transform" : x1_pos, "-webkit-transform" : x1_pos});
  }
@@ -223,7 +258,7 @@ $(window).on('scroll', function(e) {
    container_x = container_x + 20 ;
    var x_pos = "translateX(" + container_x + "px)";
    $(".mothersmatter").css({"-moz-transform" : x_pos, "-webkit-transform" : x_pos});
-   parralax1_x = parralax1_x+1;
+   parralax1_x = parralax1_x+2;
    var x1_pos="translateX(" + parralax1_x + "px)";
    $(".parralax1").css({"-moz-transform" : x1_pos, "-webkit-transform" : x1_pos});
 
