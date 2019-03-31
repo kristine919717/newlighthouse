@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/try2.css">
+    <link rel="stylesheet" type="text/css" href="css/horizontalscroll.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+
   </head>
   <body>
     <style>
@@ -173,21 +177,63 @@ See Donation Impact
   which helps me in many areas of my life, But more importantly,
   I can now support my children with their homework.</p> -->
 </div>
+  <!-- <div class="horizontal-scroll">
+  <div class="horizontal-scroll__block">item 1</div>
+  <div class="horizontal-scroll__block">item 2</div>
+  <div class="horizontal-scroll__block">item 3</div>
+  <div class="horizontal-scroll__block">item 4</div>
+  <div class="horizontal-scroll__block">item 5</div>
+  <div class="horizontal-scroll__block">item 6</div>
+  <div class="horizontal-scroll__block">item 7</div>
+  <div class="horizontal-scroll__block">item 8</div>
+</div> -->
+<div class="mothersmatter">
+  <div class="mothersintro">
+    <h1 class="bigtitle">Mother's Matter Centre</h1>
+    <p>Program for Parents of Preschool Youngsters (HIPPY) Canada</p>
+    <img class="parralax1" src="images/mothersmatter/1.jpg" alt="">
+  </div>
+
+</div>
+<div class="scroll">
+
+</div>
 <script type="text/javascript">
-// var clickstatus =[];
-// clickstatus[0]=0;
-// clickstatus[1]=0;
-// clickstatus[2]=0;
-// clickstatus[3]=0;
-// clickstatus[4]=0;
-// clickstatus[5]=0;
-// clickstatus[6]=0;
-// clickstatus[7]=0;
-// clickstatus[8]=0;
-// clickstatus[9]=0;
-// clickstatus[10]=0;
-// clickstatus[11]=0;
-// clickstatus[12]=0;
+window.onbeforeunload = function () {
+window.scrollTo(0, 0);
+}
+var lastScrollPosition = $(document).scrollTop();
+var container_x=0;
+var parralax1_x=0;
+$(window).on('scroll', function(e) {
+    if($(document).scrollTop() > lastScrollPosition ){
+      console.log("scroll");
+      // container_x -- ;
+   container_x = container_x - 20 ;
+   var x_pos = "translateX(" + container_x + "px)";
+   $(".mothersmatter").css({"-moz-transform" : x_pos, "-webkit-transform" : x_pos});
+
+   // parralax1_x--;
+   parralax1_x = parralax1_x-1;
+   var x1_pos="translateX(" + parralax1_x + "px)";
+   $(".parralax1").css({"-moz-transform" : x1_pos, "-webkit-transform" : x1_pos});
+ }
+     if($(document).scrollTop() < lastScrollPosition ){
+      // container_x ++ ;
+   container_x = container_x + 20 ;
+   var x_pos = "translateX(" + container_x + "px)";
+   $(".mothersmatter").css({"-moz-transform" : x_pos, "-webkit-transform" : x_pos});
+   parralax1_x = parralax1_x+1;
+   var x1_pos="translateX(" + parralax1_x + "px)";
+   $(".parralax1").css({"-moz-transform" : x1_pos, "-webkit-transform" : x1_pos});
+
+}
+    lastScrollPosition = $(document).scrollTop();
+
+  });
+// $('.mothersmatter').paroller();
+
+//house
 for( let i=1; i<13; i++){
   var houseclass=".house"+i;
   $( ".click-"+i ).click(function() {
