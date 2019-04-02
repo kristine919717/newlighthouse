@@ -6,6 +6,7 @@ h1{
   margin: 0;
 }
 .ml3, .ml4, .ml5, .ml6, .ml7,.ml8,.ml9 {
+  width:1050px;
   font-size: 1.5em;
   color: #FFFFFF;
   font-family: times;
@@ -14,15 +15,31 @@ h1{
 }
 
 .line2, .line3, .line4, .line5{
+  width:1050px;
   margin-top: 10px;
 }
+
+
 body{
   background-color: #000000;
   /* text-align: center; */
   line-height: 2rem;
   letter-spacing: 0.1rem;
 }
+
+.arrow{
+  width: 43px;
+  height: 80px;
+}
+
+.m_arrowtext{
+
+  width: 200px;
+}
+
+
 .intro-container{
+
   text-align: center;
 }
 
@@ -63,7 +80,7 @@ body{
   opacity: 0;
   position: fixed;
   bottom:10%;
-left: 50%;
+  left: 50%;
 }
 .m_scroll_text{
   color: #FFFFFF;
@@ -142,7 +159,7 @@ left: 50%;
 
 }
 .intro-container{
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .introsection2{
   display:none;
@@ -185,12 +202,79 @@ opacity: 0;
   color: #FFFFFF;
   position: absolute;
 }
+
+.pSecond{
+  font-family:times ;
+  font-size:23px ;
+  width:120% ;
+  line-height:1.3 ;
+  opacity:1 ;
+  margin-bottom:20px;
+}
+
+.pThird{
+  font-family: times;
+  font-size: 23px;
+  width: 120%;
+  line-height: 1.3;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.pFourth{
+  font-family: times;
+  font-size:14px;
+  margin-top:30px;
+  opacity:0.9;
+}
+
+.pFifth{
+
+  font-family: times;
+  font-size: 23px;
+  width: 120%;
+  margin-bottom: 20px;
+  line-height: 1.8rem;
+}
+
+.pSixth{
+  font-family:times;
+  font-size:23px;
+  width:120%;
+  line-height:1.3;
+  opacity:1;
+  margin-bottom:20px;
+}
+
+.pSeventh{
+
+  font-family: times;
+  font-size: 23px;
+  width: 120%;
+  line-height: 1.3;
+  opacity: 1;
+  margin-bottom: 20px;
+
+}
+
+.income-1{
+  position:absolute;
+  top:340px;
+  left: 500px;
+}
+
+.income-2{
+  position: absolute;
+  top:325px;
+  left: 865px;
+}
+
 .scroll p{
   margin-bottom: 100vh;
 }
 .thirdtriggertextcontainer{
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 45%;
   color: #FFFFFF;
   width: 40%;
@@ -210,6 +294,8 @@ opacity: 0;
   display: none;
   opacity: 0;
   text-align: left;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
 
 }
 .fourthclicktext{
@@ -221,6 +307,7 @@ opacity: 0;
   position: absolute;
   top: 10%;
   left: 55%;
+  width: 600px;
 }
 
 .fifthtriggertext{
@@ -231,8 +318,8 @@ opacity: 0;
   display: none;
   color: #FFFFFF;
   position: absolute;
-  top: 75%;
-  left: 30%;
+  top: 45%;
+  left: 41%;
 }
 .sixthtriggertext{
   font-size: 20px;
@@ -347,8 +434,8 @@ left:0;
   height:34px;
   border-radius:50px;
   background-color:rgba(255,255,255,0.9);
-box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.5);
-animation: shadow-glow 2s linear infinite;
+  box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.5);
+  animation: shadow-glow 2s linear infinite;
   /* background-color: #cccccc; */
   display: none;
 }
@@ -399,23 +486,20 @@ animation: shadow-glow 2s linear infinite;
   position: absolute;
   left: 40%;
   top: 30vh;
-  /* width: 25%;
-  height: 90vh; */
   width:34px;
   height:34px;
   border-radius:50px;
   background-color:rgba(255,255,255,0.9);
   opacity: 0;
-
-box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.5);
+  box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.5);
 animation: shadow-glow 2s linear infinite;
   /* background-color: #cccccc; */
   display: none;
 }
 .story-5-hover-area{
   position: absolute;
-  left: 25%;
-  top: 68%;
+  left: 40%;
+  top: 40%;
 
   /* width: 25%;
   height: 60vh; */
@@ -474,14 +558,22 @@ left:0;
 
 }
 .text-container{
-  width: 400px;
+  width: 30%;
   position: absolute;
+  font-family: sans-serif;
 
   color: #FFFFFF;
   opacity: 0.9;
   text-align: left;
-  font-size: 13px;
-  line-height: 1.2rem;
+  font-size: 14px;
+  line-height: 1.3rem;
+}
+
+.sSecond{
+  font-family: times;
+  font-size:14px;
+  margin-top:30px;
+  opacity:0.9;
 }
 .first{
   top: 50vh;
@@ -766,3 +858,443 @@ width: 21.5%;
   animation-name:timeline;
   animation-duration:1.5s;
 }
+
+/*RESPONSIVE STARTS*/
+
+@media only screen and (max-width:1024px){
+
+  /*cover story*/
+
+  .text-container{
+    margin-top:20%;
+    width: 75%;
+  }
+
+  .cover-color{
+    width: 150%;
+    margin-top: 10%;
+    margin-left: -40%;
+  }
+
+  .cover-bw{
+    top: 10%;
+    left: -1%;
+    width:106%;
+  }
+
+  .text-container{
+  font-size: 1em;
+  line-height: 1.6rem;
+
+}
+
+/*second story*/
+
+.pSecond{
+
+  font-size: 1.5em;
+  width: 100%;
+
+}
+
+.sSecond{
+  font-size: 1em;
+}
+
+.story-2{
+  margin-left: -40%;
+  width: 150%;
+}
+
+/*Third story*/
+
+.pThird{
+
+  font-size: 1.5em;
+  width: 100%;
+
+}
+
+.story-3{
+
+  width: 120%;
+  margin-left: -20%;
+
+}
+
+.story-3-hover{
+
+  width: 120%;
+  margin-left: -20%;
+
+}
+
+/*Fourth Story*/
+
+.thirdtriggertextcontainer{
+  top: 25%;
+  left: 10%;
+  width: 60%;
+}
+
+.thirdtriggertext{
+
+  font-size: 0.8em;
+}
+
+.thirdclicktext{
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+/*Fifth story*/
+
+.story-4,.story-4-hover{
+
+  width: 190%;
+  margin-left: -40%;
+
+}
+
+.pFifth{
+
+  font-size: 1.3em;
+  line-height: 1.8rem;
+  width: 100%;
+
+}
+
+.fourth{
+  margin-top: 0%;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fourthtriggertextcontainer{
+  width: 40%;
+}
+
+/*story 5 Starts*/
+
+.story-5{
+  width:160%;
+  margin-left: -10%;
+}
+
+.fifth{
+  left: 10%;
+  margin-top: 15%;
+}
+
+.fifthclickimage1 svg{
+  width: 90%;
+}
+
+.close{
+  top:0%;
+  left:45%;
+  right: 0%;
+}
+
+/*Story 6*/
+
+.sixth{
+  margin-top:30%;
+}
+
+.pSeventh{
+  width: 90%;
+}
+
+.story-6{
+  margin-top: 5%;
+}
+
+.sixthtriggertext{
+  top:50%;
+  left: 5%;
+
+}
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+/*intro section*/
+
+body{
+
+  line-height: 0.4em;
+  letter-spacing: 0.05rem;
+}
+
+.arrow{
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.subtitle{
+  font-size: 0.6em;
+  margin-bottom: 2%;
+  letter-spacing: 0.03rem;
+}
+
+.intro-container{
+  margin-top: 17%;
+}
+
+.ml3, .ml4, .ml5, .ml6, .ml7, .ml8, .ml9{
+  font-size:0.7em;
+}
+
+.previouscontent{
+  font-size: 0.6em;
+  top:32%;
+  left: 2%;
+
+}
+
+.previoussectionarrow{
+
+  top:40%;
+  width: 4%;
+}
+
+.nextsectionarrow{
+  top: 40%;
+  width: 4%;
+}
+
+.nextcontent{
+
+  font-size: 0.6em;
+  top:32%;
+  right:2%;
+
+}
+
+/*cover story*/
+
+.m_scroll_text{
+  font-size: 0.6em;
+  margin-left: -25%;
+}
+
+.cover-bw{
+  top: 7.5%;
+  left: -1%;
+  width:106%;
+}
+
+.text-container{
+  margin-top:10%;
+  width: 80%;
+  font-size: 0.7em;
+  line-height: 1.2rem;
+}
+
+/*second story*/
+
+.pSecond{
+
+  font-size: 1.3em;
+
+}
+
+/*Fourth story*/
+
+.thirdtriggertextcontainer{
+  width: 60%;
+}
+
+.thirdtriggertext{
+
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.thirdclicktext{
+  font-size: 0.5em;
+  line-height: 1.5em;
+}
+
+.pFourth{
+
+  font-size: 1em;
+
+}
+
+/*Fifth Story*/
+
+
+
+.story-4,.story-4-hover{
+
+  width: 250%;
+  margin-left: -70%;
+
+}
+
+.story-4-hover-area{
+  left: 15%;
+
+}
+.pFifth{
+
+  font-size: 1.2em;
+  line-height: 1rem;
+  width: 100%;
+
+}
+
+.fourthtriggertext{
+
+  font-size: 0.6em;
+  line-height: 1.2em;
+}
+
+.fourthclicktext{
+  font-size: 0.5em;
+  line-height: 1.5em;
+}
+
+.fourthtriggertextcontainer{
+  top:15%;
+  left:50%;
+}
+
+.fourth{
+  margin-top: -25%;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*story 5*/
+
+.fifth{
+  left: 10%;
+  margin-top: 0;
+}
+
+.pSixth{
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.fifthtriggertext{
+
+  font-size: 0.7em;
+  left: 50%;
+}
+
+/*story 7*/
+
+.pSeventh{
+  font-size: 1.5em;
+
+}
+
+.sixthtriggertext{
+  top: 50%;
+  left: 45%;
+  font-size: 0.8em;
+  line-height: 1rem;
+  width: 50%;
+}
+
+.sixth{
+  margin-top: 25%;
+}
+
+.story-6-hover-area{
+
+  top:40%;
+  left: 30%;
+}
+
+}
+
+@media only screen and (max-width: 374px) {
+
+  .ml3, .ml4, .ml5, .ml6, .ml7, .ml8, .ml9{
+    font-size:0.6em;
+  }
+
+  .previouscontent{
+    top:36%;
+    left: 2%;
+  }
+
+  .previoussectionarrow{
+
+    top: 45%;
+  }
+
+  .nextsectionarrow{
+
+    top: 45%;
+  }
+
+
+  .cover-bw{
+    top: 8%;
+    left: -1%;
+    width:106%;
+  }
+
+  .text-container{
+    width:80%;
+    font-size: 0.6em;
+    line-height: 1rem;
+  }
+
+
+
+  /* third story*/
+
+  .thirdtriggertextcontainer{
+    width: 70%;
+  }
+
+  .hovertext{
+
+    margin-bottom: 5px;
+
+  }
+
+  .thirdtriggertext{
+
+    font-size: 0.6em;
+    line-height: 1.2em;
+  }
+
+
+  .fourthtriggertextcontainer{
+    width: 50%;
+  }
+
+/*story 5*/
+.fifthtriggertext{
+
+  font-size: 0.7em;
+  left: 51%;
+  line-height: 1rem;
+}
+
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
