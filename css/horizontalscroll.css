@@ -59,6 +59,7 @@ border: solid 1px white;
   width: 10000vh;
   height: 10000vh;
   /* overflow-y: scroll; */
+  z-index: 0;
   opacity:0;
   background-color: white;
 }
