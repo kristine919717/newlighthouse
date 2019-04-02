@@ -11,22 +11,27 @@
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/try2.css">
 
   </head>
   <style media="screen">
-    g{
+    .mapsvg g{
       transform:translate(0px,500px);
       box-shadow: 120px 80px 40px 20px #0ff;
     }
-    path{
+    .mapsvg path{
       stroke:rgba(255,255,255,0.3);
       stroke-width: 1px;
       transition: all .4s ease;
     }
-    svg{
-
+    .mapsvg{
+      position: fixed;
+top: 100px;
+left: 50%;
+transform: translateX(-460px) scale(0.9);
+transform-origin: 50% 50%;
     }
-    path:hover{
+    .mapsvg path:hover{
       stroke:white;
       stroke-width: 3px;
     }
@@ -35,13 +40,15 @@
     }
     .province-description{
       color: white;
-      font-size: 30px;
-      font-family: times;
-      margin-bottom: 70px;
-      margin-top: 100px;
-
-      text-align: center;
-      /* display: none; */
+    font-size: 26px;
+    letter-spacing: 0.005rem;
+    font-family: times;
+    /* margin-bottom: 70px; */
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    line-height: 1.4;
     }
     .d3-tip {
      line-height: 1;
@@ -71,13 +78,80 @@
      top: 100%;
      left: 0;
    }
+   .locateinfo{
+     width:100vw;
+     height: 100vh;
+     background-color: rgba(0,0,0,0.9);
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 500;
+     color: white;
+     font-size: 20px;
+     font-family: times;
+     text-align: center;
+
+
+   }
+   .locateinfo p{
+     margin-top: 5vh;
+     margin-left: 20%;
+     margin-right: 20%;
+     line-height: 1.7;
+     font-family: sans-serif;
+     animation-name: pagebegin;
+     animation-duration: 4s;
+
+   }
+   .locate{
+     margin-top: 40vh;
+     animation-name: pagebegin;
+     animation-duration: 3s;
+   }
+   .button{
+     margin-top: 90px;
+font-family: sans-serif;
+font-weight: 500;
+animation-name: pagebegin;
+animation-duration: 5s;
+   }
+   .button:hover{
+     cursor: pointer;
+   }
+   /* .province-description{
+     opacity: 0;
+   } */
+   @keyframes pagebegin {
+     0%{
+       opacity: 0
+     }
+     30%{
+       opacity: 0
+     }
+     100%{
+       opacity: 100%;
+     }
+   }
+   .hreflink{
+     text-align: center;
+     z-index: 2000;
+display: none;  }
+   .hreflink a{
+     color: white;
+
+   }
   </style>
   <body>
     <div id="legend">
 
     </div>
+    <div class="">
+    </div>
     <div class="province-description">
-      In British Columbia, there are 17.8% children living in single-parent family.
+      Click on the provinces to see single-parent families statiics.
+    </div>
+    <div class="hreflink">
+      <a href="donation_impact.html">See how you can help these single-parent families.</a>
     </div>
     <!-- <div class="columns">
       <div class="column">
@@ -85,26 +159,151 @@
       </div>
 
     </div> -->
+    <div class="locateinfo">
+      <div class="locate">
+        <img src="images/locateicon.png" alt="">
+        <span>Vancouver, British Columbia</span>
+      </div>
+      <p>In the province you are living (British Columbia), according to Statistics Canada, there are 199729 (15.3%) single-parent families, 17.8% of children living in single-parent families.
+</p>
+<div class="button">
+<u>See Statistics in Other Provinces</u>
+</div>
+
+    </div>
+
+    <div class="logo">
+      lighthouse
+    </div>
+    <div class="donate">
+      DONATE
+    </div>
+    <div class="nextsectionarrow">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg width="43px" height="80px" viewBox="0 0 43 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+          <title>Group 3</title>
+          <desc>Created with Sketch.</desc>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.498721168" stroke-linecap="round" stroke-linejoin="round">
+              <g id="Cry4" transform="translate(-1373.000000, -433.000000)" stroke="#FFFFFF" stroke-width="5">
+                  <g id="Group-3" transform="translate(1374.000000, 434.000000)">
+                      <path d="M0,0.24 L40.6403509,78" id="Line-10"></path>
+                      <path d="M0,78.24 L40.6403509,156" id="Line-10-Copy" transform="translate(20.500000, 117.500000) scale(1, -1) translate(-20.500000, -117.500000) "></path>
+                  </g>
+              </g>
+          </g>
+      </svg>
+    </div>
+    <div class="nextcontent">
+    See Donation Impact
+    </div>
+    <div class="previouscontent">
+      Home
+    </div>
+    <div class="previoussectionarrow">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg width="43px" height="80px" viewBox="0 0 43 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+          <title>Group 3</title>
+          <desc>Created with Sketch.</desc>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.498721168" stroke-linecap="round" stroke-linejoin="round">
+              <g id="Cry4" transform="translate(-1266.000000, -433.000000)" stroke="#FFFFFF" stroke-width="5">
+                  <g id="Group-3" transform="translate(1287.500000, 512.500000) scale(-1, 1) translate(-1287.500000, -512.500000) translate(1267.000000, 434.000000)">
+                      <path d="M0,0.24 L40.6403509,78" id="Line-10"></path>
+                      <path d="M0,78.24 L40.6403509,156" id="Line-10-Copy" transform="translate(20.500000, 117.500000) scale(1, -1) translate(-20.500000, -117.500000) "></path>
+                  </g>
+              </g>
+          </g>
+      </svg>
+    </div>
+    <div class="bottomtimeline">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg width="1344px" height="37px" viewBox="0 0 1344 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+          <title>Group 4 Copy</title>
+          <desc>Created with Sketch.</desc>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Cry4" transform="translate(-45.000000, -872.000000)">
+                  <g id="Group-4-Copy" transform="translate(44.000000, 871.000000)">
+                      <g id="Group-2">
+                          <path d="M25.1469004,29.6158798 L1308.5,29.6158798" id="Line-2" stroke="#FFFFFF" opacity="0.599888393" stroke-linecap="square" transform="translate(666.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-666.500000, -29.500000) "></path>
+                          <g id="Group" transform="translate(17.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-17.500000, -29.500000) translate(10.000000, 22.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+                              <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                          </g>
+                          <g id="Group-Copy-2" opacity="0.599818638" transform="translate(1114.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-1114.500000, -29.500000) translate(1107.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                              <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                          </g>
+                          <g id="Group-Copy-4" opacity="0.599818638" transform="translate(919.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-919.500000, -29.500000) translate(912.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                              <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                          </g>
+                          <g id="Group-Copy-3" opacity="0.599818638" transform="translate(1308.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-1308.500000, -29.500000) translate(1301.000000, 22.000000)" fill="#000000" stroke="#FFFFFF" stroke-width="1.5">
+                              <circle id="Oval" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                          </g>
+                          <text id="MARIA’S-STORY" font-family="SFUIText-Bold, SF UI Text" font-size="12" font-weight="bold" letter-spacing="1.03999996" fill="#FFFFFF">
+                              <tspan x="140" y="11">MARIA’S STORY</tspan>
+                          </text>
+                          <text id="HOME" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                              <tspan x="0.852115819" y="11">HOME</tspan>
+                          </text>
+                          <text id="THE-MAP" opacity="0.599818638" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                              <tspan x="890" y="10">THE MAP</tspan>
+                          </text>
+                          <text id="DONATION-IMPACT" opacity="0.599818638" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                              <tspan x="1061" y="10">DONATION IMPACT</tspan>
+                          </text>
+                          <text id="DONATE-NOW" opacity="0.599818638" font-family="SFUIText-Regular, SF UI Text" font-size="10" font-weight="normal" letter-spacing="0.8666667" fill="#FFFFFF">
+                              <tspan x="1269" y="10">DONATE NOW</tspan>
+                          </text>
+                          <g id="Group-Copy" transform="translate(340.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-340.500000, -29.500000) translate(333.000000, 22.000000)"></g>
+                          <g id="Group-Copy-6" transform="translate(473.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-473.000000, -30.000000) translate(468.000000, 25.000000)"></g>
+                          <g id="Group-Copy-7" transform="translate(538.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-538.000000, -30.000000) translate(533.000000, 25.000000)"></g>
+                          <g id="Group-Copy-8" transform="translate(602.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-602.000000, -30.000000) translate(597.000000, 25.000000)"></g>
+                          <g id="Group-Copy-11" transform="translate(667.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-667.000000, -30.000000) translate(662.000000, 25.000000)"></g>
+                          <g id="Group-Copy-10" transform="translate(732.000000, 30.000000) scale(1, -1) rotate(360.000000) translate(-732.000000, -30.000000) translate(727.000000, 25.000000)"></g>
+                          <g id="Group-Copy-9" transform="translate(504.500000, 29.500000) scale(1, -1) rotate(360.000000) translate(-504.500000, -29.500000) translate(185.000000, 22.000000)" stroke="#FFFFFF" stroke-width="1.5">
+                              <circle id="7" fill="#000000" opacity="0.600144159" cx="633.818572" cy="6.81857199" r="4.81857199"></circle>
+                              <circle id="6" fill="#000000" opacity="0.600144159" cx="544.818572" cy="6.81857199" r="4.81857199"></circle>
+                              <circle id="5" fill="#000000" opacity="0.600144159" cx="455.818572" cy="6.81857199" r="4.81857199"></circle>
+                              <circle id="4" fill="#000000" opacity="0.600144159" cx="365.818572" cy="6.81857199" r="4.81857199"></circle>
+                              <circle id="3" fill="#000000" opacity="0.600144159" cx="276.818572" cy="6.81857199" r="4.81857199"></circle>
+                              <circle id="2" fill="#000000" opacity="0.600144159" cx="187.818572" cy="6.81857199" r="4.81857199"></circle>
+                              <circle id="1" fill="#000000" opacity="0.600144159" cx="98.818572" cy="6.81857199" r="4.81857199"></circle>
+                              <circle id="start" fill="#FFFFFF" cx="7.22785798" cy="7.22785798" r="7.22785798"></circle>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+    </div>
+
 <script>
 //text aimation
-
-$('.province-description').each(function(){
-  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
-});
-anime.timeline({loop: false})
-  .add({
-    targets: '.province-description .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 500,
-    delay: function(el, i) {
-      return 50 * (i+1)
-    }
+$('.button').click(function(){
+  $('.province-description').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
   });
+  anime.timeline({loop: false})
+    .add({
+      targets: '.province-description .letter',
+      opacity: [0,1],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $('.locateinfo').animate({
+    opacity:0
+  },800,"linear",function(){
+    $('.locateinfo').hide();
+  })
+});
+
 
 
 //data vis code
-var child_domain = [15, 17.5, 20, 22.5, 25];
+var child_domain = [14, 18, 22, 26, 30];
 // var child_color = d3.scaleThreshold()
 //     .domain(child_domain)
 //     .range(d3.schemeYlGn[6]);
@@ -115,18 +314,30 @@ var child_color = d3.scaleThreshold()
         .domain(child_domain)
         .range(['#EFF8F4','#DCE7ED','#D4DCE4','#CAD5E4','#C0CCE4','#A4B6DB']);
   var child_inlone_data = d3.map();
-  var child_lone_url="https://gist.githubusercontent.com/kristine919717/7bdadf721dfc388c18c3f419c860bcd8/raw/704674b105d09e90379acbaac66fc9ec4852c62c/percent_lonefamily.csv";
-
+  var percent_lone = d3.map();
+  var num_lone=d3.map();
+  var province_des=d3.map();
+  var child_lone_url="https://gist.githubusercontent.com/kristine919717/f1cb7559c0b097d694232ec5d260857e/raw/a5a773b96451bea7dc6b188176fb391f0f483363/percent_lonefamily.csv";
+  var percent_lone_url="https://gist.githubusercontent.com/kristine919717/95c7671958a5a57550988e34aeec04f2/raw/e2a8936fc7e06502e45e4d33db4c91f2a9bd3b7c/percent_lone.csv";
+  var num_lone_url="https://gist.githubusercontent.com/kristine919717/6f4655cfceebf1d0116618fdfd495085/raw/bf54eddfe7b5bd83be450196ec0541fe243d5f70/num_lonefamily.csv";
+  var province_des_url="https://gist.githubusercontent.com/kristine919717/3b7e05c02e377e33413ddadb55a8e992/raw/90770c25d8cc4d2fdab08dd22d6f1b4961c50f51/province_des.csv";
   d3.queue()
     .defer(d3.csv, child_lone_url, function(d){
-
-          child_inlone_data.set(d.Province, +d["Percent_child_in_lone"], +d["num_lonefamily"]);
-
+          child_inlone_data.set(d.Province, +d["Percent_child_in_lone"],d.Description, +d["num_lonefamily"], +d["percent_lone"]);
     })
-
+    .defer(d3.csv, percent_lone_url, function(d){
+          percent_lone.set(d.Province,+d["percent_lone"]);
+    })
+    .defer(d3.csv, num_lone_url, function(d){
+          num_lone.set(d.Province,+d["num_lonefamily"]);
+    })
+    .defer(d3.csv, province_des_url, function(d){
+          province_des.set(d.Province,d["Description"]);
+    })
     var canvas = d3.select("body").append("svg")
-    .attr("width",1260)
-    .attr("height", 1500)
+    .attr("width",960)
+    .attr("height", 960)
+    .attr("class","mapsvg")
   var group;
   var projection = d3.geoAlbers();
   var path = d3.geoPath().projection(projection);
@@ -156,19 +367,23 @@ var tip = d3.tip()
       .attr("d", path)
       .attr("class", "area")
       .attr("fill", function(d){
-        var value = child_inlone_data.get(d.properties.PRENAME);
+        var value = percent_lone.get(d.properties.PRENAME);
         return (value != 0 ? child_color(value) : "lightblue");
+        // return child_color(d["percent_lone"] = percent_lone.get(d.properties.PRENAME))
       })
       .on('mouseover', tip.show)
-
       .on('click', function(d){
         d3.select(".province-description")
           .html("In " +d.properties.PRENAME +"  <span>, there are " +
-          child_inlone_data.get(d.properties.PRENAME) + "% of children living in single-parent families</span>"
+          num_lone.get(d.properties.PRENAME) +
+          " ("+percent_lone.get(d.properties.PRENAME)+
+          "%) single-parent families, "+child_inlone_data.get(d.properties.PRENAME)
+          +"% of children living in single-parent families. "+province_des.get(d.properties.PRENAME)+"</span>"
       )
     })
       .on('mouseout', tip.hide);
 $("path").click(function(){
+  $('.hreflink').show()
   $('.province-description').each(function(){
     $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
   });
@@ -179,7 +394,7 @@ $("path").click(function(){
       easing: "easeInOutQuad",
       duration: 500,
       delay: function(el, i) {
-        return 50 * (i+1)
+        return 25 * (i+1)
       }
     });
 })

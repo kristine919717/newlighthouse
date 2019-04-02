@@ -123,23 +123,23 @@
                       <animate attributeName="width" from="0" to="30" dur="0.5s" fill="freeze" /></rect>
 
                     <rect class="activity3" id="transit" fill="url(#linearGradient-2)" x="94" y="210" width="32" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="32" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="32" dur="1.5s" fill="freeze"id="timelinepart1" /></rect>
                     <rect class="activity10" id="dishwasher" fill="url(#linearGradient-3)" x="127" y="210" width="263" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="263" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="263" dur="1.5s" fill="freeze" id="timelinepart2"/></rect>
                     <rect class="activity5" id="cook" fill="url(#linearGradient-4)" x="439" y="210" width="163" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="163" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="163" dur="1.5s" fill="freeze" id="timelinepart3"/></rect>
                     <rect class="activity7" id="study" fill="url(#linearGradient-5)" x="673" y="210" width="68" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="68" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="68" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
                     <rect class="activity8" id="cleaner" fill="url(#linearGradient-6)" x="742" y="210" width="204" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="204" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="204" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
                     <rect class="activity9" id="sleep" fill="url(#linearGradient-7)" x="947" y="210" width="191" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="191" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="191" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
                     <rect class="activity2" id="breakfast" fill="url(#linearGradient-8)" x="48" y="210" width="45" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="45" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="45" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
                     <rect class="activity4" id="pickup" fill="url(#linearGradient-9)" x="391" y="210" width="46" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="46" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="46" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
                     <rect class="activity6" id="dinner" fill="url(#linearGradient-10)" x="603" y="210" width="69" height="14" rx="7">
-                      <animate attributeName="width" from="0" to="69" dur="1.5s" fill="freeze" /></rect>
+                      <animate attributeName="width" from="0" to="69" dur="1.5s" fill="freeze" id="timelinepart"/></rect>
                     <text id="job#1-:-dishwasher" font-family="NotoSans-Regular, Noto Sans" font-size="13" font-weight="normal" letter-spacing="0.52" fill="#FFFFFF">
                         <tspan x="196" y="197">job#1 : dishwasher</tspan>
                     </text>
@@ -236,6 +236,11 @@
   var mouseX,mouseY,windowWidth,windowHeight;
   var  popupLeft,popupTop;
 $(document).ready(function(){
+  document.body.onmousedown = function() {
+    document.getElementById("timelinepart").beginElement();
+    document.getElementById("timelinepart1").beginElement();
+
+}
 
   $(document).mousemove(function(e){
           mouseX = e.pageX;
