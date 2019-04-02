@@ -24,11 +24,15 @@
     }
     window.onbeforeunload = function(){
             document.documentElement.scrollTop = 0;  //ie下
+            document.documentElement.scrollLeft = 0;  //ie下
+
             document.body.scrollTop = 0;  //非ie
+            document.body.scrollLeft = 0;  //非ie
+
     }
 
      $(window).scrollTop(0);
-
+ $(window).scrollLeft(0);
      // $('.scroll').animate({ scrollTop: elementOffset }, 200);
 
     </script>
@@ -216,8 +220,8 @@ See Donation Impact
                         <polyline id="Path-9" points="95 0 103 7.03880082 95 13.21405"></polyline>
                     </g>
                     <text id="&lt;-Scroll-&gt;" font-family="Times-Roman, Times" font-size="12" font-weight="normal" letter-spacing="1.12800002" fill="#000000">
-                        <tspan x="4" y="11">&lt; Scrol</tspan>
-                        <tspan x="46.9936564" y="11" letter-spacing="1.35360003">l Down&gt;</tspan>
+                        <tspan x="4" y="11">Scroll</tspan>
+                        <tspan x="46.9936564" y="11" letter-spacing="1.35360003"> to donate</tspan>
                     </text>
                 </g>
             </g>
