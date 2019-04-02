@@ -6,15 +6,15 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/try2.css">
     <link rel="stylesheet" type="text/css" href="css/horizontalscroll.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery.paroller.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </head>
   <body>
     <style>
       body{
-        cursor: url(images/heart.png) 1 1, auto;
+        cursor: url(images/heart.png) 0 0, auto;
 
       }
     </style>
@@ -34,7 +34,7 @@
     </script>
 
 <div class="donationimpact">
-  <img class="donationimpactbg" src="images/donationimpactbg.png" alt="">
+  <img class="donationimpactbg" src="images/house/housebg.png" alt="">
   <div class="click-2">
   </div>
   <div class="house2">
@@ -48,13 +48,13 @@
   <div class="click-4">
   </div>
  <div class="house4">
-    <img src="images/house003.png" alt="">
+    <img src="images/house/house018.png" alt="">
   </div>
-  <div class="click-6">
+  <!-- <div class="click-6">
   </div>
    <div class="house6">
     <img src="images/house004.png" alt="">
-  </div>
+  </div> -->
   <div class="click-7">
   </div>
    <div class="house7">
@@ -78,26 +78,26 @@
   <div class="click-11">
   </div>
   <div class="house11">
-    <img src="images/house009.png" alt="">
-  </div>
-  <div class="click-12">
-  </div>
-  <div class="house12">
-    <img src="images/house010.png" alt="">
-  </div>
-<!--  <div class="house13">
-    <img src="images/house011.png" alt="">
-  </div>
-  <div class="house14">
     <img src="images/house014.png" alt="">
   </div>
-  <div class="house15">
+  <!-- <div class="click-12">
+  </div>
+  <div class="house12">
+    <img src="images/house018.png" alt="">
+  </div> -->
+ <!-- <div class="house13">
+    <img src="images/house013.png" alt="">
+  </div> -->
+  <!-- <div class="house14">
+    <img src="images/house014.png" alt="">
+  </div> -->
+  <!-- <div class="house15">
     <img src="images/house015.png" alt="">
-  </div>
-  <div class="house16">
+  </div> -->
+  <!-- <div class="house16">
     <img src="images/house016.png" alt="">
-  </div>
-  <div class="house17">
+  </div> -->
+  <!-- <div class="house17">
     <img src="images/house017.png" alt="">
   </div> -->
 
@@ -201,11 +201,36 @@ See Donation Impact
   <div class="horizontal-scroll__block">item 8</div>
 </div> -->
 <div class="mothersmatter">
+  <div class="revealarrow">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg class="helperarrow" width="104px" height="25px" viewBox="0 0 104 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+        <title>Group 2</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="A4-Copy-20" transform="translate(-565.000000, -66.000000)">
+                <g id="Group-2" transform="translate(565.000000, 64.000000)">
+                    <g id="Group" transform="translate(0.000000, 13.000000)" stroke="#000000">
+                        <path d="M0.448354901,7 L103.107891,7" id="Path-8"></path>
+                        <polyline id="Path-9" points="95 0 103 7.03880082 95 13.21405"></polyline>
+                    </g>
+                    <text id="&lt;-Scroll-&gt;" font-family="Times-Roman, Times" font-size="12" font-weight="normal" letter-spacing="1.12800002" fill="#000000">
+                        <tspan x="4" y="11">&lt; Scrol</tspan>
+                        <tspan x="46.9936564" y="11" letter-spacing="1.35360003">l Down&gt;</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </svg>
+    The charity you can consider to donate
+  </div>
   <div class="mothersintro">
-    <h1 class="bigtitle">Mother's Matter Centre</h1>
-    <p class="italicsmall">Program for Parents of Preschool Youngsters (HIPPY) Canada</p>
     <img class="parralax1" src="images/mothersmatter/1.jpg" alt="">
-    <p class="paragraph firstparagraph">The Mothers Matter Centre (MMC)  is a not-for-profit, registered charity.  It is a virtual, national consortium of organizations dedicated to serving socially isolated and low economic status mothers and their families using our proven mother-to-mother approach.</p>
+
+    <h1 class="bigtitle parralax3 maintitle">Mother's Matter Centre</h1>
+    <p class="italicsmall parralax3">Program for Parents of Preschool Youngsters (HIPPY) Canada</p>
+    <p class="paragraph parralax3 firstparagraph">The Mothers Matter Centre (MMC)  is a not-for-profit, registered charity.  It is a virtual, national consortium of organizations dedicated to serving socially isolated and low economic status mothers and their families using our proven mother-to-mother approach.</p>
   </div>
   <div class="inspire">
     <img class="parralax1" src="images/mothersmatter/2.jpg" alt="">
@@ -224,61 +249,223 @@ See Donation Impact
     <p class="paragraph thirdparagraph">The mothers we support come from all walks of life — refugee, newcomer, Aboriginal and other at-risk mothers are regularly involved in our programs. Since our inception, the Mothers Matter Centre has transformed over 40,000 lives. We helped more than 14,000 mothers gain new skills and abilities essential to strengthening mother-child relationships. This means their children and families were better prepared to get the most from their early school experiences.</p>
   </div>
   <div class="donatesection">
-    <h1 class="bigtitle donatetitle">Donate</h1>
+    <img id="donateimage"  src="images/mothersmatter/5.jpg" alt="">
+
+    <h1 class="bigtitle parralax3 donatetitle">Donate</h1>
 
 
     <p class="paragraph fourthparagraph">help us make brighter house</p>
-    <img class="parralax1" src="images/mothersmatter/5.jpg" alt="">
 
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg class="donatebutton" width="216px" height="51px" viewBox="0 0 216 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+        <title>Group</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="MMC-introduce" transform="translate(-4380.000000, -298.000000)">
+                <g id="Group" transform="translate(4380.000000, 298.000000)">
+                    <path id="Line" d="M200.086062,25.0148559 L193.71252,21.5175361 L193.274176,21.277006 L193.755236,20.4003184 L194.19358,20.6408485 L202.240502,25.0563933 L203.01978,25.4840023 L202.249676,25.9279206 L194.297485,30.5118772 L193.864302,30.7615812 L193.364894,29.8952143 L193.798077,29.6455103 L200.096588,26.0148005 L194.015642,26.0788104 L154.005263,26.4999723 L153.505291,26.5052352 L153.494765,25.5052906 L153.994737,25.5000277 L194.005116,25.0788658 L200.086062,25.0148559 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <text id="DONATE-NOW" font-family="NotoSans-SemiBold, Noto Sans" font-size="15" font-weight="500" letter-spacing="0.600000024" fill="#000000">
+                        <tspan x="27.2449999" y="32">DONATE NOW</tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#000000" x="0.5" y="0.5" width="215" height="50" rx="25"></rect>
+                </g>
+            </g>
+        </g>
+    </svg>
   </div>
 </div>
 <div class="scroll">
 123
 </div>
+<div class="instruction">
+  <img src="images/instruction.png" alt="">
+<div class="gotit">
+  Start Enlight!
+</div>
+</div>
+<div class="hearteffect" id="hearteffect">
+<img src="images/heart.png" alt="">
+</div>
 <script type="text/javascript">
 
+$( ".gotit").click(function() {
+  $( ".instruction").animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".instruction").hide();
+    $( ".mothersmatter").show();
+  });
+});
+
 var lastScrollPosition = $(document).scrollTop();
+var lastScrollPositionHorizon= $(document).scrollLeft();
 var container_x=0;
 var parralax1_x=0;
+var parralax3_x=0;
+var imagewidth=700;
+var opacityvalue=0.8;
+// $('.donatebutton').mouseenter(function(){
+//   $('#Line').animate({
+//     transform:translateX("40px")
+//   },500,"linear",function(){});
+// })
 $(window).on('scroll', function(e) {
-    if($(document).scrollTop() > lastScrollPosition ){
+    if($(document).scrollTop() > lastScrollPosition ||$(document).scrollLeft() > lastScrollPositionHorizon ){
       console.log("scroll");
       // container_x -- ;
    container_x = container_x - 20 ;
+   // console.log(container_x);
+   // console.log(parralax1_x);
+   // console.log(parralax3_x);
+    opacityvalue=opacityvalue+=.01;
+    if(opacityvalue>=1){opacityvalue=1;}
+    $(".mothersmatter").css({"opacity" : opacityvalue});
+
+if(container_x<=-3650){
+  imagewidth=imagewidth+6;
+  if(imagewidth>=950){imagewidth=950;}
+  var widthstring = imagewidth+"px";
+  document.getElementById('donateimage').style.width=widthstring;
+}
+if(container_x<=-4220){container_x=-4220;}
+if(parralax1_x<=-436){parralax1_x=-439;}
+if(parralax3_x>=219){parralax3_x=219;}
+
    var x_pos = "translateX(" + container_x + "px)";
    $(".mothersmatter").css({"-moz-transform" : x_pos, "-webkit-transform" : x_pos});
 
-   // parralax1_x--;
    parralax1_x = parralax1_x-2;
    var x1_pos="translateX(" + parralax1_x + "px)";
    $(".parralax1").css({"-moz-transform" : x1_pos, "-webkit-transform" : x1_pos});
  }
-     if($(document).scrollTop() < lastScrollPosition ){
+ parralax3_x=parralax3_x+1;
+ var x3_pos="translateX(" + parralax3_x + "px)";
+
+ $(".parralax3").css({"-moz-transform" : x3_pos, "-webkit-transform" : x3_pos});
+     if($(document).scrollTop() < lastScrollPosition ||$(document).scrollLeft() < lastScrollPositionHorizon){
       // container_x ++ ;
-   container_x = container_x + 20 ;
+   container_x = container_x + 40 ;
+   if(container_x>=0){container_x=0;}
+   opacityvalue=opacityvalue-=.02;
+   if(opacityvalue<=0.6){opacityvalue=0.6;}
+   $(".mothersmatter").css({"opacity" : opacityvalue});
+
+   // console.log(container_x);
+
    var x_pos = "translateX(" + container_x + "px)";
    $(".mothersmatter").css({"-moz-transform" : x_pos, "-webkit-transform" : x_pos});
-   parralax1_x = parralax1_x+2;
+   parralax1_x = parralax1_x+4;
+   if(parralax1_x>=0){parralax1_x=0;}
+
    var x1_pos="translateX(" + parralax1_x + "px)";
    $(".parralax1").css({"-moz-transform" : x1_pos, "-webkit-transform" : x1_pos});
+   parralax3_x=parralax3_x-4;
+   if(parralax3_x<=0){parralax3_x=0;}
+
+   var x3_pos="translateX(" + parralax3_x + "px)";
+
+   $(".parralax3").css({"-moz-transform" : x3_pos, "-webkit-transform" : x3_pos});
+   if(container_x<=-3650){
+     imagewidth=imagewidth-6;
+     if(imagewidth<=700){imagewidth=700;}
+     var widthstring = imagewidth+"px";
+     document.getElementById('donateimage').style.width=widthstring;
+   }
 
 }
     lastScrollPosition = $(document).scrollTop();
+    lastScrollPositionHorizon = $(document).scrollLeft();
 
   });
 // $('.mothersmatter').paroller();
+var mouseX,mouseY,windowWidth,windowHeight;
+var  popupLeft,popupTop;
+
+
+$(document).mousemove(function(e){
+        mouseX = e.pageX;
+        mouseY = e.pageY;
+        //To Get the relative position
+        if( this.offsetLeft !=undefined)
+          mouseX = e.pageX - this.offsetLeft;
+        if( this.offsetTop != undefined)
+          mouseY = e.pageY; - this.offsetTop;
+
+        if(mouseX < 0)
+             mouseX =0;
+        if(mouseY < 0)
+            mouseY = 0;
+
+        windowWidth  = $(window).width()+$(window).scrollLeft();
+        windowHeight = $(window).height()+$(window).scrollTop();
+});
+
+
 
 //house
+
 for( let i=1; i<13; i++){
   var houseclass=".house"+i;
   $( ".click-"+i ).click(function() {
-    // clickstatus[i]=2;
-    // console.log(clickstatus[i]);
+
     $(".outcomecontainer").show();
+    $( ".hearteffect").show();
+
     $( ".house"+i).animate({
       opacity:1,
     },800,"linear",function(){
     });
+    $( ".outcomecontainer").animate({
+      opacity:1
+
+    },3000,"linear",function(){
+$( ".hearteffect").hide()
+});
+//     });
+
+
+
+    var popupWidth  = $('.outcomecontainer').outerWidth();
+   var popupHeight =  $('.outcomecontainer').outerHeight();
+
+   if(mouseX+popupWidth > windowWidth)
+     popupLeft = mouseX-popupWidth;
+   else
+    popupLeft = mouseX;
+
+   if(mouseY+popupHeight > windowHeight)
+     popupTop = mouseY-popupHeight;
+   else
+     popupTop = mouseY;
+
+  if( popupLeft < $(window).scrollLeft()){
+  popupLeft = $(window).scrollLeft();
+  }
+
+  if( popupTop < $(window).scrollTop()){
+  popupTop = $(window).scrollTop();
+  }
+
+  if(popupLeft < 0 || popupLeft == undefined)
+        popupLeft = 0;
+   if(popupTop < 0 || popupTop == undefined)
+        popupTop = 0;
+
+   $('.outcomecontainer').offset({top:popupTop,left:popupLeft});
+
+   $('.hearteffect').offset({top:popupTop,left:popupLeft});
+   // $(".hearteffect").css({"opacity" : 1});
+
+   // $(".hearteffect").css({"-moz-transform" : "scale(5)", "-webkit-transform" : "scale(5)"});
+   // $(".hearteffect").css({"opacity" : 0});
+
+   // $( ".hearteffect").animate({
+   //   opacity:0,
+   //  transform:"scale(5)"
+   //
+   // },800,"linear",function(){
+   // });
 
     $.ajax({
         type: "POST",

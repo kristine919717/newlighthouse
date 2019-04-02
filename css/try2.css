@@ -538,6 +538,7 @@ html::-webkit-scrollbar {
 }
 .donationimpact{
   width: 100%;
+  margin-top: -80px;
   overflow: hidden;
   position: fixed;
 }
@@ -552,7 +553,9 @@ left: 39.5%;
 opacity: 0;
 width: 21.5%;
 }
-.house2,.house3,.house4,.house6,.house7,.house8,.house9,.house10,.house11,.house12{
+.house2,.house3,.house4,.house6,.house7,.house8,.house9,.house10,.house11,.house12,
+.house13,.house14,.house15,.house16,.house17
+{
   position: absolute;
   top: 0;
   opacity: 0;
@@ -583,21 +586,23 @@ width: 21.5%;
   width: 100%;
 }
 .outcomecontainer{
-  max-width: 400px;
+  position:fixed;
+  max-width: 280px;
   color: white;
   border: solid 1px white;
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
+  /* position: absolute; */
   font-size: 11px;
+  background-color: rgba(0,0,0,0.8);
   display: none;
 }
 .outcomecontainer img{
   width: 100%;
 }
 .outcomecontainer p{
-  padding: 20px;
-
+  padding: 10px;
+  padding-top: 0px;
+  line-height: 1.4;
+  letter-spacing: 0.05rem;
 }
 .click-2{
   position: absolute;
@@ -654,8 +659,8 @@ width: 21.5%;
   position: absolute;
   width: 11.5vw;
   height: 10.5vw;
-  top: 9vw;
-  left: 5vw;
+  top: 16vw;
+  left: 76vw;
   z-index: 1;
 
   /* background-color: white;
@@ -718,10 +723,10 @@ width: 21.5%;
 }
 .click-11{
   position: absolute;
-  width: 13vw;
-  height: 8.5vw;
-  top: 12.5vw;
-  left: 68vw;
+      width: 16vw;
+      height: 8.5vw;
+      top: 34.5vw;
+      left: 62vw;
   z-index: 1;
 
   /* background-color: white;
@@ -765,4 +770,79 @@ width: 21.5%;
 .timelinesvg{
   animation-name:timeline;
   animation-duration:1.5s;
+}
+.instruction{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  animation-name: pagebegin;
+  animation-duration: 3s;
+}
+.instruction img{
+  margin-top: 40vh;
+
+}
+.gotit{
+  color: white;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+width: 150px;
+margin-left: 50%;
+transform: translateX(-90px);
+margin-top: 40px;
+border: 1px solid white;
+transition: all .3s ease;
+font-weight: bold;
+}
+.gotit:hover{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.hearteffect{
+  display: none;
+  /* left: 10%;
+  top:10%; */
+  opacity:0;
+  position:fixed;
+  transform-origin: 50% 50%;
+  /* transition: all 3s ease; */
+  animation-name: heart;
+  animation-duration:2s;
+  z-index: 2000;
+  /* transform: translate(-30px,-28px); */
+
+}
+.hearteffect img{
+  width: 100%;
+  transform-origin: 50% 50%;
+  /* transform: translate(-5px,-5px); */
+
+}
+@keyframes heart {
+  0% {
+    transform: scale(1);
+    opacity:1;
+  }
+  100% {
+    transform: scale(5);
+    opacity:0;
+
+  }
+}
+@keyframes pagebegin {
+  0%{
+    opacity: 0
+  }
+
+  100%{
+    opacity: 100%;
+  }
 }
