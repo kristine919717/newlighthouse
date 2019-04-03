@@ -43,7 +43,7 @@
     123
     </div>
 <div class="donationimpact">
-  <img class="donationimpactbg" src="images/house/housebg.png" alt="">
+  <img class="donationimpactbg" src="images/housebg.png" alt="">
   <div class="click-2">
   </div>
   <div class="house2">
@@ -57,7 +57,7 @@
   <div class="click-4">
   </div>
  <div class="house4">
-    <img src="images/house/house018.png" alt="">
+    <img src="images/house/house015.png" alt="">
   </div>
   <!-- <div class="click-6">
   </div>
@@ -278,8 +278,8 @@ See Donation Impact
                         <polyline id="Path-9" points="95 0 103 7.03880082 95 13.21405"></polyline>
                     </g>
                     <text id="&lt;-Scroll-&gt;" font-family="Times-Roman, Times" font-size="12" font-weight="normal" letter-spacing="1.12800002" fill="#000000">
-                        <tspan x="4" y="11">Scroll</tspan>
-                        <tspan x="46.9936564" y="11" letter-spacing="1.35360003"> to donate</tspan>
+                        <tspan x="0" y="11">Scroll</tspan>
+                        <tspan x="40.9936564" y="11" letter-spacing="1.35360003">to donate</tspan>
                     </text>
                 </g>
             </g>
@@ -343,6 +343,8 @@ See Donation Impact
   Enlight Now!
 </div>
 </div>
+
+div
 <div class="hearteffect" id="hearteffect">
 <img src="images/heart.png" alt="">
 </div>
@@ -376,7 +378,7 @@ $(window).on('scroll', function(e) {
       // container_x -- ;
    container_x = container_x - 20 ;
    // console.log(container_x);
-   // console.log(parralax1_x);
+   console.log(parralax1_x);
    // console.log(parralax3_x);
     opacityvalue=opacityvalue+=.01;
     if(opacityvalue>=1){opacityvalue=1;}
@@ -388,8 +390,8 @@ if(container_x<=-3650){
   var widthstring = imagewidth+"px";
   document.getElementById('donateimage').style.width=widthstring;
 }
-if(container_x<=-4220){container_x=-4220;}
-if(parralax1_x<=-436){parralax1_x=-439;}
+if(container_x<=-4100){container_x=-4100;}
+if(parralax1_x<=-436){parralax1_x=-436;}
 if(parralax3_x>=219){parralax3_x=219;}
 
    var x_pos = "translateX(" + container_x + "px)";
@@ -407,11 +409,14 @@ if(parralax3_x>=219){parralax3_x=219;}
       // container_x ++ ;
    container_x = container_x + 40 ;
    if(container_x>=0){container_x=0;}
-   opacityvalue=opacityvalue-=.02;
+   if(container_x>=-1100){
+     opacityvalue=opacityvalue-=.02;
+
+   }
    if(opacityvalue<=0.6){opacityvalue=0.6;}
    $(".mothersmatter").css({"opacity" : opacityvalue});
 
-   // console.log(container_x);
+   console.log(container_x);
 
    var x_pos = "translateX(" + container_x + "px)";
    $(".mothersmatter").css({"-moz-transform" : x_pos, "-webkit-transform" : x_pos});

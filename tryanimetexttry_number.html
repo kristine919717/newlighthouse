@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/data1.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
 
     <link rel="stylesheet" type="text/css" href="css/try2.css">
     <link rel="stylesheet" type="text/css" href="css/mousescroll.css">
@@ -61,6 +62,95 @@
     <script type="text/javascript" src="js/storyshowandhide.js"></script>
 
 <script type="text/javascript">
+ $(window).on('load',function(){
+
+   $('.loading').fadeOut('1',function(){
+     $(this).remove();
+
+   })
+    $('.introsection').show();
+    anime.timeline({loop: false})
+      .add({
+        targets: '.ml3 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 500,
+        delay: function(el, i) {
+          return 50 * (i+1)
+        }
+      }).add({
+        targets: '.ml5 .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 600,
+        delay: function(el, i) {
+          return 50 * (i+1)
+        }
+      });
+      anime.timeline({loop: false})
+
+        .add({
+          targets: '.ml8 .letter',
+          opacity: [0,1],
+          easing: "easeInOutQuad",
+          duration: 650,
+          delay: function(el, i) {
+            return 70 * (i+1)
+          }
+        });
+
+
+
+
+        anime.timeline({loop: false})
+          .add({
+            targets: '.ml7 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 750,
+            delay: function(el, i) {
+              return 70 * (i+1)
+            }
+          });
+
+
+      var t1 =anime({
+          targets: '.ml4 .letter',
+          opacity: [1,0],
+          easing: "easeInOutQuad",
+          duration: 650,
+          // direction: 'reverse',
+
+          delay: function(el, i) {
+            return 75 * (i+1)
+          }
+        });
+
+        t1.reverse();
+        var t3 =anime({
+            targets: '.ml9 .letter',
+            opacity: [1,0],
+            easing: "easeInOutQuad",
+            duration: 650,
+            // direction: 'reverse',
+
+            delay: function(el, i) {
+              return 65 * (i+1)
+            }
+          });
+
+          t3.reverse();
+
+        var t2 =anime({
+            targets: '.ml6 .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 450,
+            delay: function(el, i) {
+              return 45 * (i+1)
+            }
+          });
+ })
   window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
@@ -89,87 +179,7 @@ $('.ml4').each(function(){
 $('.ml9').each(function(){
   $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
 });
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 500,
-    delay: function(el, i) {
-      return 50 * (i+1)
-    }
-  }).add({
-    targets: '.ml5 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 600,
-    delay: function(el, i) {
-      return 50 * (i+1)
-    }
-  });
-  anime.timeline({loop: false})
 
-    .add({
-      targets: '.ml8 .letter',
-      opacity: [0,1],
-      easing: "easeInOutQuad",
-      duration: 650,
-      delay: function(el, i) {
-        return 70 * (i+1)
-      }
-    });
-
-
-
-
-    anime.timeline({loop: false})
-      .add({
-        targets: '.ml7 .letter',
-        opacity: [0,1],
-        easing: "easeInOutQuad",
-        duration: 750,
-        delay: function(el, i) {
-          return 70 * (i+1)
-        }
-      });
-
-
-  var t1 =anime({
-      targets: '.ml4 .letter',
-      opacity: [1,0],
-      easing: "easeInOutQuad",
-      duration: 650,
-      // direction: 'reverse',
-
-      delay: function(el, i) {
-        return 75 * (i+1)
-      }
-    });
-
-    t1.reverse();
-    var t3 =anime({
-        targets: '.ml9 .letter',
-        opacity: [1,0],
-        easing: "easeInOutQuad",
-        duration: 650,
-        // direction: 'reverse',
-
-        delay: function(el, i) {
-          return 65 * (i+1)
-        }
-      });
-
-      t3.reverse();
-
-    var t2 =anime({
-        targets: '.ml6 .letter',
-        opacity: [0,1],
-        easing: "easeInOutQuad",
-        duration: 450,
-        delay: function(el, i) {
-          return 45 * (i+1)
-        }
-      });
 
       // t2.reverse();
     </script>
@@ -789,7 +799,9 @@ See Donation Impact
       </g>
   </svg>
 </div>
-
+<div class="loading">
+  loading...
+</div>
 
 <script src="js/bottomtimelinefunction.js"></script>
 

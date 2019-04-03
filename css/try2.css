@@ -185,6 +185,9 @@ body{
 transform: translateX(-50%);
 top:15vh;
 }
+.introsection{
+  display: none;
+}
 .scroll{
   height: 1000vh;
   /* height: 100%; */
@@ -628,7 +631,7 @@ html::-webkit-scrollbar {
 }
 .donationimpact{
   width: 100%;
-  margin-top: -80px;
+  margin-top: -30px;
   overflow: hidden;
   position: fixed;
 }
@@ -747,10 +750,10 @@ width: 21.5%;
 }
 .click-4{
   position: absolute;
-  width: 11.5vw;
-  height: 10.5vw;
-  top: 16vw;
-  left: 76vw;
+  width: 14vw;
+height: 13.5vw;
+top: 38vw;
+left: 46vw;
   z-index: 1;
 
   /* background-color: white;
@@ -850,6 +853,8 @@ width: 21.5%;
   font-size: 13px;
   border:1px solid white;
   opacity:0;
+  text-align: left;
+  line-height: 1.4;
   display: none;
   /* transition: opacity 2s ease; */
 }

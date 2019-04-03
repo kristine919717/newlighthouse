@@ -112,7 +112,7 @@ top: 255px;
 .helperarrow{
   position: absolute;
 bottom: 400px;
-      left: 15px;
+      left: 25px;
         animation: helperarrow 3s infinite;
 }
 #donateimage{
@@ -214,12 +214,12 @@ top: 145px;
 }
 @keyframes helperarrow {
   0%{
-    left:15px;
+    left:25px;
   }
   50%{
-    left:55px;
+    left:65px;
   }
   100%{
-    left:15px;
+    left:25px;
   }
 }
