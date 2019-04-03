@@ -29,11 +29,12 @@ d3.csv(url).get(function(error,data){
         return
 "couple families ("+d.year+"): <strong>"+d.couple+"</strong> CAD"
       });
-  var imagesrc="images/donationimpact/1.png";
       var tip3 = d3.tip()
           .attr('class','d3-tip mariatip')
           .offset([-10, 0])
           .html(function(d){
+            var imagesrc="images/work/"+d.year+".jpg";
+
             return "<img src="+ imagesrc +">"+d.mariades+" <br><br><strong>Maria's income ("+d.year+"): "+d.maria+" CAD</strong>"
           });
   var y = d3.scaleLinear()
@@ -142,6 +143,15 @@ chartGroup2.call(tip3);
     $( ".story-6-hover-area" ).click(function() {
       $( ".sixthclickimage1" ).show();
       $( ".firstgraph" ).show();
+      $( ".sixthclickimage1" ).animate({
+        opacity:1,
+      },500,"linear",function(){
+      });
+
+      $( ".firstgraph" ).animate({
+        opacity:1,
+      },500,"linear",function(){
+      });
       graph1
       .attr("stroke-dasharray", totalLength1 + " " + totalLength1)
       .attr("stroke-dashoffset", totalLength1)
@@ -161,5 +171,7 @@ chartGroup2.call(tip3);
             .duration(2000)
             .delay(2000)
             .attr("stroke-dashoffset", 0);
+
+
     });
 });

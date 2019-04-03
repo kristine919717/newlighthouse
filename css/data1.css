@@ -16,6 +16,46 @@
   opacity: 1;
 }
 }
+@keyframes income-1 {
+  0% {
+  opacity: 0;
+  top:370px;
+}
+30%{
+  opacity: 0;
+  top:370px;
+
+}
+100% {
+  opacity: 1;
+  top:340px;
+
+}
+}
+@keyframes income-2 {
+  0% {
+  opacity: 0;
+  top:365px;
+}
+30%{
+  opacity: 0;
+  top:365px;
+
+}
+100% {
+  opacity: 1;
+  top:325px;
+
+}
+}
+.income-1{
+  animation-name: income-1;
+  animation-duration: 2s;
+}
+.income-2{
+  animation-name: income-2;
+  animation-duration: 3s;
+}
 @keyframes dot2 {
   0% {
   opacity: 0;
@@ -75,7 +115,7 @@
 .couple{
   position: absolute;
   top: 273px;
-    left: 1230px;
+    left: 1280px;
     animation-name: dot1;
     animation-duration: 6s;
 
@@ -83,7 +123,7 @@
 .single{
   position: absolute;
   top: 461px;
-    left: 1230px;
+    left: 1280px;
     animation-name: dot1;
     animation-duration: 6s;
 
@@ -91,7 +131,7 @@
 .maria{
   position: absolute;
   top: 533px;
-    left: 1230px;
+    left: 1280px;
     animation-name: dot2;
     animation-duration: 4s;
     animation-duration: 7s;
@@ -280,7 +320,7 @@ display: block;
   z-index: 1;
   position: fixed;
   top: 6em;
-  left: 0px;
+  left: 50px;
   display: none;
 }
 #secondgraph{

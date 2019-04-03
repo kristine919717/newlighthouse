@@ -135,6 +135,11 @@ function story2scrollup(){
   },700,"linear",function(){
     $(this).hide();
   });
+  $(".story-3-hover").animate({
+    opacity:0,
+  },700,"linear",function(){
+    $(this).hide();
+  });
 
   //show---------------------
 
@@ -224,6 +229,11 @@ function story3scrollup(){
       $(this).hide();
     });
     $(".story-4-hover-area").animate({
+      opacity:0,
+    },1700,"linear",function(){
+      $(this).hide();
+    });
+    $(".story-4-hover").animate({
       opacity:0,
     },1700,"linear",function(){
       $(this).hide();
@@ -458,6 +468,11 @@ function story5scrollup(){
     $(this).hide();
   });
   $(".sixth").animate({
+    opacity:0,
+  },1700,"linear",function(){
+    $(this).hide();
+  });
+  $(".story-6-hover").animate({
     opacity:0,
   },1700,"linear",function(){
     $(this).hide();

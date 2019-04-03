@@ -1,0 +1,41 @@
+#gotostory:hover{
+  fill:#FFFFFF;
+  opacity:1;
+
+  cursor: pointer;
+}
+#gotomap:hover{
+  fill:#FFFFFF;
+  opacity:1;
+  cursor: pointer;
+}
+#gotodonationimpact:hover{
+  fill:#FFFFFF;
+  opacity:1;
+
+  cursor: pointer;
+}
+#start:hover{
+  fill:#FFFFFF;
+  opacity:1;
+
+  cursor: pointer;
+}
+#donatenow:hover{
+  fill:#FFFFFF;
+  opacity:1;
+
+  cursor: pointer;
+}
+#gotostory,#gotomap,#gotodonationimpact,#start,#donatenow{
+  transition:opacity .4s ease;
+}
+.nextsectionarrow{
+  position: fixed;
+  right: 10px;
+  top: 45%;
+  opacity:0.6;
+}
+.nextsectionarrow:hover{
+  opacity:1;
+}
