@@ -48,17 +48,17 @@ function story1scrollup(){
   //scroll up hide-----------------------------
   $(".story-2").animate({
     opacity:0,
-  },700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".second").animate({
     opacity:0,
-  },700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".story-2-hover-area").animate({
     opacity:0,
-  },700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
 
@@ -70,11 +70,11 @@ function story1scrollup(){
         });
   $(".first").show();
   $(".cover-bw").show();
-        $(".first").delay(3500);
+        $(".first").delay(1500);
       $(".first").animate({
         opacity:0.8,
         top:"46vh",
-      },1300,"linear",function(){
+      },700,"linear",function(){
         $(document.body).css({
           "overflow-x":"auto",
           "overflow-y":"auto"
@@ -90,28 +90,28 @@ function story2scrolldown(){
     //scroll down hide------------------------
   $(".first").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },700,"linear",function(){
   });
   $(".cover-bw").animate({
     opacity:0,
-  },1300,"linear",function(){
+  },300,"linear",function(){
     $(this).hide();
 
   });
   //show---------------------
 
-        $(".second").delay(2200);
+        $(".second").delay(1700);
         $(".second").show();
       $(".second").animate({
         opacity:0.8,
-        top:"36vh",
+        top:"10vh",
       },1500,"linear",function(){
       });
       $(".story-2").show();
-      $(".story-2").delay(800);
+      $(".story-2").delay(300);
     $(".story-2").animate({
       opacity:1,
-    },1800,"linear",function(){
+    },1300,"linear",function(){
       $(document.body).css({
         "overflow-x":"auto",
         "overflow-y":"auto"
@@ -122,22 +122,22 @@ function story2scrollup(){
   //scroll up hide-----------------------------
   $(".story-3").animate({
     opacity:0,
-  },700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".third").animate({
     opacity:0,
-  },700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".story-3-hover-area").animate({
     opacity:0,
-  },700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".story-3-hover").animate({
     opacity:0,
-  },700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
 
@@ -147,7 +147,7 @@ function story2scrollup(){
         $(".second").show();
       $(".second").animate({
         opacity:0.8,
-        top:"36vh",
+        top:"10vh",
       },1500,"linear",function(){
       });
       $(".story-2").show();
@@ -168,12 +168,12 @@ function story3scrolldown(){
   //----------scroll down hide---------
 $(".second").animate({
   opacity:0,
-},1700,"linear",function(){
+},1200,"linear",function(){
 });
   // $(".story-2").delay(200);
 $(".story-2").animate({
   opacity:0,
-},1700,"linear",function(){
+},1200,"linear",function(){
   $(".story-3-hover-area").show();
 
   $(this).hide();
@@ -184,32 +184,32 @@ $(".story-3").show();
 $(".third").show();
 $(".story-3-hover-area").show();
 $(".thirdtriggertext").show();
-$(".story-3-hover-area").delay(1000);
+$(".story-3-hover-area").delay(500);
 $(".story-3-hover-area").animate({
 opacity:1,
-},3500,"linear",function(){
+},2500,"linear",function(){
 });
 $(".story-3-hover").show();
-        $(".story-3").delay(1000);
+        $(".story-3").delay(500);
       $(".story-3").animate({
         opacity:1,
-      },3500,"linear",function(){
+      },2000,"linear",function(){
       });
-      $(".story-3-hoverarea").delay(1000);
+      $(".story-3-hoverarea").delay(500);
       $(".story-3-hoverarea").animate({
         opacity:0.9,
-      },3500,"linear",function(){
+      },2500,"linear",function(){
       });
     $(".story-3").animate({
       opacity:1,
-    },3500,"linear",function(){
+    },2500,"linear",function(){
     });
 
-      $(".third").delay(2000);
+      $(".third").delay(1700);
     $(".third").animate({
       opacity:0.8,
       top:"36vh",
-    },1700,"linear",function(){
+    },1500,"linear",function(){
       $(document.body).css({
         "overflow-x":"auto",
         "overflow-y":"auto"
@@ -220,32 +220,32 @@ function story3scrollup(){
   //---------------scroll up hide
     $(".story-4").animate({
       opacity:0,
-    },1700,"linear",function(){
+    },900,"linear",function(){
       $(this).hide();
     });
     $(".fourth").animate({
       opacity:0,
-    },1700,"linear",function(){
+    },900,"linear",function(){
       $(this).hide();
     });
     $(".story-4-hover-area").animate({
       opacity:0,
-    },1700,"linear",function(){
+    },900,"linear",function(){
       $(this).hide();
     });
     $(".story-4-hover").animate({
       opacity:0,
-    },1700,"linear",function(){
+    },900,"linear",function(){
       $(this).hide();
     });
     $(".fourthtriggertext").animate({
       opacity:0,
-    },1700,"linear",function(){
+    },900,"linear",function(){
       $(this).hide();
     });
     $(".fourthclicktext").animate({
       opacity:0,
-    },1700,"linear",function(){
+    },900,"linear",function(){
       $(this).hide();
     });
 
@@ -254,32 +254,32 @@ function story3scrollup(){
     $(".third").show();
     $(".story-3-hover-area").show();
     $(".thirdtriggertext").show();
-    $(".story-3-hover-area").delay(1000);
+    $(".story-3-hover-area").delay(500);
     $(".story-3-hover-area").animate({
     opacity:1,
-    },3500,"linear",function(){
+  },3000,"linear",function(){
     });
     $(".story-3-hover").show();
-            $(".story-3").delay(1000);
+            $(".story-3").delay(500);
           $(".story-3").animate({
             opacity:1,
-          },3500,"linear",function(){
+          },3000,"linear",function(){
           });
           $(".story-3-hoverarea").delay(1000);
           $(".story-3-hoverarea").animate({
             opacity:0.9,
-          },3500,"linear",function(){
+          },3000,"linear",function(){
           });
         $(".story-3").animate({
           opacity:1,
-        },3500,"linear",function(){
+        },3000,"linear",function(){
         });
 
-          $(".third").delay(2000);
+          $(".third").delay(1500);
         $(".third").animate({
           opacity:0.8,
           top:"36vh",
-        },1700,"linear",function(){
+        },1200,"linear",function(){
           $(document.body).css({
             "overflow-x":"auto",
             "overflow-y":"auto"
@@ -291,9 +291,14 @@ function story4scrolldown(){
   document.getElementById("4").setAttribute("opacity", "1" );
   document.getElementById("4").setAttribute("fill", "#FFFFFF" );
   //scrolldownhide-------------
+  $(".story-3").animate({
+  opacity:0,
+  },200,"linear",function(){
+  $(this).hide();
+  });
   $(".story-3-hover").animate({
     opacity:0,
-  },1200,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
 $(".story-3-hover-area").animate({
@@ -303,24 +308,20 @@ $(this).hide();
 });
 $(".third").animate({
 opacity:0,
-},1200,"linear",function(){
+},900,"linear",function(){
 $(this).hide();
 });
 $(".thirdclicktext").animate({
 opacity:0,
-},1200,"linear",function(){
+},900,"linear",function(){
 $(this).hide();
 });
 $(".thirdtriggertext").animate({
 opacity:0,
-},1200,"linear",function(){
+},100,"linear",function(){
 $(this).hide();
 });
-$(".story-3").animate({
-opacity:0,
-},1200,"linear",function(){
-$(this).hide();
-});
+
 //show------------
 $(".story-4").show();
 $(".story-4-hover").show();
@@ -330,18 +331,18 @@ $(".fourth").show();
 $(".story-4-hover-area").delay(1000);
 $(".story-4-hover-area").animate({
   opacity:1,
-},3000,"linear",function(){
+},2500,"linear",function(){
 });
         $(".story-4").delay(500);
       $(".story-4").animate({
         opacity:1,
-      },3000,"linear",function(){
+      },2000,"linear",function(){
       });
 
-      $(".fourth").delay(1500);
+      $(".fourth").delay(1700);
     $(".fourth").animate({
       opacity:0.8,
-      top:"54vh",
+      top:"40vh",
     },1500,"linear",function(){
       $(document.body).css({
         "overflow-x":"auto",
@@ -353,27 +354,27 @@ function story4scrollup(){
   //scroll up hide------
   $(".story-5").animate({
   opacity:0,
-},1700,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
 });
 $(".story-5-hover").animate({
   opacity:0,
-},1700,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
 });
 $(".fifth").animate({
   opacity:0,
-},1700,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
 });
 $(".story-5-hover-area").animate({
   opacity:0,
-},1700,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
 });
 $(".fifthtriggertext").animate({
   opacity:0,
-},1700,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
 });
 //show------------
@@ -382,18 +383,18 @@ $(".story-4-hover").show();
 $(".story-4-hover-area").show();
 $(".fourthtriggertext").show();
 $(".fourth").show();
-$(".story-4-hover-area").delay(1000);
+$(".story-4-hover-area").delay(500);
 $(".story-4-hover-area").animate({
   opacity:1,
-},3000,"linear",function(){
+},2500,"linear",function(){
 });
-        $(".story-4").delay(500);
+        $(".story-4").delay(300);
       $(".story-4").animate({
         opacity:1,
-      },3000,"linear",function(){
+      },1300,"linear",function(){
       });
 
-      $(".fourth").delay(1500);
+      $(".fourth").delay(1700);
     $(".fourth").animate({
       opacity:0.8,
       top:"54vh",
@@ -413,7 +414,7 @@ function story5scrolldown(){
   $(".fourthtriggertext").hide()
           $(".story-4-hover").animate({
             opacity:0,
-          },1200,"linear",function(){
+          },900,"linear",function(){
             $(this).hide();
           });
     $(".story-4-hover-area").animate({
@@ -424,36 +425,36 @@ function story5scrolldown(){
 
     $(".fourth").animate({
       opacity:0,
-    },1200,"linear",function(){
+    },900,"linear",function(){
       $(this).hide();
     });
 
   $(".story-4").animate({
     opacity:0,
-  },1200,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   //show-------
   $(".story-5-hover-area").show();
   $(".story-5").show();
   $(".fifth").show();
-  $(".story-5-hover-area").delay(800);
+  $(".story-5-hover-area").delay(500);
   $(".story-5-hover-area").animate({
     opacity:1,
-  },2000,"linear",function(){
+  },1500,"linear",function(){
   });
   $(".fifthtriggertext").show();
-          $(".story-5").delay(1400);
+          $(".story-5").delay(300);
         $(".story-5").animate({
           opacity:1,
-        },2000,"linear",function(){
+        },1300,"linear",function(){
         });
 
-        $(".fifth").delay(1200);
+        $(".fifth").delay(1700);
       $(".fifth").animate({
         opacity:0.8,
         top:"42vh",
-      },1100,"linear",function(){
+      },1500,"linear",function(){
         $(document.body).css({
           "overflow-x":"auto",
           "overflow-y":"auto"
@@ -464,27 +465,27 @@ function story5scrollup(){
   //scroll up hide------
   $(".story-6").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },1200,"linear",function(){
     $(this).hide();
   });
   $(".sixth").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },1200,"linear",function(){
     $(this).hide();
   });
   $(".story-6-hover").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },1200,"linear",function(){
     $(this).hide();
   });
   $(".story-6-hover-area").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },1200,"linear",function(){
     $(this).hide();
   });
   $(".sixthtriggertext").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },1200,"linear",function(){
     $(this).hide();
   });
   //show-------
@@ -521,32 +522,32 @@ function story6scrolldown(){
   //scrolldownhide-------------
   $(".story-5-hover").animate({
     opacity:0,
-  },1200,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
 $(".story-5-hover-area").animate({
 opacity:0,
-},1200,"linear",function(){
+},900,"linear",function(){
 $(this).hide();
 });
 $(".fifth").animate({
 opacity:0,
-},1200,"linear",function(){
+},900,"linear",function(){
 $(this).hide();
 });
 $(".fifthclicktext").animate({
 opacity:0,
-},1200,"linear",function(){
+},900,"linear",function(){
 $(this).hide();
 });
 $(".fifthtriggertext").animate({
 opacity:0,
-},1200,"linear",function(){
+},900,"linear",function(){
 $(this).hide();
 });
 $(".story-5").animate({
 opacity:0,
-},1200,"linear",function(){
+},900,"linear",function(){
 $(this).hide();
 });
 
@@ -556,18 +557,18 @@ $(".story-6-hover").show();
 $(".story-6-hover-area").show();
 $(".sixthtriggertext").show();
 $(".sixth").show();
-$(".story-6-hover-area").delay(800);
+$(".story-6-hover-area").delay(500);
 $(".story-6-hover-area").animate({
   opacity:1,
-},3000,"linear",function(){
+},2000,"linear",function(){
 });
-        $(".story-6").delay(800);
+        $(".story-6").delay(500);
       $(".story-6").animate({
         opacity:1,
-      },3000,"linear",function(){
+      },1500,"linear",function(){
       });
 
-      $(".sixth").delay(1500);
+      $(".sixth").delay(1900);
     $(".sixth").animate({
       opacity:0.8,
       top:"24vh",
@@ -583,27 +584,27 @@ function story6scrollup(){
   //scroll up hide------
   $(".story-7").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".story-7-hover").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".seventh").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".story-7-hover-area").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".seventhtriggertext").animate({
     opacity:0,
-  },1700,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
 
@@ -613,22 +614,22 @@ function story6scrollup(){
   $(".story-6-hover-area").show();
   $(".sixthtriggertext").show();
   $(".sixth").show();
-  $(".story-6-hover-area").delay(800);
+  $(".story-6-hover-area").delay(300);
   $(".story-6-hover-area").animate({
     opacity:1,
-  },3000,"linear",function(){
+  },2000,"linear",function(){
   });
-          $(".story-6").delay(800);
+          $(".story-6").delay(300);
         $(".story-6").animate({
           opacity:1,
-        },3000,"linear",function(){
+        },2000,"linear",function(){
         });
 
-        $(".sixth").delay(1500);
+        $(".sixth").delay(1000);
       $(".sixth").animate({
         opacity:0.8,
         top:"24vh",
-      },1500,"linear",function(){
+      },1000,"linear",function(){
         $(document.body).css({
           "overflow-x":"auto",
           "overflow-y":"auto"
@@ -642,32 +643,32 @@ function story7scrolldown(){
   //scroll down hide--------------------
   $(".story-6-hover").animate({
     opacity:0,
-  },1200,"linear",function(){
+  },900,"linear",function(){
     $(this).hide();
   });
   $(".story-6-hover-area").animate({
   opacity:0,
-  },1200,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
   });
   $(".sixth").animate({
   opacity:0,
-  },1200,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
   });
   $(".sixthclicktext").animate({
   opacity:0,
-  },1200,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
   });
   $(".sixthtriggertext").animate({
   opacity:0,
-  },1200,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
   });
   $(".story-6").animate({
   opacity:0,
-  },1200,"linear",function(){
+},900,"linear",function(){
   $(this).hide();
   });
   //show------------
@@ -676,18 +677,18 @@ function story7scrolldown(){
   $(".seventh").show();
   $(".story-7-hover-area").show();
   $(".seventhtriggertext").show();
-  $(".story-7-hover-area").delay(1000);
+  $(".story-7-hover-area").delay(500);
   $(".story-7-hover-area").animate({
     opacity:0.9,
-  },3500,"linear",function(){
+  },2500,"linear",function(){
   });
-          $(".story-7").delay(800);
+          $(".story-7").delay(300);
         $(".story-7").animate({
           opacity:1,
-        },3000,"linear",function(){
+        },2500,"linear",function(){
         });
 
-        $(".seventh").delay(1500);
+        $(".seventh").delay(1700);
       $(".seventh").animate({
         opacity:0.8,
         top:"16vh",

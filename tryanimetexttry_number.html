@@ -18,8 +18,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      .storysection{
+        margin-top: -32px;
+      }
+      .closepopup img{
+        width: 30px;
+        position: absolute;
+        right: -15px;
+        top: -15px;
+      }
+    </style>
   </head>
   <body>
+    <embed src="Passing_Time.m4a" autostart="true" loop="true"
+width="2" height="0">
+</embed>
     <script type="text/javascript" src="js/data2.js"></script>
 
     <section class="introsection" id="introsection">
@@ -66,7 +80,7 @@
 
    $('.loading').fadeOut('1',function(){
      $(this).remove();
-
+$(this).hide();
    })
     $('.introsection').show();
     anime.timeline({loop: false})
@@ -707,10 +721,10 @@ buy a birthday present for my boy.”
   </svg>
 </div>
 <div class="nextcontent">
-See Donation Impact
+
 </div>
 <div class="previouscontent">
-  Home
+  <!-- Home -->
 </div>
 <div class="previoussectionarrow">
   <?xml version="1.0" encoding="UTF-8"?>
@@ -837,7 +851,7 @@ $(".activity"+i).mouseenter(function(){
     opacity:1,
   },800,"linear",function(){
   });
-  $(".activitycontent img").hide();
+  // $(".activitycontent img").hide();
 
   var popupWidth  = $('.activitycontent').outerWidth();
  var popupHeight =  $('.activitycontent').outerHeight();
@@ -865,7 +879,7 @@ if(popupLeft < 0 || popupLeft == undefined)
  if(popupTop < 0 || popupTop == undefined)
       popupTop = 0;
 
- $('.activitycontent').offset({top:popupTop,left:popupLeft});
+ $('.activitycontent').offset({top:popupTop+30,left:popupLeft});
  // var id_post=obj.id;
  // console.log(idname);
  $.ajax({
@@ -1081,7 +1095,155 @@ $(window).on('scroll', function(e) {
 
     console.log(number);
 })
+    $(".nextsectionarrow").click(function(){
+      console.log("click");
+      if(number>=5){
+        number+=10;
+        viewBox_x+=(-88);
+            document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
+      }
 
+
+
+
+        if(number ==15){
+
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+          story1scrolldown();
+          $(".mouse_scroll2").show();
+        }
+        if(number ==25){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+          story2scrolldown();
+          $(".mouse_scroll2").animate({
+            opacity:0
+          },800,"linear",function(){
+            $(".mouse_scroll2").hide();
+          })
+
+        }
+
+        if(number ==35){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+          story3scrolldown();
+
+        }
+
+        if(number==45){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+          story4scrolldown();
+
+        }
+        if(number==55){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+
+          story5scrolldown();
+
+        }
+        if(number==65){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+          story6scrolldown();
+
+        }
+        if(number==75){
+          $(document.body).css({
+            "overflow-x":"hidden",
+            "overflow-y":"hidden"
+          });
+
+          story7scrolldown();
+
+        }
+        if(number ==85){
+            window.location.href = 'statusincanada.html';
+        }
+    });
+
+    $('.previoussectionarrow').click(function(){
+      number+= (-1);
+      if(number<=5){
+        number=5;
+      }
+      if(number>=5){
+      viewBox_x+=(88);
+          document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
+    }
+      if(number ==15){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story1scrollup();
+      }
+      if(number ==25){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+          $(".story-2").show();
+        story2scrollup();
+      }
+      if(number ==35){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story3scrollup();
+      }
+      if(number ==45){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story4scrollup();
+      }
+      if(number ==55){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story5scrollup();
+      }
+      if(number ==65){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story6scrollup();
+      }
+      if(number ==75){
+        $(document.body).css({
+          "overflow-x":"hidden",
+          "overflow-y":"hidden"
+        });
+        story6scrollup();
+      }
+
+
+    console.log(number);
+});
 
 </script>
     <script type="text/javascript">

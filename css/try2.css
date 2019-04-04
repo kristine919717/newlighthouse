@@ -338,8 +338,9 @@ opacity: 0;
 .seventhtriggertextcontainer{
   color: #FFFFFF;
   position: absolute;
-  top: 60%;
-  left: 75%;
+  top: 55vh;
+      left: 66%;
+      width: 400px;
 }
 .hovertext{
   letter-spacing: 0.05rem;
@@ -590,7 +591,7 @@ opacity: 0;
 
 }
 .fourth{
-  top: 60vh;
+  top: 42vh;
   left: 5%;
 opacity: 0;
 
@@ -622,7 +623,7 @@ display: none;
 
 } */
 .second{
-  top: 40vh;
+  top: 14vh;
   left: 10%;
 opacity: 0;
 
@@ -1367,7 +1368,9 @@ font-weight: bold;
 font-weight: 300;
 font-size: 15px;
 letter-spacing: 0.04rem;
-
+position: absolute;
+top: 450px;
+left: 180px;
 }
 .hearteffect img{
   width: 100%;

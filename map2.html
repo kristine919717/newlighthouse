@@ -345,7 +345,7 @@ $('.button').click(function(){
       easing: "easeInOutQuad",
       duration: 500,
       delay: function(el, i) {
-        return 50 * (i+1)
+        return 30 * (i+1)
       }
     });
   $('.locateinfo').animate({
@@ -437,22 +437,22 @@ var tip = d3.tip()
       )
     })
       .on('mouseout', tip.hide);
-$("path").click(function(){
-  $('.hreflink').show()
-  $('.province-description').each(function(){
-    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
-  });
-  anime.timeline({loop: false})
-    .add({
-      targets: '.province-description .letter',
-      opacity: [0,1],
-      easing: "easeInOutQuad",
-      duration: 500,
-      delay: function(el, i) {
-        return 25 * (i+1)
-      }
-    });
-})
+// $("path").click(function(){
+//   $('.hreflink').show()
+//   $('.province-description').each(function(){
+//     $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+//   });
+//   anime.timeline({loop: false})
+//     .add({
+//       targets: '.province-description .letter',
+//       opacity: [0,1],
+//       easing: "easeInOutQuad",
+//       duration: 500,
+//       delay: function(el, i) {
+//         return 25 * (i+1)
+//       }
+//     });
+// })
 group.call(tip);
     // group.append("svg:text")
     //   .attr("x", function(d){return path.centroid(d)[0];})

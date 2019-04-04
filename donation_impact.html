@@ -351,7 +351,7 @@ div
 <script src="js/bottomtimelinefunction.js"></script>
 <script type="text/javascript">
 
-$( ".gotit").click(function() {
+$( ".instruction").click(function() {
   $( ".instruction").animate({
     opacity:0,
   },500,"linear",function(){
@@ -531,7 +531,7 @@ $( ".hearteffect").hide()
    //
    // },800,"linear",function(){
    // });
-
+console.log(i);
     $.ajax({
         type: "POST",
         url: "http://light-house.xyz/outcometext.php",
