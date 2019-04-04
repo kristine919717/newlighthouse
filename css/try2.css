@@ -441,6 +441,13 @@ left:0;
   /* background-color: #cccccc; */
   display: none;
 }
+.clickhere{
+margin-top: 70px;
+margin-left: -20px;
+font-family: sans-serif;
+width: 300%;
+color:white;
+}
 .close{
   position: absolute;
   top: -130px;
