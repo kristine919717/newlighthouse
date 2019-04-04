@@ -18,6 +18,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      .storysection{
+        margin-top: -32px;
+      }
+    </style>
   </head>
   <body>
     <embed src="Passing_Time.m4a" autostart="true" loop="true"
@@ -69,7 +74,7 @@ width="2" height="0">
 
    $('.loading').fadeOut('1',function(){
      $(this).remove();
-
+$(this).hide();
    })
     $('.introsection').show();
     anime.timeline({loop: false})

@@ -342,7 +342,7 @@ $(".story-4-hover-area").animate({
       $(".fourth").delay(1700);
     $(".fourth").animate({
       opacity:0.8,
-      top:"46vh",
+      top:"40vh",
     },1500,"linear",function(){
       $(document.body).css({
         "overflow-x":"auto",
