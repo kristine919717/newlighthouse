@@ -229,6 +229,9 @@
         </g>
     </svg>
     <div class="activitycontent">
+      <div class="closepopup">
+        <img src="popupclose.png" alt="">
+      </div>
       <!-- Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is tho -->
     </div>
   </body>
@@ -266,7 +269,7 @@ for(let i=1; i<11; i++){
       opacity:1,
     },800,"linear",function(){
     });
-    $(".activitycontent img").hide();
+    // $(".activitycontent img").hide();
 
     var popupWidth  = $('.activitycontent').outerWidth();
    var popupHeight =  $('.activitycontent').outerHeight();
@@ -294,7 +297,7 @@ for(let i=1; i<11; i++){
    if(popupTop < 0 || popupTop == undefined)
         popupTop = 0;
 
-   $('.activitycontent').offset({top:popupTop,left:popupLeft});
+   $('.activitycontent').offset({top:popupTop+30,left:popupLeft});
    // var id_post=obj.id;
    // console.log(idname);
    $.ajax({
@@ -311,14 +314,14 @@ for(let i=1; i<11; i++){
                }
        });
   });
-  document.body.onmousedown = function() {
-    $( ".activitycontent").animate({
-        opacity:0,
-      },300,"linear",function(){
-        $(".activitycontent").hide();
-
-      });
-}
+//   document.body.onmousedown = function() {
+//     $( ".activitycontent").animate({
+//         opacity:0,
+//       },300,"linear",function(){
+//         $(".activitycontent").hide();
+//
+//       });
+// }
   // $(".activity"+i).mouseout(function(){
   //   // $(".activitycontent img").hide();
   //   // $( ".activitycontent").animate({

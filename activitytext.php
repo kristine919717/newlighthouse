@@ -19,7 +19,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $des=$row['des'];
     $image="images/activity/".$activity.".jpg";
     ?>
-
+    <div class="closepopup">
+      <img src="popupclose.png" alt="">
+    </div>
     <img src=<?php echo $image ?>>
     <p><?php echo $des ?></p>
 
