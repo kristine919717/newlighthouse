@@ -69,6 +69,7 @@ width="2" height="0">
 
   </span>
 </div>
+
   </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -82,6 +83,8 @@ width="2" height="0">
      $(this).remove();
 $(this).hide();
    })
+
+
     $('.introsection').show();
     anime.timeline({loop: false})
       .add({
@@ -164,7 +167,18 @@ $(this).hide();
               return 45 * (i+1)
             }
           });
+
+          $(".soundContainer").delay(3000);
+          $(".soundContainer").animate({
+          opacity:1
+          },1500,"linear",function(){
+
+
+          });
+
  })
+
+
   window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
@@ -197,16 +211,44 @@ $('.ml9').each(function(){
 
       // t2.reverse();
     </script>
+
     <div class="mouse_scroll">
 
   		<div class="mouse">
   			<div class="wheel"></div>
   		</div>
-  		<div>
+  		<div class="m_arrowtext">
   			<span class="m_scroll_arrows unu"></span>
   			<span class="m_scroll_arrows doi"></span>
   			<span class="m_scroll_arrows trei"></span>
+        <span class="m_scroll_text">scroll to read whole story</span>
   		</div>
+
+  </div>
+
+  <div class="soundContainer">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg width="32px" height="28px" class="soundImg" viewBox="0 0 32 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+        <title>Group 2</title>
+        <desc>Created with Sketch.</desc>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Artboard" transform="translate(-103.000000, -161.000000)" stroke="#FFFFFF">
+                <g id="Group-2" transform="translate(104.000000, 161.000000)">
+                    <polygon id="Path" points="9.7752809 7.07865169 4.22246531 11.8711301 0 11.8711301 0 14.2908953 0 16.7805553 4.22246531 16.7805553 9.7752809 21.5730337 9.7752809 14.2908953"></polygon>
+                    <g id="Group" transform="translate(15.168539, 0.000000)">
+                        <path d="" id="Path-2"></path>
+                        <path d="M0,5.73033708 C4.49438202,11.2633111 4.49438202,16.768929 0,22.247191" id="Path-3"></path>
+                        <path d="M5.39325843,3.37078652 C10.7865169,10.5975281 10.7865169,17.7885393 5.39325843,24.9438202" id="Path-3-Copy"></path>
+                        <path d="M9.43820225,0 C16.6292135,9.37218043 16.6292135,18.6980231 9.43820225,27.9775281" id="Path-3-Copy-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+  <span class="soundText">Turn your sound on</span>
   </div>
 </section>
 <div class="scroll" id="scroll">
@@ -234,6 +276,8 @@ $('.ml9').each(function(){
   <section class="storysection">
     <div class="story-cover">
         <img class="cover-color"src="images/storycover.jpg" alt="">
+        <?xml version="1.0" encoding="UTF-8"?>
+
         <div class="mouse_scroll2">
 
       		<div class="mouse">
@@ -249,7 +293,21 @@ $('.ml9').each(function(){
       </div>
         <img class="cover-bw" src="images/storycover_black.png" alt="">
   </div>
-      <div class="text-container first">
+      <div class="story-1-container">
+
+        <div class="story-1-hover-area" id="story-1-hover-area">
+          <img class="helperclick"src="images/helperclick.png" alt="">
+          <p class="clickhere"> Click Here</p>
+        </div>
+        <div class="text-container first">
+          <div class="firsttriggertextcontainer">
+          <div class="hovertext firsttriggertext">
+            <p>How Maria felt about being an immigrant?<br></p>
+          </div>
+          <p class="firstclicktext">“We didn’t know much about life as an immigrant. If you’re alone, it can be a nightmare.”
+            <br>
+            <br>
+          </div>
         In 2010, Maria moved to Canada along with her two children, Derek and Macy.
         Although she had <strong><u> no professional skills, no money, and no connections,</u></strong> she could at least work hard.
         She started from the bottom of the career chain for the second time in her life, working as a waitress and picking up odd jobs.
@@ -260,14 +318,17 @@ $('.ml9').each(function(){
         Maria worked hard and always took any possible overtime opportunities to make more money, including weekends and holidays.
 
       </div>
+
+      </div>
+
       <div class="story-2-container">
 
       <img class="story-2" src="images/story-2.png" alt="">
       <div class="text-container second">
-        <p class="pSecond">“We didn’t know much about life as an immigrant. If you’re alone, it can be a nightmare.” </p>
+        <!-- <p class="pSecond">“We didn’t know much about life as an immigrant. If you’re alone, it can be a nightmare.” </p> -->
         She had to ride her bicycle to work every day, no matter if it was raining hard or if there were heavy snow and ice. Before work, she would take the children to school, after that, pick them up again and make them dinner. She worked until 2 am, then got up early to start all over again.
         <br><br>
-        Life has not been easy for her. She felt so <strong><u>lonely and helpless </u></strong>because she knew no one here. With the packed schedule, she could not met or know anyone outside from work.
+        Life was not easy for her. She felt so <strong><u>lonely and helpless </u></strong>because she knew no one here. With the packed schedule, she could not met or know anyone outside from work.
         <!-- <br><br><br> -->
         <p class="sSecond">"One big problem for single parents is social isolation."  --YMCA </p>
 
@@ -324,10 +385,11 @@ $('.ml9').each(function(){
           “I thought I have everything in control
           until I missed my daugther’s performance”
         </p>
-        <p>One afternoon, Macy stood alone at the door of the school. Her school play was about to start, but her mother<strong><u> did not appear</u></strong>. Finally, she could not wait any longer and had to take her place. Her classmates wore beautiful costumes and performed their routines on the stage with glee.
+        <p>
+          One afternoon, Macy stood alone at the door of the school. Her school play was about to start, but her mother<strong><u> did not appear</u></strong>. Finally, she could not wait any longer and had to take her place. Her classmates wore beautiful costumes and performed their routines on the stage with glee.
           <br><br>
-The other children's parents sat in front of the stage, watching their darlings. Macy could only pretend that everything was fine, clap her hands with the rhythm, sing, and dance, and then occasionally look at the teachers and try to smile.
-After the performance, Macy ran away for the first time. After she arrived home, she was so sad, holding her toy rabbit tightly and<strong><u> hiding in her room to cry</u></strong>.
+          The other children's parents sat in front of the stage, watching their darlings. Macy could only pretend that everything was fine, clap her hands with the rhythm, sing, and dance, and then occasionally look at the teachers and try to smile.
+          After the performance, Macy ran away for the first time. After she arrived home, she was so sad, holding her toy rabbit tightly and<strong><u> hiding in her room to cry</u></strong>.
 
         </p>
       </div>
@@ -336,9 +398,9 @@ After the performance, Macy ran away for the first time. After she arrived home,
         <p>What happen to macy at school?<br></p>
       </div>
       <p class="fourthclicktext">"Where is your mother? Why didn't she come? Wow! Macy is brave!"<br>
-    "I don't want to be brave at all, I don't want to..." Macy gently squeezed the bridge of her nose with her hand, as if to block some sadness. <br>
-    "Every time I need my mother, she always says she is at work, or she is too tired and needs to sleep. Does Mom really care about me?"
-</p>
+        "I don't want to be brave at all, I don't want to..." Macy gently squeezed the bridge of her nose with her hand, as if to block some sadness. <br>
+        "Every time I need my mother, she always says she is at work, or she is too tired and needs to sleep. Does Mom really care about me?"
+      </p>
   </div>
 
 </div>
@@ -354,8 +416,8 @@ After the performance, Macy ran away for the first time. After she arrived home,
     </p>
     <p>In order to solve the doubts in her heart, Macy watched through her window and crept onto the stairs to listen that night. Through the dim light, she saw everything - her mother <strong><u>typing in front of the computer</u></strong> with a big cup of coffee, then <strong><u>going out at 10 pm.</u></strong>
       <br><br>
-It was hard for Macy to imagine how her mother spent her time. After cooking dinner for them both, she still needed to do some freelance typing and then go to another job in the evening in order to make ends meet.
-From that night on, little Macy always snuck out of bed secretly, crept on her tiptoes, knelt by the balcony and watched her mother's back disappearing down the road.
+      It was hard for Macy to imagine how her mother spent her time. After cooking dinner for them both, she still needed to do some freelance typing and then go to another job in the evening in order to make ends meet.
+      From that night on, little Macy always snuck out of bed secretly, crept on her tiptoes, knelt by the balcony and watched her mother's back disappearing down the road.
 
 </p>
   </div>
@@ -493,34 +555,34 @@ From that night on, little Macy always snuck out of bed secretly, crept on her t
                           <tspan x="471" y="197">cook and clean</tspan>
                       </text>
                       <text id="7:00-copy-3" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="29" y="317">7:00 </tspan>
+                          <tspan x="29" y="317">7am </tspan>
                       </text>
                       <text id="8:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="77" y="317">8:00 </tspan>
+                          <tspan x="77" y="317">8am </tspan>
                       </text>
                       <text id="8:30" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="112" y="317">8:30</tspan>
+                          <tspan x="112" y="317">8:30 am</tspan>
                       </text>
                       <text id="14:20" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="370" y="317">14:20</tspan>
+                          <tspan x="370" y="317">2pm</tspan>
                       </text>
                       <text id="15:20" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="417" y="317">15:20</tspan>
+                          <tspan x="417" y="317">3:20 pm</tspan>
                       </text>
                       <text id="18:30" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="585" y="317">18:30 </tspan>
+                          <tspan x="585" y="317">6:30 pm </tspan>
                       </text>
                       <text id="20:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="655" y="317">20:00</tspan>
+                          <tspan x="655" y="317">8:00 pm</tspan>
                       </text>
                       <text id="22:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="724" y="317">22:00</tspan>
+                          <tspan x="724" y="317">10:00 pm</tspan>
                       </text>
                       <text id="2:00" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="933" y="317">2:00 </tspan>
+                          <tspan x="933" y="317">2:00 am </tspan>
                       </text>
                       <text id="6:30" font-family="Baskerville-Bold, Baskerville" font-size="13" font-weight="bold" letter-spacing="0.519999981" fill="#FFFFFF">
-                          <tspan x="1123" y="317">6:30</tspan>
+                          <tspan x="1123" y="317">6:30 am</tspan>
                       </text>
                       <path d="M71,227 L71,239" id="Line-13" stroke="#FFFFFF" stroke-linecap="square"></path>
                       <text id="MARIA’S-TIME-IN-A-DA" font-family="Baskerville" font-size="30" font-weight="normal" letter-spacing="0.662500024" fill="#FFFFFF">
@@ -546,7 +608,11 @@ From that night on, little Macy always snuck out of bed secretly, crept on her t
                   </g>
               </g>
           </g>
+          <div class="hovertips">
+          <img class="helperclick"src="images/helperclick.png" alt="">
+        </div>
       </svg>
+
       <?xml version="1.0" encoding="UTF-8"?>
       <svg class="close timelineclose" width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
@@ -594,7 +660,9 @@ buy a birthday present for my boy.”
       <div class="title-container">
         <div class="title-show" id="thefirstshow">
           <h1 class ="datatitleh1_1">Single-parent families VS. Couple families VS. Maria Median Income in Canada (CAD)</h1>
-          <h2 class="datatitleh2">(hover to explore Maria's income)</h2>
+          <div class="hovertips2">
+          <img class="helperclick"src="images/helperclick.png" alt="">
+        </div>
         </div>
      </div>
       <div class="legend couple">
@@ -681,8 +749,7 @@ buy a birthday present for my boy.”
   <div class="story-7-hover-area"></div>
   <div class="text-container seventh">
     <p style="font-family:times !important; font-size:23px !important;width:120% !important;line-height:1.3 !important; opacity:1 !important;margin-bottom:20px;">
-      “Not only he didn’t complain
-,but he also gave me his piggy bank.”
+      “Not only he didn’t complain, but he also gave me his piggy bank.”
     </p>
     <p>
       He went to his room to find his piggy bank and said: "Mom. Don't cry, I have a lot of money to pay the rent. I don’t need a toy car. Macy said she will help me make my own."
@@ -846,6 +913,7 @@ $(document).mousemove(function(e){
 });
 for(let i=1; i<11; i++){
 $(".activity"+i).mouseenter(function(){
+    $(".hovertips").hide();
   $(".activitycontent").show();
   $( ".activitycontent").animate({
     opacity:1,
@@ -1811,6 +1879,68 @@ $(window).on('scroll', function(e) {
       // })
     </script>
 <script type="text/javascript">
+$( ".story-1-hover-area").mouseenter(function() {
+  // $(".secondtriggertext").show();
+
+
+  $('.firsttriggertext').each(function(){
+    $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+  });
+  anime.timeline({loop: false})
+    .add({
+        targets: '.firsttriggertext',
+        opacity:0.8,
+        duration:1
+
+    })
+    .add({
+      targets: '.firsttriggertext .letter',
+      opacity: [0,0.8],
+      easing: "easeInOutQuad",
+      duration: 500,
+      delay: function(el, i) {
+        return 50 * (i+1)
+      }
+    });
+  $( ".story-1-hover" ).animate({
+    opacity:1,
+
+  },500,"linear",function(){
+  });
+});
+$( ".story-1-hover-area").mouseleave(function() {
+//   $( ".story-3-hover" ).animate({
+//     opacity:0,
+//
+//   },500,"linear",function(){
+//   });
+// });
+});
+$( ".story-1-hover-area" ).click(function() {
+  $( ".firsttriggertext" ).animate({
+    opacity:0,
+
+  },1000,"linear",function(){
+
+    });
+
+
+
+$( ".firstclicktext" ).animate({
+  opacity:1,
+
+},1000,"linear",function(){
+
+});
+
+$(".story-1-hover-area").animate({
+  opacity: 0,
+},1000,"linear",function(){
+  $('.story-1-hover-area').hide();
+});
+
+
+});
 $( ".story-3-hover-area").mouseenter(function() {
   // $(".secondtriggertext").show();
   $('.thirdtriggertext').show();

@@ -29,19 +29,28 @@ function story1scrolldown(){
               $(".cover-bw").animate({
                 opacity:1,
               },3500,"linear",function(){
+                $(".story-1-hover-area").show();
               });
 
               $(".first").delay(3500);
             $(".first").animate({
-              opacity:0.8,
-              top:"46vh",
+              opacity:0.8
+
             },1300,"linear",function(){
+
               $(document.body).css({
                 "overflow-x":"auto",
                 "overflow-y":"auto"
               });
 
             });
+
+
+          $(".story-1-hover-area").delay(3500);
+          $(".story-1-hover-area").animate({
+          opacity:1,
+          },2500,"linear",function(){
+          });
 }
 function story1scrollup(){
 
@@ -98,13 +107,19 @@ function story2scrolldown(){
     $(this).hide();
 
   });
+  $(".story-1-hover-area").animate({
+    opacity:0,
+  },300,"linear",function(){
+    $(this).hide();
+
+  });
   //show---------------------
 
         $(".second").delay(1700);
         $(".second").show();
       $(".second").animate({
         opacity:0.8,
-        top:"10vh",
+        top:"35vh",
       },1500,"linear",function(){
       });
       $(".story-2").show();
@@ -377,6 +392,7 @@ $(".fifthtriggertext").animate({
 },900,"linear",function(){
   $(this).hide();
 });
+
 //show------------
 $(".story-4").show();
 $(".story-4-hover").show();
@@ -488,6 +504,18 @@ function story5scrollup(){
   },1200,"linear",function(){
     $(this).hide();
   });
+  $( ".sixthclickimage1" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".sixthclickimage1" ).hide();
+    console.log("close");
+  });
+  $( ".firstgraph" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".firstgraph" ).hide();
+    console.log("close");
+  });
   //show-------
   $(".story-5-hover-area").show();
   $(".story-5").show();
@@ -549,6 +577,18 @@ $(".story-5").animate({
 opacity:0,
 },900,"linear",function(){
 $(this).hide();
+});
+$( ".fifthclickimage1" ).animate({
+  opacity:0,
+},500,"linear",function(){
+  $( ".fifthclickimage1" ).hide();
+  console.log("close");
+});
+$( ".fifthclickimage1" ).animate({
+  opacity:0,
+},500,"linear",function(){
+  $( ".fifthclickimage1" ).hide();
+  console.log("close");
 });
 
 //show------------
@@ -670,6 +710,18 @@ function story7scrolldown(){
   opacity:0,
 },900,"linear",function(){
   $(this).hide();
+  });
+  $( ".sixthclickimage1" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".sixthclickimage1" ).hide();
+    console.log("close");
+  });
+  $( ".firstgraph" ).animate({
+    opacity:0,
+  },500,"linear",function(){
+    $( ".firstgraph" ).hide();
+    console.log("close");
   });
   //show------------
   $(".story-7").show();

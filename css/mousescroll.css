@@ -11,7 +11,7 @@
 	margin: 0 auto;
 	width: 24px;
 	height: 100px;
-	margin-top: 100px;
+	margin-top: 180px;
 	animation-name: mouse-scroll-fadeup;
 	animation-duration: 6s;
 	/* animation-delay: 6s; */
@@ -27,6 +27,7 @@
 	animation-duration: 6s;
 	/* animation-delay: 6s; */
 }
+
 
 @-webkit-keyframes mouse-scroll-fadeup{
    0% {
