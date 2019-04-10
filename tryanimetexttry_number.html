@@ -297,7 +297,7 @@ $('.ml9').each(function(){
 
         <div class="story-1-hover-area" id="story-1-hover-area">
           <img class="helperclick"src="images/helperclick.png" alt="">
-          <p class="clickhere"> Click Here</p>
+          <p class="clickhere"> Click to chat with Maria</p>
         </div>
         <div class="text-container first">
           <div class="firsttriggertextcontainer">
@@ -328,7 +328,7 @@ $('.ml9').each(function(){
         <!-- <p class="pSecond">“We didn’t know much about life as an immigrant. If you’re alone, it can be a nightmare.” </p> -->
         She had to ride her bicycle to work every day, no matter if it was raining hard or if there were heavy snow and ice. Before work, she would take the children to school, after that, pick them up again and make them dinner. She worked until 2 am, then got up early to start all over again.
         <br><br>
-        Life was not easy for her. She felt so <strong><u>lonely and helpless </u></strong>because she knew no one here. With the packed schedule, she could not met or know anyone outside from work.
+        Life was not easy for her. She felt so <strong><u>lonely and helpless </u></strong>because she knew no one here. With the packed schedule, she could not meet or know anyone outside from work.
         <!-- <br><br><br> -->
         <p class="sSecond">"One big problem for single parents is social isolation."  --YMCA </p>
 
@@ -348,7 +348,7 @@ $('.ml9').each(function(){
         </p>
          Her limited English made it difficult to communicate with everyone from her neighbours to public officials. When she struggled to find the most basic needs – such as <strong><u>safe housing, food, and medical insurance</strong></u> - she could not even find anyone to help her.
          <br><br>
-        In order to find a better job and to allow her children to live better in their new country, she had to use her remaining budget to take <strong><u>English lessons.</u></strong> Because of her age, she could not learn as fast as a child would. Her notebook was full of words, grammars and phrases. Every night, she would sit alone in the kitchen, whispering the words out loud under dim light for fear of waking her children.
+        In order to find a better job and to allow her children to live better in their new country, she had to use her remaining budget to take <strong><u>English lessons.</u></strong> Because of her age, she could not learn as fast as a child would. Her notebook was full of words, grammar and phrases. Every night, she would sit alone in the kitchen, whispering the words out loud under dim light for fear of waking her children.
 
       </div>
 
@@ -788,7 +788,7 @@ buy a birthday present for my boy.”
   </svg>
 </div>
 <div class="nextcontent">
-
+NEXT
 </div>
 <div class="previouscontent">
   <!-- Home -->
@@ -980,6 +980,7 @@ document.body.onmousedown = function() {
 
   })
 </script>
+
 <script type="text/javascript">
 
 
@@ -993,48 +994,67 @@ $(window).on('scroll', function(e) {
         viewBox_x+=(-8.8);
             document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
       }
+      if(viewBox_x<=0){viewBox_x=0;}
       if(number==5){
-        $(document.body).css({
-          "overflow-x":"hidden",
-          "overflow-y":"hidden"
-        });
-                $(".introsection").delay(200);
-              $(".introsection").animate({
-                opacity:0,
-              },1500,"linear",function(){
-                $(this).hide();
-
-              });
-                $(".mouse_scroll2").show();
-              $(".mouse_scroll2").delay(1500);
-            $(".mouse_scroll2").animate({
-              opacity:1,
-            },2500,"linear",function(){
-
-              });
-                $(".cover-color").delay(1500);
-              $(".cover-color").animate({
-                opacity:1,
-              },2500,"linear",function(){
-                // $(window).off('scroll');
-                $(document.body).css({
-                  "overflow-x":"auto",
-                  "overflow-y":"auto"
-                });
-
-
-
-              });
+        // $(document.body).css({
+        //   "overflow-x":"hidden",
+        //   "overflow-y":"hidden"
+        // });
+            //     $(".introsection").delay(200);
+            //   $(".introsection").animate({
+            //     opacity:0,
+            //   },1500,"linear",function(){
+            //     $(this).hide();
+            //
+            //   });
+            //     $(".mouse_scroll2").show();
+            //   $(".mouse_scroll2").delay(1500);
+            // $(".mouse_scroll2").animate({
+            //   opacity:1,
+            // },2500,"linear",function(){
+            //
+            //   });
+            //     $(".cover-color").delay(1500);
+            //   $(".cover-color").animate({
+            //     opacity:1,
+            //   },2500,"linear",function(){
+            //     // $(window).off('scroll');
+            //     $(document.body).css({
+            //       "overflow-x":"auto",
+            //       "overflow-y":"auto"
+            //     });
+            //
+            //
+            //
+            //   });
       }
-        if(number ==15){
+        if(number ==14){
 
           $(document.body).css({
             "overflow-x":"hidden",
             "overflow-y":"hidden"
           });
+          $(".introsection").delay(200);
+        $(".introsection").animate({
+          opacity:0,
+        },1500,"linear",function(){
+          $(this).hide();
 
-          story1scrolldown();
+        });
+
+        $(".cover-color").animate({
+          opacity:1,
+        },1000,"linear",function(){
           $(".mouse_scroll2").show();
+
+
+        });
+        $(".mouse_scroll2").animate({
+          opacity:1,
+        },1000,"linear",function(){
+        });
+          story1scrolldown();
+          // $(".mouse_scroll2").show();
         }
         if(number ==25){
           $(document.body).css({
@@ -1108,6 +1128,8 @@ $(window).on('scroll', function(e) {
       viewBox_x+=(8.8);
           document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
     }
+    if(viewBox_x>=1100){viewBox_x=1100;}
+
       if(number ==15){
         $(document.body).css({
           "overflow-x":"hidden",
@@ -1165,12 +1187,16 @@ $(window).on('scroll', function(e) {
 })
     $(".nextsectionarrow").click(function(){
       console.log("click");
+      if(number==0){
+        number+=5;
+
+      }
       if(number>=5){
         number+=10;
         viewBox_x+=(-88);
             document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
       }
-
+if(viewBox_x<=0){viewBox_x=0;}
 
 
 
@@ -1180,9 +1206,26 @@ $(window).on('scroll', function(e) {
             "overflow-x":"hidden",
             "overflow-y":"hidden"
           });
+          $(".introsection").delay(200);
+        $(".introsection").animate({
+          opacity:0,
+        },1500,"linear",function(){
+          $(this).hide();
 
-          story1scrolldown();
+        });
+
+        $(".cover-color").animate({
+          opacity:1,
+        },1000,"linear",function(){
           $(".mouse_scroll2").show();
+
+
+        });
+        $(".mouse_scroll2").animate({
+          opacity:1,
+        },1000,"linear",function(){
+        });
+          story1scrolldown();
         }
         if(number ==25){
           $(document.body).css({
@@ -1250,14 +1293,16 @@ $(window).on('scroll', function(e) {
     });
 
     $('.previoussectionarrow').click(function(){
-      number+= (-1);
+      number+= (-10);
       if(number<=5){
-        number=5;
+        number+=(-5);
       }
       if(number>=5){
       viewBox_x+=(88);
           document.getElementById("progressline").setAttribute("viewBox", viewBox_x+" 0 1276 3" );
     }
+    if(viewBox_x>=1100){viewBox_x=1100;}
+
       if(number ==15){
         $(document.body).css({
           "overflow-x":"hidden",

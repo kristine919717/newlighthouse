@@ -18,7 +18,7 @@
 }
 
 .mouse_scroll2{
-	display: none;
+	/* display: none; */
 	margin: 0 auto;
 	width: 24px;
 	height: 100px;

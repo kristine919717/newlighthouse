@@ -156,6 +156,7 @@ display: none;  }
      position: absolute;
     bottom: 14%;
     left: 9%;
+    transform: scale(1.2);
    }
    /* .nextsectionarrow{
      opacity:0.8;
@@ -188,8 +189,8 @@ display: none;  }
           <desc>Created with Sketch.</desc>
           <defs>
               <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
-                  <stop stop-color="#E2EDE8" offset="0%"></stop>
-                  <stop stop-color="#899FCE" offset="100%"></stop>
+                  <stop stop-color="#EAFBF3" offset="0%"></stop>
+                  <stop stop-color="#4680F8" offset="100%"></stop>
               </linearGradient>
           </defs>
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -355,19 +356,25 @@ $('.button').click(function(){
   })
 });
 
+$('.nextsectionarrow').click(function(){
+  window.location.href = 'donation_impact.html';
 
+})
 
 //data vis code
 var child_domain = [15, 17.5, 20, 22.5, 25];
 // var child_color = d3.scaleThreshold()
 //     .domain(child_domain)
 //     .range(d3.schemeYlGn[6]);
-var child_color = d3.scaleThreshold()
-    .domain(child_domain)
-    .range(['#E2EDE8','#CDDAE1','#C2D0DE','#B5C4DA','#A6B6D5','#899FCE']);
+// var child_color = d3.scaleThreshold()
+//     .domain(child_domain)
+//     .range(['#E2EDE8','#CDDAE1','#C2D0DE','#B5C4DA','#A6B6D5','#899FCE']);
+    var child_color = d3.scaleThreshold()
+        .domain(child_domain)
+        .range(['#EAFBF3','#CFE5F1','#B5D0EF','#9ABAEC','#7FA4EA','#4E1AF3']);
     var child_color_highlight = d3.scaleThreshold()
         .domain(child_domain)
-        .range(['#EFF8F4','#DCE7ED','#D4DCE4','#CAD5E4','#C0CCE4','#A4B6DB']);
+        .range(['#EFF8F4','#CFE5F1','#D4DCE4','#CAD5E4','#C0CCE4','#A4B6DB']);
   var child_inlone_data = d3.map();
   var percent_lone = d3.map();
   var num_lone=d3.map();

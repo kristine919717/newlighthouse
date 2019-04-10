@@ -490,7 +490,8 @@ left:0;
 .story-1-hover-area{
   position: absolute;
   right: 51%;
-  margin-top: 25%;
+  display: none;
+  margin-top: 15%;
   opacity: 0;
   width:34px;
   height:34px;
@@ -541,6 +542,9 @@ margin-top: 70px;
 margin-left: -20px;
 font-family: sans-serif;
 width: 300%;
+font-size: 14px;
+    color: white;
+    letter-spacing: 0;
 color:white;
 }
 .close{
@@ -681,7 +685,7 @@ left:0;
   opacity:0.9;
 }
 .first{
-  top: 30vh;
+  top: 35vh;
   left: 10%;
 opacity: 0;
 

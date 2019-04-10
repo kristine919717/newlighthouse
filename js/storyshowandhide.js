@@ -4,7 +4,7 @@ function story1scrolldown(){
   document.getElementById("1").setAttribute("fill", "#FFFFFF" );
 
   //scroll down hide------------------
-  $(".mouse_scroll2").hide();
+  // $(".mouse_scroll2").hide();
 
           $(".cover-color").delay(500);
         $(".cover-color").animate({
@@ -29,14 +29,17 @@ function story1scrolldown(){
               $(".cover-bw").animate({
                 opacity:1,
               },3500,"linear",function(){
-                $(".story-1-hover-area").show();
+                // $(".story-1-hover-area").show();
+                $(".mouse_scroll2").show();
+
               });
 
-              $(".first").delay(3500);
+              $(".first").delay(4000);
             $(".first").animate({
-              opacity:0.8
-
-            },1300,"linear",function(){
+              opacity:0.8,
+              top:"30vh"
+            },1500,"linear",function(){
+              $(".story-1-hover-area").show()
 
               $(document.body).css({
                 "overflow-x":"auto",
@@ -46,7 +49,7 @@ function story1scrolldown(){
             });
 
 
-          $(".story-1-hover-area").delay(3500);
+          $(".story-1-hover-area").delay(4000);
           $(".story-1-hover-area").animate({
           opacity:1,
           },2500,"linear",function(){
@@ -82,7 +85,7 @@ function story1scrollup(){
         $(".first").delay(1500);
       $(".first").animate({
         opacity:0.8,
-        top:"46vh",
+        top:"40vh",
       },700,"linear",function(){
         $(document.body).css({
           "overflow-x":"auto",
@@ -119,7 +122,7 @@ function story2scrolldown(){
         $(".second").show();
       $(".second").animate({
         opacity:0.8,
-        top:"35vh",
+        top:"25vh",
       },1500,"linear",function(){
       });
       $(".story-2").show();
