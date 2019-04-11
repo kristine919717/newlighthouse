@@ -223,3 +223,10 @@ top: 145px;
     left:25px;
   }
 }
+
+@media only screen and (max-width: 767px){
+  .mothersmatter{
+    display: none;
+
+  }
+}

@@ -1,0 +1,180 @@
+@media only screen and (max-width: 767px){
+
+  .mobile{
+    display: block;
+  }
+  .donationimpact{
+    display: none;
+  }
+  .donationimpactbg{
+  display: none;
+  }
+  .house1{
+  display: none;
+  }
+  .house2,.house3,.house4,.house6,.house7,.house8,.house9,.house10,.house11,.house12,
+  .house13,.house14,.house15,.house16,.house17
+  {
+    display: none;
+  }
+  .house1:hover{
+    display: none;
+  }
+  .house5:hover{
+    display: none;
+  }
+  .house5{
+    display: none;
+  }
+  .house1 img{
+    display: none;
+  }
+  .house5 img{
+    display: none;
+  }
+  .house2 img, .house3 img,.house4 img,.house5 img, .house6 img,
+  .house7 img, .house8 img, .house9 img,.house10 img,.house11 img,.house12 img{
+  display: none;
+  }
+  .outcomecontainer{
+  display: none;
+  }
+  .outcomecontainer img{
+    display: none;
+  }
+  .outcomecontainer p{
+  display: none;
+  }
+  .click-2{
+display: none;
+    /* background-color: white; */
+  }
+  .click-2:hover + .house2{
+    display: none;
+  }
+  .click-3:hover + .house3{
+  display: none;
+  }
+  .click-4:hover + .house4{
+    display: none;
+  }
+  .click-6:hover + .house6{
+    display: none;
+  }
+  .click-7:hover + .house7{
+    display: none;
+  }
+  .click-8:hover + .house8{
+    display: none;
+  }
+  .click-9:hover + .house9{
+    display: none;
+  }
+  .click-10:hover + .house10{
+    display: none;
+  }
+  .click-11:hover + .house11{
+    display: none;
+  }
+  .click-12:hover + .house12{
+    display: none;
+
+  }
+  .click-3{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-4{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-6{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-7{
+  display: none;
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-8{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-9{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-10{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-11{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+  .click-12{
+  display: none;
+
+    /* background-color: white;
+    opacity: 1; */
+  }
+
+  .scroll{
+    display: none;
+  }
+
+
+  .instruction{
+    display: none;
+  }
+
+  .mobile ul{
+    list-style: none;
+    position: relative;
+    left: 5%;
+  }
+
+  .mTitle{
+
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .mobile img{
+
+    width:80%;
+    padding: 20px;
+
+  }
+
+  #topimg{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 100px;
+  }
+
+  .mobile p{
+
+    color:white;
+    text-align: center;
+    line-height: 1.2rem;
+    width: 80%;
+    padding: 20px;
+  }
+
+}
