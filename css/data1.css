@@ -322,6 +322,7 @@ display: block;
   top: 6em;
   left: 50px;
   display: none;
+  width: 1210px;
 }
 #secondgraph{
 display: none;}

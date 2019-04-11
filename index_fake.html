@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "js/jquery.lettering.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="css/cover.css">
+
+<script>
+$( function() {
+  $( "#slider" ).slider();
+} );
+</script>
+    <script src = "js/function.js"></script>
+
+    <title></title>
+  </head>
+  <body>
+    <div class="bg">
+      <img src="images/cover.png" alt="">
+    </div>
+<div class="title">
+  <h1>the darken house</h1>
+  <h2>In 2017, there are 1.64 million of single parent families in Canada. </h2>
+</div>
+      <div id="slider_container" class="middle-center-container slider-container">
+
+    			<secton id="slider_bars" class="middle-center-container slider-bars">
+
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg width="194px" height="55px" viewBox="0 0 194 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+                  <title>Group</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Artboard" transform="translate(-105.000000, -213.000000)">
+                          <g id="Group" transform="translate(105.000000, 214.000000)">
+                              <circle id="Oval" fill="#FFFFFF" cx="51" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-16" fill="#FFFFFF" cx="1" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-8" fill="#FFFFFF" cx="91" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-17" fill="#FFFFFF" cx="41" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-4" fill="#FFFFFF" cx="71" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-18" fill="#FFFFFF" cx="21" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-9" fill="#FFFFFF" cx="111" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-2" fill="#FFFFFF" cx="61" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-19" fill="#FFFFFF" cx="11" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-10" fill="#FFFFFF" cx="101" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-5" fill="#FFFFFF" cx="81" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-20" fill="#FFFFFF" cx="31" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-11" fill="#FFFFFF" cx="121" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy" fill="#FFFFFF" cx="56" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-21" fill="#FFFFFF" cx="6" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-12" fill="#FFFFFF" cx="96" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-22" fill="#FFFFFF" cx="46" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-6" fill="#FFFFFF" cx="76" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-23" fill="#FFFFFF" cx="26" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-13" fill="#FFFFFF" cx="116" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-3" fill="#FFFFFF" cx="66" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-24" fill="#FFFFFF" cx="16" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-14" fill="#FFFFFF" cx="106" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-7" fill="#FFFFFF" cx="86" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-25" fill="#FFFFFF" cx="36" cy="25" r="1"></circle>
+                              <circle id="Oval-Copy-15" fill="#FFFFFF" cx="126" cy="25" r="1"></circle>
+                              <circle id="Oval-2" stroke="#FFFFFF" cx="166.5" cy="26.5" r="26.5"></circle>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+              <div class="drag-container">
+                <div id="slider" class="slider">
+
+                </div>
+
+              	<section id="slider_drag" class="slider-drag" data-min-range="0">
+              <!-- <svg id="slider_drag" class="slider-drag" data-min-range="0" xmlns="http://www.w3.org/2000/svg">
+                  <circle id="drag_circle" cx="27" cy="27" r="26" fill="none" stroke="rgb(255,255,255)" />
+              </svg> -->
+
+  </div>
+    				</section>
+
+    			</secton><div class="tishi">
+            drag to read Maria's story
+          </div>
+    		</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+  // var slider = $("#slider");
+  // var valueofslide;
+  // $( "#slider" ).slider( "option", "max", 50 );
+
+  $( "#slider" ).on( "slide", function(event, ui) {
+    if(ui.value> 98){
+      // alert("hehe");
+
+      window.location.href = 'tryanimetext.html';
+
+
+      // print(min);
+    }
+  } );
+
+  $('.tishi').each(function(){
+  $(this).html($(this).text().replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.tishi .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 1250,
+    delay: function(el, i) {
+      return 80 * (i+1)
+    }
+  }).add({
+    targets: '.tishi',
+    opacity: 0,
+    duration: 0,
+    easing: "easeOutExpo",
+    delay: 200
+  });
+
+</script>
+
+
+  </body>
+</html>

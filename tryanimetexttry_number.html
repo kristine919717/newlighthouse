@@ -340,7 +340,7 @@ $('.ml9').each(function(){
       <img class="story-3-hover" src="images/story-3-hover.png" alt="">
       <div class="story-3-hover-area" id="story-3-hover-area">
         <img class="helperclick"src="images/helperclick.png" alt="">
-        <p class="clickhere"> Click Here</p>
+        <p class="clickhere talktomaria2"> Talk to Maria</p>
       </div>
       <div class="text-container third">
         <p class="pThird">
@@ -2024,6 +2024,7 @@ $( ".story-3-hover-area").mouseleave(function() {
 });
 
 $( ".story-3-hover-area" ).click(function() {
+  $(".talktomaria2").hide();
   $( ".thirdclicktext" ).show();
 $( ".thirdclicktext" ).animate({
   opacity:1,
