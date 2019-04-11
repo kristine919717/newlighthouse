@@ -35,12 +35,15 @@
   right: 10px;
   top: 45%;
   opacity:0.8;
-  z-index: 3000;
+  z-index: 5000;
 }
 .previoussectionarrow{
-  z-index: 3000;
+  z-index: 5000;
 
 }
 .nextsectionarrow:hover{
   opacity:1;
+}
+.timelineclose{
+  
 }

@@ -553,14 +553,14 @@ color:white;
   right: 200px;
   opacity: 0.8;
   transition: all .8s ease;
-  z-index: 2;
+  z-index: 5000;
 }
 .close:hover{
   opacity: 1;
   cursor: pointer;
 }
 .incomeclose{
-  top: 80px;
+  top: 60px;
   right: 170px;
 
 }

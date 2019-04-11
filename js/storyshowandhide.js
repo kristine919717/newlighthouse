@@ -75,6 +75,11 @@ function story1scrollup(){
   });
 
   //-----show-------
+  $(".mouse_scroll2").show();
+  $(".mouse_scroll2").animate({
+    opacity:1,
+  },1000,"linear",function(){
+  });
           $(".cover-bw").delay(1000);
         $(".cover-bw").animate({
           opacity:1,
@@ -85,7 +90,7 @@ function story1scrollup(){
         $(".first").delay(1500);
       $(".first").animate({
         opacity:0.8,
-        top:"40vh",
+        top:"30vh"
       },700,"linear",function(){
         $(document.body).css({
           "overflow-x":"auto",
@@ -165,7 +170,7 @@ function story2scrollup(){
         $(".second").show();
       $(".second").animate({
         opacity:0.8,
-        top:"10vh",
+        top:"25vh",
       },1500,"linear",function(){
       });
       $(".story-2").show();
@@ -200,6 +205,8 @@ $(".story-2").animate({
 //-----------------show--------------
 $(".story-3").show();
 $(".third").show();
+$(".talktomaria2").hide();
+$(".thirdhelperclick").hide();
 $(".story-3-hover-area").show();
 $(".thirdtriggertext").show();
 $(".story-3-hover-area").delay(500);
@@ -416,7 +423,7 @@ $(".story-4-hover-area").animate({
       $(".fourth").delay(1700);
     $(".fourth").animate({
       opacity:0.8,
-      top:"54vh",
+      top:"40vh",
     },1500,"linear",function(){
       $(document.body).css({
         "overflow-x":"auto",

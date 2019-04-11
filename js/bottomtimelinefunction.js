@@ -7,11 +7,11 @@ $('#gotomap').click(function(){
 
 })
 $('#gotostory').click(function(){
-  window.location.href = 'tryanimetexttry_number.html';
+  window.location.href = 'index.html';
 
 })
 $('#start').click(function(){
-  window.location.href = 'tryanimetexttry_number.html';
+  window.location.href = 'index.html';
 
 })
 $( ".nextsectionarrow").mouseenter(function() {
